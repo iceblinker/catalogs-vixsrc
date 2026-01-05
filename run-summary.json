@@ -1,0 +1,16 @@
+{
+    "timestamp": "2025-11-30T00:00:00.000Z",
+    "durationMs": 0,
+    "addedCount": 0,
+    "uniqueTmdbCount": 0,
+    "duplicatesCount": 0,
+    "previewAttempts": 0,
+    "previewSuccess": 0,
+    "previewRetriedSuccess": 0,
+    "previewTransientFailure": 0,
+    "previewPermanentFailure": 0,
+    "previewLatencyAvgMs": 0,
+    "previewLatencyP95Ms": 0,
+    "previewLatencyMaxMs": 0,
+    "segments": []
+}

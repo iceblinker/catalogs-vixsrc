@@ -1,0 +1,571 @@
+[
+  {
+    "id": "tmdb:1355666",
+    "type": "movie",
+    "name": "Vorrei dirti che ti amo",
+    "poster": "https://image.tmdb.org/t/p/w500/iJqDzZdk0rQUBqTnuZgBNvwkX1Y.jpg",
+    "background": "https://image.tmdb.org/t/p/original/oBcvmHD7lbaX8RZ7NXvO05fIJef.jpg",
+    "description": "Un'adolescente innamorata decide di conquistare il rubacuori della scuola lisciandosi i ricci... ma l'arrivo di un nuovo studente cambia tutto.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "8.39",
+    "genres": [
+      "Romance",
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:1218681",
+    "type": "movie",
+    "name": "Good News",
+    "poster": "https://image.tmdb.org/t/p/w500/lqymgp2NxHKkkeWwec3yU924Npt.jpg",
+    "background": "https://image.tmdb.org/t/p/original/um0RHg3JMsr6Gf0WpqgRlHHnsj4.jpg",
+    "description": "Good News",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:1210938",
+    "type": "movie",
+    "name": "Tre rivelazioni",
+    "poster": "https://image.tmdb.org/t/p/w500/2bjdL5L3rpcVuFBMQ7zX0D16jyn.jpg",
+    "background": "https://image.tmdb.org/t/p/original/ljaRxXl7XzffsQU4LxFnaiIhglv.jpg",
+    "description": "Un pastore che crede nella rivelazione divina e un detective perseguitato da visioni portano a galla i loro demoni personali mentre cercano una persona scomparsa.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.38",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:1075676",
+    "type": "movie",
+    "name": "Guerra e rivolta",
+    "poster": "https://image.tmdb.org/t/p/w500/6xpZB6fPPBFEJ6FushLyLOZb1eG.jpg",
+    "background": "https://image.tmdb.org/t/p/original/qcHOh5PoygMtPbhpeBC0VUNNtAp.jpg",
+    "description": "Nella dinastia Joseon, un padrone e un servitore cresciuti insieme come amici si ritrovano nel dopoguerra schierati su fronti opposti.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.013",
+    "genres": [
+      "Azione",
+      "Dramma",
+      "Storia"
+    ]
+  },
+  {
+    "id": "tmdb:726139",
+    "type": "movie",
+    "name": "Project Silence",
+    "poster": "https://image.tmdb.org/t/p/w500/rXuSca6qEb4xPrSRT7XRzYCFbZB.jpg",
+    "background": "https://image.tmdb.org/t/p/original/39CRS71VP0d9VOsJ5TVgD8IaQnT.jpg",
+    "description": "A causa dell'improvviso peggioramento delle condizioni meteorologiche, la visibilità sul ponte dell'aeroporto è gravemente compromessa, lasciando le persone bloccate e con il rischio che il ponte crolli a causa di una serie di collisioni a catena ed esplosioni. In mezzo al caos, i soggetti canini \"Echo\" dell'esperimento militare \"Progetto Silenzio\", trasportati in segreto, si liberano e tutti i sopravvissuti umani diventano bersaglio di attacchi implacabili.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "6.928",
+    "genres": [
+      "Thriller",
+      "Azione",
+      "Horror",
+      "Fantascienza",
+      "Avventura",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:1039882",
+    "type": "movie",
+    "name": "My Name Is Loh Kiwan",
+    "poster": "https://image.tmdb.org/t/p/w500/jykPMkGEEjd3wIuoGciavt1JNR1.jpg",
+    "background": "https://image.tmdb.org/t/p/original/vWVmlnQnTjqB2MpGD9CtRitep0a.jpg",
+    "description": "Il disertore della Corea del Nord Loh Kiwan fatica a ottenere l'asilo in Belgio, dove conosce una donna sconsolata che ha ormai perso tutte le speranze.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.312",
+    "genres": [
+      "Romance",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:1273277",
+    "type": "movie",
+    "name": "Wonderland",
+    "poster": "https://image.tmdb.org/t/p/w500/fBUW9CSqdwZl0FXvLBcNfXO1qnO.jpg",
+    "background": null,
+    "description": "Wonderland",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "genres": [
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:933131",
+    "type": "movie",
+    "name": "Badland Hunters",
+    "poster": "https://image.tmdb.org/t/p/w500/tgrtRcuyNvDIDUUwkg6HrHV6Q2P.jpg",
+    "background": "https://image.tmdb.org/t/p/original/xk8CF3DAmiqLFI2YZAmxEJFqI1q.jpg",
+    "description": "Quando un letale terremoto trasforma Seul in una landa desolata e selvaggia, un impavido cacciatore si rimbocca le maniche per salvare un'adolescente rapita da un medico pazzo.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "6.724",
+    "genres": [
+      "Azione",
+      "Avventura",
+      "Thriller",
+      "Horror",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:342473",
+    "type": "movie",
+    "name": "Ballerina",
+    "poster": "https://image.tmdb.org/t/p/w500/1qQ1oixuuJJxWZnNqS87vol8o6F.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wlLdcK3Sm7zp0w1ZuVvnFlmcchM.jpg",
+    "description": "Félicie è una piccola orfana della Bretagna ed ha un'unica grande passione: la danza. Insieme al suo migliore amico Victor, che sogna di diventare un inventore, studia un piano folle per fuggire dall'orfanotrofio dove vive e andare a Parigi. Félicie dovrà superare i propri limiti e gli ostacoli sulla sua strada per realizzare il suo sogno: diventare la prima ballerina dell'Opera di Parigi.",
+    "year": "2016",
+    "releaseInfo": "2016",
+    "imdbRating": "7.193",
+    "genres": [
+      "Animazione",
+      "Avventura",
+      "Commedia",
+      "Famiglia"
+    ]
+  },
+  {
+    "id": "tmdb:849869",
+    "type": "movie",
+    "name": "Kill Boksoon",
+    "poster": "https://image.tmdb.org/t/p/w500/nYdtg6ZmoVhE80UoCo7F6OZitnF.jpg",
+    "background": "https://image.tmdb.org/t/p/original/mGwzJbtX6zU0SdtxeHn1sNNK8JW.jpg",
+    "description": "Al lavoro è una celebre killer, quando torna a casa diventa la madre single di una figlia adolescente. Ammazzare gente è una passeggiata, la cosa difficile è fare il genitore.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "6.867",
+    "genres": [
+      "Azione",
+      "Dramma",
+      "Thriller",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:740441",
+    "type": "movie",
+    "name": "Unlocked",
+    "poster": "https://image.tmdb.org/t/p/w500/nAK839maBC4QdWSymeUXYXIGZ49.jpg",
+    "background": "https://image.tmdb.org/t/p/original/mLnbZF4B2ZUYkrbGZL5RGkfe0n4.jpg",
+    "description": "스마트폰을 떨어뜨렸을 뿐인데",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "7.329",
+    "genres": [
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:952701",
+    "type": "movie",
+    "name": "Ritorno a Seoul",
+    "poster": "https://image.tmdb.org/t/p/w500/1MoOJlMCo3CJu9FwesDOndvfGjx.jpg",
+    "background": "https://image.tmdb.org/t/p/original/ngsAuG8JYOiuwgGejN7xljgETNt.jpg",
+    "description": "Freddie ha 25 anni, da molto piccola è stata adottata da una coppia francese che l'ha cresciuta amorevolmente, ma per qualche recondito motivo le sue origini coreane rimangono per lei un nodo irrisolto. In maniera piuttosto fortuita è costretta a trasferire il suo viaggio da Tokyo a Seoul, luogo in cui non riuscirà a ignorare il richiamo delle sue radici e finirà per mettersi alla ricerca della sua famiglia biologica. Nel giro di anni, fatti di silenzio, freddezza e poi riavvicinamenti, Freddie prova a ricostruire i pezzi sparsi della sua identità, cercando di comunicare con un padre alcolizzato che non parla nemmeno la sua lingua e una madre che non vuole farsi trovare.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "6.3",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:851644",
+    "type": "movie",
+    "name": "20th Century Girl",
+    "poster": "https://image.tmdb.org/t/p/w500/rSNtRQpCsDckczokmynAcVAt4Fm.jpg",
+    "background": "https://image.tmdb.org/t/p/original/37y53Jt8K6MvN6s4zJVFa61luO2.jpg",
+    "description": "Yeon-du chiede alla sua migliore amica Bora di raccogliere tutte le informazioni possibili su Baek Hyun-jin mentre lei è negli Stati Uniti per un'operazione al cuore. Bora decide di avvicinarsi prima al migliore amico di Baek, Pung Woon-ho. Tuttavia, il maldestro piano di Bora prende una direzione inaspettata. Nel 1999, un anno prima del nuovo secolo, Bora, che compie diciassette anni, cade nella febbre del primo amore.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.144",
+    "genres": [
+      "Romance",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:800345",
+    "type": "movie",
+    "name": "Carter",
+    "poster": "https://image.tmdb.org/t/p/w500/gA42BzZjv2WHO9B8d7lLpaXS8HD.jpg",
+    "background": "https://image.tmdb.org/t/p/original/nHWr40LGgyxymEhZCOA2WHATPpn.jpg",
+    "description": "A due mesi dall'inizio di una pandemia mortale che ha avuto origine nella zona demilitarizzata e che ha devastato Stati Uniti e Corea del Nord, \"Carter\" si risveglia senza alcuna memoria del passato. Nella sua testa c'è un misterioso dispositivo e in bocca ha un ordigno letale. Una strana voce che sente solo lui gli dice cosa fare. La bomba può scoppiare da un momento all'altro, a meno che non riesca a salvare la bambina che è l'unico antidoto al virus, ma per riuscirci dovrà vedersela con la CIA e con i golpisti nordcoreani.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "6",
+    "genres": [
+      "Azione",
+      "Thriller",
+      "Crime",
+      "Virus"
+    ]
+  },
+  {
+    "id": "tmdb:606402",
+    "type": "movie",
+    "name": "Yaksha",
+    "poster": "https://image.tmdb.org/t/p/w500/7WN4bLzEeVwHKMzDc2GrOWSkFHY.jpg",
+    "background": "https://image.tmdb.org/t/p/original/hXTWVJMsI9BkxMLliqL1j0FT55t.jpg",
+    "description": "Soprannominato in onore di uno spirito divoratore di umani, lo spietato leader di una squadra di operazioni nere all'estero intraprende una pericolosa missione in una città crivellata di spie.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "6.579",
+    "genres": [
+      "Azione",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:928769",
+    "type": "movie",
+    "name": "AI Love You",
+    "poster": "https://image.tmdb.org/t/p/w500/1NXe9caUGbnw49hQlqlXXfvTgeI.jpg",
+    "background": "https://image.tmdb.org/t/p/original/AfWtIzrdB0HMQ0Swequza4Jo1Kh.jpg",
+    "description": "Una moderna storia d'amore ambientata in un futuro prossimo in cui un edificio di intelligenza artificiale è alimentato dai sentimenti umani. A causa di un problema tecnico del software, si innamora di una vera ragazza, fugge dall'edificio nel corpo di un vero uomo e cerca di conquistare il suo affetto.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "5.905",
+    "genres": [
+      "Romance",
+      "Fantascienza",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:760517",
+    "type": "movie",
+    "name": "Amore e guinzagli",
+    "poster": "https://image.tmdb.org/t/p/w500/pD6rSCML58cYFfAxfwnYLuvytCA.jpg",
+    "background": "https://image.tmdb.org/t/p/original/xFZ4vSVN6zG0F0ut97pjkrJmVwG.jpg",
+    "description": "Ji-hoo ha delle preferenze sessuali che secondo qualcuno potrebbero essere catalogate come perversioni, mentre Ji-woo è sessualmente fredda, ma quando scopre quello che per lui sarebbe un segreto, gli propone un accordo...",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "6.743",
+    "genres": [
+      "Romance",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:606403",
+    "type": "movie",
+    "name": "Special Delivery",
+    "poster": "https://image.tmdb.org/t/p/w500/jqcqUZ4yjM1Gl9DRMfBTjO2Z4fy.jpg",
+    "background": "https://image.tmdb.org/t/p/original/e2rPSd0yZGwAQzZYEcI21hDMy0C.jpg",
+    "description": "Eun-ha, che è una normale impiegata dello sfasciacarrozze, lavora segretamente come addetto alle consegne, si occupa di richieste di consegna insolite. Un giorno, Eun-ha si reca a Seul per prelevare un cliente coinvolto in un crimine di gioco d'azzardo che vuole fuggire all'estero, tuttavia Eun-ha incontra il giovane figlio del cliente al punto di raccolta, anziché il cliente stesso. Kyeong-pil, un agente di polizia in carica che è in realtà il mandante dell'intero crimine di gioco d'azzardo, insegue il bambino scomparso che ha la chiave di sicurezza del conto corrente bancario che contiene 30 milioni di dollari.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "7.032",
+    "genres": [
+      "Azione",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:615643",
+    "type": "movie",
+    "name": "Minari",
+    "poster": "https://image.tmdb.org/t/p/w500/5zKqJ8FM8sFT4H9E1VKcDLthyeI.jpg",
+    "background": "https://image.tmdb.org/t/p/original/bKCpRjjTKcr3KAITmwjVMobbBYg.jpg",
+    "description": "Tutto ha inizio quando Jacob (Steven Yeun), immigrato coreano, trascina la sua famiglia dalla California all'Arkansas, deciso a ritagliarsi la dura indipendenza di una vita da agricoltore negli Stati Uniti degli anni '80. Sebbene Jacob veda l'Arkansas come una terra ricca di opportunità, il resto della sua famiglia è sconvolto da questo imprevisto trasferimento in un fazzoletto di terra nell'isolata regione dell'Ozark. L'arrivo dalla Corea della nonna (Yoon Yeo-jeon), donna imprevedibile e singolare, stravolgerà ulteriormente la loro vita. I suoi modi bizzarri accenderanno la curiosità del nipotino David (Alan Kim) e accompagneranno la famiglia in un percorso di riscoperta dell'amore che li unisce.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.336",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:581389",
+    "type": "movie",
+    "name": "Space Sweepers",
+    "poster": "https://image.tmdb.org/t/p/w500/m2EExYYTjIfAEQqyPKN1I7xOpsk.jpg",
+    "background": "https://image.tmdb.org/t/p/original/drulhSX7P5TQlEMQZ3JoXKSDEfz.jpg",
+    "description": "Nel 2092, l'astronave Victory è una delle tante che sopravvive recuperando detriti spaziali. L'equipaggio è composto dal geniale pilota spaziale Tae-ho, dal misterioso ex pirata Jang, dall'ingegnere Tiger Park e dal robot militare riprogrammato Bubs. Ben presto, il team si ritrova a recuperare con successo una navetta spaziale precipitata al cui interno trova una bambina di sette anni. Costei non è altro che il robot umanoide voluto dalle guardie spaziali UTS e per tale ragione la squadra decide di chiedere un riscatto per il suo rilascio.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.077",
+    "genres": [
+      "Dramma",
+      "Fantasy",
+      "Fantascienza",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:606523",
+    "type": "movie",
+    "name": "Night in Paradise",
+    "poster": "https://image.tmdb.org/t/p/w500/mWZ2aujwBdFEONvRQv05zPBGy7J.jpg",
+    "background": "https://image.tmdb.org/t/p/original/MocpW8Wrp8uireBg6bT6Y6TKWC.jpg",
+    "description": "Tae-gu, uomo di punta di una gang criminale guidata da Mr. Yang, tenta di rifarsi una vita per amore della sorella malata e del nipote. Quando questi ultimi vengono uccisi in un incidente da qualcuno che mirava a Tae-gu, egli, scioccato, decide di vendicarsi. Elimina il boss di un’altra gang e fugge nell’isola Jeju. Senza sapere che la sua gang lo ha già abbandonato, incontra Kuto e sua nipote Jae-yeon, che si prendono cura di lui. Jae-yeon sta morendo per una malattia, mentre Tae-gu intuisce che il pericolo si sta avvicinando. La situazione si fa ingarbugliata, e Jae- yeon e Tae-gu, che hanno perso il desiderio di vivere, cominciano a sentire pietà l’uno per l’altra.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "6.885",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Azione"
+    ]
+  },
+  {
+    "id": "tmdb:581392",
+    "type": "movie",
+    "name": "Peninsula",
+    "poster": "https://image.tmdb.org/t/p/w500/hpCtv0Plf21KlTi51UCIEVxRmkh.jpg",
+    "background": "https://image.tmdb.org/t/p/original/gEjNlhZhyHeto6Fy5wWy5Uk3A9D.jpg",
+    "description": "La Corea del Sud viene investita dall'apocalisse zombi, e stavolta non c'è treno che tenga. In poco tempo l'intera penisola viene abbandonata e dichiarata inabitabile. Quattro anni dopo, l'ex-militare coreano Jung-seok si trova a Hong Kong, dove era sbarcato grazie all'ultima nave carica di superstiti. La vita da rifugiato è però grama. Le scarse opportunità e il pregiudizio ancora diffuso verso i coreani lo costringono a frequentare giri illeciti. Attraverso questi ultimi, gli viene proposta una missione tanto pericolosa quanto remunerativa: tornare in patria di nascosto, a Incheon, per recuperare un camion pieno di soldi e mettere in salvo il bottino.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "6.74",
+    "genres": [
+      "Horror",
+      "Azione",
+      "Thriller",
+      "Avventura",
+      "Virus",
+      "Dystopia",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:570503",
+    "type": "movie",
+    "name": "Tune in for Love",
+    "poster": "https://image.tmdb.org/t/p/w500/rt8yDvXSnk9CMDJeNYh9lv6kPMt.jpg",
+    "background": "https://image.tmdb.org/t/p/original/5sSCPzLhX9Ho7Llpj5N3ECjqYai.jpg",
+    "description": "Negli anni '90, la laboriosa Mi-soo e l'ottimista Hyun-woo si incontrano in una panetteria e si innamorano mentre si scambiano storie in una stazione radio, ma mentre le loro strade continuano a incrociarsi, i tempi non sembrano mai funzionare.",
+    "year": "2019",
+    "releaseInfo": "2019",
+    "imdbRating": "7.771",
+    "genres": [
+      "Romance",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:560527",
+    "type": "movie",
+    "name": "The Dude In Me",
+    "poster": "https://image.tmdb.org/t/p/w500/ofhf0Tn7hnBtboiUEuVj5IZyD3g.jpg",
+    "background": "https://image.tmdb.org/t/p/original/f5xCw22fOR6DgDRCpDFGkPbKbmY.jpg",
+    "description": "Dong-hyun è uno studente delle superiori. Un giorno cade dal tetto e incontra Pan-soo che è un passante. Pan-soo è membro di un'organizzazione criminale. Quando i due uomini si svegliano in ospedale, scoprono di essersi scambiati i corpi.",
+    "year": "2019",
+    "releaseInfo": "2019",
+    "imdbRating": "7.801",
+    "genres": [
+      "Fantasy",
+      "Commedia",
+      "Azione"
+    ]
+  },
+  {
+    "id": "tmdb:497370",
+    "type": "movie",
+    "name": "The Drug King",
+    "poster": "https://image.tmdb.org/t/p/w500/vXqDNIp7CrUpkcBc8eMBtDPch4J.jpg",
+    "background": "https://image.tmdb.org/t/p/original/kIORtumDUNUzdR84TD6jicOi6YG.jpg",
+    "description": "Busan, Corea del Sud, anni '70. Lee Doo-sam è un piccolo contrabbandiere. Dopo aver aiutato una banda di narcotrafficanti a contrabbandare metanfetamina, cade nell'oscuro mondo del crimine. Arguto e pieno di ambizioni, alla fine prende il controllo della malavita della droga e inizia a condurre una doppia vita: un buon leader della comunità durante il giorno ma un famigerato signore della droga durante la notte.",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "6.32",
+    "genres": [
+      "Crime",
+      "Azione",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:554137",
+    "type": "movie",
+    "name": "Default",
+    "poster": "https://image.tmdb.org/t/p/w500/rk4AuqG73R4xNcILdP0Ot7UWzO9.jpg",
+    "background": "https://image.tmdb.org/t/p/original/91rCHR1bT9rhzxThevgKXyFE65v.jpg",
+    "description": "A una settimana dal default della Corea del Sud, avvenuto nel 1997, un analista della Banca Nazionale prevede la crisi e cerca di prevenire il disastro. Nel frattempo, Jung-hak, un investitore finanziario, approfitta della crisi e scommette contro il paese, mentre un piccolo commerciante lotta per proteggere i suoi affari e la sua famiglia…",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "6.9",
+    "genres": [
+      "Dramma",
+      "Storia"
+    ]
+  },
+  {
+    "id": "tmdb:435841",
+    "type": "movie",
+    "name": "Steel Rain",
+    "poster": "https://image.tmdb.org/t/p/w500/pC3Mcz2TPuXIkTrd8bolUgBm9GV.jpg",
+    "background": "https://image.tmdb.org/t/p/original/3eEtOooEzdpIA9hf0V4b5DFqyjd.jpg",
+    "description": "Nel mezzo di un colpo di stato, un agente nordcoreano fugge a sud con il leader ferito del paese nel tentativo di tenerlo in vita e prevenire una guerra di Corea.",
+    "year": "2017",
+    "releaseInfo": "2017",
+    "imdbRating": "7.079",
+    "genres": [
+      "Azione",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:488623",
+    "type": "movie",
+    "name": "Forgotten",
+    "poster": "https://image.tmdb.org/t/p/w500/pXHLaA2dvIfJ3NbslufKqvS48dt.jpg",
+    "background": "https://image.tmdb.org/t/p/original/tGFII2hY0O0qXPAPGE1fBDOONQJ.jpg",
+    "description": "Quando suo fratello torna a casa dopo un rapimento, non ricordando nulla degli ultimi 19 giorni, Jin-seok si mette in cerca della verità.",
+    "year": "2017",
+    "releaseInfo": "2017",
+    "imdbRating": "7.9",
+    "genres": [
+      "Thriller",
+      "Mistero",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:433950",
+    "type": "movie",
+    "name": "Daytime Shooting Star",
+    "poster": "https://image.tmdb.org/t/p/w500/laijmNN64UKXnOdtM45cTsm3Bo8.jpg",
+    "background": "https://image.tmdb.org/t/p/original/24ZHWJlVU1DDueF6oOxK6Y4q3Qw.jpg",
+    "description": "ひるなかの流星",
+    "year": "2017",
+    "releaseInfo": "2017",
+    "imdbRating": "7.4",
+    "genres": [
+      "Romance"
+    ]
+  },
+  {
+    "id": "tmdb:396535",
+    "type": "movie",
+    "name": "Train to Busan",
+    "poster": "https://image.tmdb.org/t/p/w500/oekUlBFR85PejJK3z5jWyy3KyCG.jpg",
+    "background": "https://image.tmdb.org/t/p/original/fVpFOcQyHJM2di9upgSIwWD5wac.jpg",
+    "description": "Seok-wu è un manager finanziario separato dalla moglie: la piccola Su-an spesso si sente trascurata da lui e preferisce la compagnia della madre. Sul treno su cui viaggiano i due, per portare Su-an dalla madre che vive a Busan, sale una ragazza che riporta delle ferite strane sul corpo, simili al morso di un animale. Presto si trasformerà in zombi e sul treno per Busan si scatenerà l'inferno.",
+    "year": "2016",
+    "releaseInfo": "2016",
+    "imdbRating": "7.747",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Azione",
+      "Avventura",
+      "Virus",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:1080713",
+    "type": "movie",
+    "name": "Pandora",
+    "poster": "https://image.tmdb.org/t/p/w500/iwk4QRu4QPpVamvSOowEXRqjNdf.jpg",
+    "background": "https://image.tmdb.org/t/p/original/cxRrHdTpJXJ8F4jo6KZkGQpui4r.jpg",
+    "description": "Pandora",
+    "year": "2016",
+    "releaseInfo": "2016",
+    "imdbRating": "9",
+    "genres": []
+  },
+  {
+    "id": "tmdb:346646",
+    "type": "movie",
+    "name": "Veteran",
+    "poster": "https://image.tmdb.org/t/p/w500/vPFqA1KxYaVJg6foIuRIawGaH5d.jpg",
+    "background": "https://image.tmdb.org/t/p/original/y9m021FLQARGxoTyQdJk4C27zCS.jpg",
+    "description": "Jo Tae-oh nato in una famiglia ricca è il terzo in linea di successione. Figlio di un top manager, è annoiato dalla vita e ha pericolose ambizioni che lo portano a formare un'organizzazione criminale che si espande velocemente. Ben presto, sulla sua strada incontra il poco scaltro detective Seo Do-cheol. Su richiesta di un bambino di nove anni che gli chiede aiuto, il detective si ripromette di sabotare i piani di Tae-oh, costi quel che costi.",
+    "year": "2015",
+    "releaseInfo": "2015",
+    "imdbRating": "6.916",
+    "genres": [
+      "Azione",
+      "Crime",
+      "Commedia",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:241863",
+    "type": "movie",
+    "name": "As the Gods Will",
+    "poster": "https://image.tmdb.org/t/p/w500/lXo4Afo6u7z2QA2IHeJKHTqj8dk.jpg",
+    "background": "https://image.tmdb.org/t/p/original/aIokpcLZ1CRJDqFCjb0KHlUY1UQ.jpg",
+    "description": "Shun Takahata si è appena lamentato della sua vita, noiosa e uguale a se stessa, quando la mattina, in classe, la testa del professore esplode e al suo posto compare un gioco parlante e assassino (il Daruma ga koronda, \"Daruma è caduto\"), una versione mortale di \"Un, due, tre, Stella\" che miete una vittima dopo l'altra, lasciando un solo vincitore per aula. Non c'è tempo per domandarsi cosa stia succedendo, ma solo per prepararsi al secondo gioco, altrettanto infantile e sterminatore",
+    "year": "2014",
+    "releaseInfo": "2014",
+    "imdbRating": "7.1",
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:50090",
+    "type": "movie",
+    "name": "The Secret Reunion",
+    "poster": "https://image.tmdb.org/t/p/w500/mgHYCmfmFnnKCbrR42hZTNbeq4n.jpg",
+    "background": "https://image.tmdb.org/t/p/original/Ae2aDT7b1WXxQ9OiyqhuANHHo7X.jpg",
+    "description": "L'agente segreto nordcoreano Ji-won assieme a un sicario sta compiendo una missione a Seul quando intervengono i servizi segreti sudcoreani con la squadra comandata da Han gyu. Sarà un massacro anche se la missione nordcoreana fallisce. Ji won fugge e rimane isolato dagli altri agenti. Han gyu viene licenziato. Sei anni più tardi i due si incontrano di nuovo per puro caso: Ji won lavora in una cava, Han gyu ha un'agenzia che è specializzata nel riportare a casa mogli fuggite dal focolare domestico. Ognuno sa dell'identità dell'altro ma fanno entrambi finta di non conoscersi. Per controllarsi meglio l'un l'altro, cominciano a lavorare assieme all'agenzia di Han gyu.",
+    "year": "2010",
+    "releaseInfo": "2010",
+    "imdbRating": "6.373",
+    "genres": [
+      "Thriller",
+      "Azione",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:4552",
+    "type": "movie",
+    "name": "Two Sisters",
+    "poster": "https://image.tmdb.org/t/p/w500/5gWqetgQaY6MHEyNeLngT3w0jSj.jpg",
+    "background": "https://image.tmdb.org/t/p/original/syKbZiHVdXw0NcH6NdXWEKZaECv.jpg",
+    "description": "Dopo aver passato un lungo periodo in un istituto per malattie mentali a seguito della morte della madre, le due sorelle Bae Soo-yeon e Bae Soo-mi, fanno ritorno a casa, dove ad attenderle, oltre al padre, c'è anche la sua nuova compagna, la giovane Eun-Joo. Nonostante le apparenti buone intenzioni iniziali della donna nei confronti delle ragazze, il clima fra loro e la matrigna è tesissimo. Inoltre in casa, sembra esserci una presenza inquietante, di cui solo le ragazze sembrano accorgersi. Il padre, dal canto suo, sembra ignorare completamente le richieste d'aiuto delle figlie, come se intorno a lui non stesse accadendo assolutamente nulla.",
+    "year": "2003",
+    "releaseInfo": "2003",
+    "imdbRating": "7.09",
+    "genres": [
+      "Dramma",
+      "Horror",
+      "Mistero",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:11423",
+    "type": "movie",
+    "name": "Memorie di un assassino",
+    "poster": "https://image.tmdb.org/t/p/w500/n6GHqnUBV0R0MWof77slsHYXskF.jpg",
+    "background": "https://image.tmdb.org/t/p/original/2NArMoObkAbnIPvqlHC3gRGsfBb.jpg",
+    "description": "In un villaggio nella provincia di Gyunggi viene rinvenuto il cadavere di una donna che prima di essere uccisa è stata stuprata. Due detectives locali si fanno carico del caso ma, sebbene non usino i guanti bianchi nel condurre le indagini, non arrivano a nulla. Ad aiutare l'inesperta coppia arriva da Seul il collega Seo Tae-yoon, mentre altri omicidi commessi con lo stesso modus operandi cominciano a far pensare ad un serial killer…",
+    "year": "2003",
+    "releaseInfo": "2003",
+    "imdbRating": "8.053",
+    "genres": [
+      "Crime",
+      "Dramma",
+      "Thriller"
+    ]
+  }
+]

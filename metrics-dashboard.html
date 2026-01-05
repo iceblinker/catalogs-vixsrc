@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingestion Metrics | VixSrc</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root {
+      --bg-body: #0f172a;
+      --bg-card: #1e293b;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-color: #3b82f6;
+      --border-color: #334155;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .navbar {
+      background: rgba(30, 41, 59, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-card {
+      transition: transform 0.2s;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .table-dark {
+      --bs-table-bg: transparent;
+      --bs-table-color: var(--text-secondary);
+      --bs-table-border-color: var(--border-color);
+    }
+
+    .table th {
+      font-weight: 600;
+      color: var(--text-primary);
+      background-color: rgba(30, 41, 59, 0.5);
+    }
+
+    .text-success-custom {
+      color: #10b981 !important;
+    }
+
+    .text-danger-custom {
+      color: #ef4444 !important;
+    }
+
+    .text-warning-custom {
+      color: #f59e0b !important;
+    }
+
+    <div class="container pb-5"><h4 class="mb-4 fw-bold">Run Summary</h4>< !-- Summary Grid --><div class="row g-3 mb-4" id="summaryGrid">< !-- Populated by JS --></div>< !-- Latency & Charts --><div class="row g-4 mb-4"><div class="col-md-4"><div class="card h-100"><div class="card-body"><h6 class="card-title text-secondary mb-3"><i class="bi bi-stopwatch"></i>Preview Latency</h6><div class="d-flex flex-column gap-3" id="latencyStats">< !-- Populated by JS --></div></div></div></div><div class="col-md-8"><div class="card h-100"><div class="card-body"><h6 class="card-title text-secondary mb-3"><i class="bi bi-activity"></i>Segment Success Rate</h6><div style="height: 200px;"><canvas id="segmentChart"></canvas></div></div></div></div></div>< !-- Segments Table --><div class="card"><div class="card-header border-bottom border-secondary bg-transparent"><h6 class="mb-0"><i class="bi bi-list-ul"></i>Detailed Segments</h6></div><div class="table-responsive"><table class="table table-dark table-hover mb-0 align-middle" id="segmentsTable"><thead><tr><th>Type</th><th>Kind</th><th>Value</th><th>Pages</th><th>Collected</th><th>Added</th><th>Preview OK</th><th>Preview Fail</th><th>Skipped</th><th>Aborted</th><th>OK %</th></tr></thead><tbody>< !-- Populated by JS --></tbody></table></div></div></div><script>const REFRESH_MS=30000;
+    let chartInstance=null;
+
+    async function load() {
+      try {
+        const res=await fetch('run-summary.json');
+
+        if ( !res.ok) throw new Error(`HTTP $ {
+            res.status
+          }
+
+          `);
+        const data=await res.json();
+
+        renderSummary(data);
+        renderLatency(data);
+        renderSegments(data.segments || []);
+        updateChart(data);
+      }
+
+      catch (e) {
+        console.error('Load error:', e);
+        // Optional: show error toast
+      }
+    }
+
+    function renderSummary(m) {
+      const items=[ {
+        label: 'Duration (s)', value: ((m.durationMs || 0) / 1000).toFixed(1), color: 'text-primary'
+      }
+
+      ,
+      {
+      label: 'Added Count', value: m.addedCount || 0, color: 'text-success-custom'
+    }
+
+    ,
+    {
+    label: 'Unique TMDB', value: m.uniqueTmdbCount || 0, color: 'text-info'
+    }
+
+    ,
+    {
+    label: 'Duplicates', value: m.duplicatesCount || 0, color: 'text-secondary'
+    }
+
+    ,
+    {
+    label: 'Preview Attempts', value: m.previewAttempts || 0, color: 'text-white'
+    }
+
+    ,
+    {
+    label: 'Preview Success', value: m.previewSuccess || 0, color: 'text-success-custom'
+    }
+
+    ,
+    {
+    label: 'Retried Success', value: m.previewRetriedSuccess || 0, color: 'text-warning-custom'
+    }
+
+    ,
+    {
+    label: 'Transient Fail', value: m.previewTransientFailure || 0, color: 'text-warning-custom'
+    }
+
+    ,
+    {
+    label: 'Permanent Fail', value: m.previewPermanentFailure || 0, color: 'text-danger-custom'
+    }
+
+    ];
+
+    const html=items.map(item=> ` <div class="col-6 col-md-4 col-lg-3" > <div class="card stat-card h-100" > <div class="card-body" > <div class="stat-label mb-1" >$ {
+        item.label
+      }
+
+      </div> <div class="stat-value ${item.color}" >$ {
+        item.value
+      }
+
+      </div> </div> </div> </div> `).join('');
+
+    document.getElementById('summaryGrid').innerHTML=html;
+    }
+
+    function renderLatency(m) {
+      const stats=[ {
+
+        label: 'Average',
+        value: `$ {
+          m.previewLatencyAvgMs || 0
+        }
+
+        ms`
+      }
+
+      ,
+      {
+
+      label: 'P95',
+      value: `$ {
+        m.previewLatencyP95Ms || 0
+      }
+
+      ms`
+    }
+
+    ,
+    {
+
+    label: 'Max',
+    value: `$ {
+      m.previewLatencyMaxMs || 0
+    }
+
+    ms`
+    }
+
+    ];
+
+    const html=stats.map(s=> ` <div class="d-flex justify-content-between align-items-center border-bottom border-secondary pb-2" > <span class="text-secondary" >$ {
+        s.label
+      }
+
+      </span> <span class="fw-bold font-monospace" >$ {
+        s.value
+      }
+
+      </span> </div> `).join('');
+
+    document.getElementById('latencyStats').innerHTML=html;
+    }
+
+    function renderSegments(segs) {
+      const tbody=document.querySelector('#segmentsTable tbody');
+
+      tbody.innerHTML=segs.map(s=> {
+          const total=(s.previewsOk + s.previewsFailures) || 0;
+          const okPct=total ? ((s.previewsOk / total) * 100).toFixed(1) : '0.0';
+          const pctClass=parseFloat(okPct) > 90 ? 'text-success-custom' : (parseFloat(okPct) > 50 ? 'text-warning-custom' : 'text-danger-custom');
+
+          return ` <tr> <td><span class="badge bg-secondary" >$ {
+            s.type
+          }
+
+          </span></td> <td>$ {
+            s.segmentKind
+          }
+
+          </td> <td class="text-truncate" style="max-width: 150px;" title="${s.segmentValue}" >$ {
+            s.segmentValue
+          }
+
+          </td> <td>$ {
+            s.pages
+          }
+
+          </td> <td>$ {
+            s.collected
+          }
+
+          </td> <td>$ {
+            s.addedCount
+          }
+
+          </td> <td class="text-success-custom" >$ {
+            s.previewsOk
+          }
+
+          </td> <td class="text-danger-custom" >$ {
+            s.previewsFailures
+          }
+
+          </td> <td>$ {
+            s.skipped
+          }
+
+          </td> <td>$ {
+            s.aborted
+          }
+
+          </td> <td class="${pctClass} fw-bold" >$ {
+            okPct
+          }
+
+          %</td> </tr> `;
+        }).join('');
+    }
+
+    function updateChart(m) {
+      const segs=m.segments || [];
+
+      const labels=segs.map((s, i)=> `#$ {
+          i + 1
+        }
+
+        `); // Simplified labels
+
+      const data=segs.map(s=> {
+          const total=s.previewsOk + s.previewsFailures;
+          return total ? (s.previewsOk / total) * 100 : 0;
+        });
+
+      const ctx=document.getElementById('segmentChart').getContext('2d');
+
+      if (chartInstance) {
+        chartInstance.data.labels=labels;
+        chartInstance.data.datasets[0].data=data;
+        chartInstance.update();
+      }
+
+      else {
+        chartInstance=new Chart(ctx, {
+
+          type: 'line',
+          data: {
+
+            labels: labels,
+            datasets: [ {
+              label: 'Success Rate (%)',
+              data: data,
+              borderColor: '#10b981',
+              backgroundColor: 'rgba(16, 185, 129, 0.1)',
+              borderWidth: 2,
+              tension: 0.3,
+              fill: true,
+              pointRadius: 2
+            }
+
+            ]
+          }
+
+          ,
+          options: {
+
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: {
+
+                beginAtZero: true,
+                max: 100,
+                grid: {
+                  color: '#334155'
+                }
+
+                ,
+                ticks: {
+                  color: '#94a3b8'
+                }
+              }
+
+              ,
+              x: {
+                grid: {
+                  display: false
+                }
+
+                ,
+                ticks: {
+                  display: false
+                }
+
+                // Hide x labels for cleanliness
+              }
+            }
+
+            ,
+            plugins: {
+              legend: {
+                display: false
+              }
+
+              ,
+              tooltip: {
+                callbacks: {
+                  title: (ctx)=> {
+                    const idx=ctx[0].dataIndex;
+                    const s=segs[idx];
+
+                    return `$ {
+                      s.type
+                    }
+
+                    - $ {
+                      s.segmentValue
+                    }
+
+                    `;
+                  }
+                }
+              }
+            }
+          }
+        });
+    }
+    }
+
+    // Init
+    load();
+    setInterval(load, REFRESH_MS);
+    </script></body></html>

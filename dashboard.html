@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VixSrc Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-body: #0f172a;
+            --bg-card: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --border-color: #334155;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--text-primary) !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .vixsrc-logo {
+            height: 32px;
+            width: auto;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            background-color: transparent;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.25rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .log-box {
+            background-color: #000;
+            color: #10b981;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+            height: 350px;
+            overflow-y: auto;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .log-entry {
+            margin-bottom: 4px;
+        }
+
+        .log-time {
+            color: #6b7280;
+            margin-right: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .form-select,
+        .form-control {
+            background-color: #0f172a;
+            border-color: var(--border-color);
+            color: var(--text-primary);
+            border-radius: 8px;
+        }
+
+        .form-select:focus,
+        .form-control:focus {
+            background-color: #0f172a;
+            border-color: var(--accent-color);
+            color: var(--text-primary);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25);
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .status-success {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--success-color);
+        }
+
+        .status-warning {
+            background-color: rgba(245, 158, 11, 0.1);
+            color: var(--warning-color);
+        }
+
+        .status-danger {
+            background-color: rgba(239, 68, 68, 0.1);
+            color: var(--danger-color);
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-body);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        .spinner-border-sm {
+            width: 1rem;
+            height: 1rem;
+            border-width: 0.15em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/logo.png" alt="VixSrc" class="vixsrc-logo" onerror="this.style.display='none'">
+                VixSrc Dashboard
+            </a>
+            <div class="d-flex align-items-center gap-3">
+                <span id="lastUpdateBadge" class="badge bg-secondary">Checking...</span>
+                <a href="/metrics-dashboard.html" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-graph-up"></i> Metrics
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pb-5">
+        <!-- Top Stats Row -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="stat-label mb-2">Total Movies</div>
+                        <div class="stat-value text-primary" id="movieCount">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="stat-label mb-2">Total Series</div>
+                        <div class="stat-value text-info" id="tvCount">-</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="stat-label mb-2">Total Items</div>
+                        <div class="stat-value text-white" id="totalCount">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls & Status -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-8">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <span><i class="bi bi-cpu"></i> System Status</span>
+                        <span id="statusIndicator" class="status-badge status-success">Idle</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label class="form-label text-secondary small">Filter Stats</label>
+                                <select id="providerSel" class="form-select form-select-sm">
+                                    <option value="">All Providers</option>
+                                    <optgroup label="Streaming Services">
+                                        <option value="Netflix">Netflix</option>
+                                        <option value="Disney+">Disney+</option>
+                                        <option value="Prime Video">Prime Video</option>
+                                        <option value="Apple TV+">Apple TV+</option>
+                                        <option value="Now TV">Now TV</option>
+                                        <option value="Sky Go">Sky Go</option>
+                                        <option value="Infinity+">Infinity+</option>
+                                    </optgroup>
+                                    <optgroup label="Keywords">
+                                        <option value="Animal Horror">Animal Horror</option>
+                                        <option value="Virus & Disease">Virus & Disease</option>
+                                        <option value="Dystopia">Dystopia</option>
+                                        <option value="Apocalypse">Apocalypse</option>
+                                        <option value="Supernatural">Supernatural</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-end">
+                                <button id="runBtn" class="btn btn-primary w-100 btn-sm">
+                                    <span id="btnSpinner" class="spinner-border spinner-border-sm me-2 d-none"
+                                        role="status" aria-hidden="true"></span>
+                                    <span id="btnText">Run Update</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-3 pt-3 border-top border-secondary">
+                            <div class="d-flex justify-content-between text-secondary small">
+                                <span>Last Run: <span id="lastRunTime" class="text-white">N/A</span></span>
+                                <span>Duration: <span id="lastRunDuration" class="text-white">N/A</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <span><i class="bi bi-hdd-network"></i> Cache Health</span>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled mb-0 small" id="cacheList">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manual Editor Row -->
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span><i class="bi bi-pencil-square"></i> Manual Metadata Editor</span>
+                    </div>
+                    <div class="card-body">
+                        <form id="editorForm" class="row g-3">
+                            <div class="col-md-3">
+                                <label class="form-label small text-secondary">TMDB ID</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="editTmdbId" required
+                                        placeholder="e.g. 12345">
+                                    <button class="btn btn-outline-secondary" type="button" id="fetchBtn"
+                                        title="Fetch Current Value">
+                                        <i class="bi bi-arrow-clockwise"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-secondary">Type</label>
+                                <select class="form-select" id="editType">
+                                    <option value="movie">Movie</option>
+                                    <option value="tv">Series</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-secondary">Field</label>
+                                <select class="form-select" id="editField">
+                                    <option value="title">Title</option>
+                                    <option value="description">Description</option>
+                                    <option value="genres">Genres (JSON)</option>
+                                    <option value="catalog_names">Catalogs (JSON)</option>
+                                    <option value="poster_path">Poster URL</option>
+                                    <option value="background_path">Background URL</option>
+                                    <option value="release_year">Year</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label small text-secondary">Mode</label>
+                                <div class="d-flex gap-3 mt-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="editMode" id="modeReplace"
+                                            value="replace" checked>
+                                        <label class="form-check-label" for="modeReplace">Replace</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="editMode" id="modeAdd"
+                                            value="add">
+                                        <label class="form-check-label" for="modeAdd">Add/Append</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small text-secondary">Current Value</label>
+                                <div class="form-control bg-dark text-secondary" id="currentValueDisplay"
+                                    style="min-height: 38px; max-height: 150px; overflow-y: auto; white-space: pre-wrap; font-family: monospace; font-size: 0.85rem;">
+                                    -</div>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label small text-secondary">Value</label>
+                                <textarea class="form-control" id="editValue" rows="3"
+                                    placeholder="Enter new value..."></textarea>
+                                <div class="form-text text-secondary">For JSON fields (Genres, Catalogs), 'Add' will
+                                    push to array. For text, it appends.</div>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end gap-2">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    onclick="document.getElementById('editorForm').reset()">Reset</button>
+                                <button type="submit" class="btn btn-primary" id="saveBtn">
+                                    <span id="saveSpinner" class="spinner-border spinner-border-sm me-2 d-none"></span>
+                                    Save Changes
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <span><i class="bi bi-pie-chart"></i> Content by Genre</span>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="genreChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <span><i class="bi bi-bar-chart"></i> Provider Distribution</span>
+                    </div>
+                    <div class="card-body">
+                        <canvas id="providerChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logs Row -->
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <span><i class="bi bi-terminal"></i> Live Logs</span>
+                        <button class="btn btn-xs btn-outline-secondary" onclick="refreshLog()">Refresh</button>
+                    </div>
+                    <div class="card-body p-0">
+                        <div id="logBox" class="log-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // --- Configuration ---
+        const API_BASE = '/dashboard';
+        const REFRESH_INTERVAL = 30000; // 30s
+
+        // --- DOM Elements ---
+        const els = {
+            movieCount: document.getElementById('movieCount'),
+            tvCount: document.getElementById('tvCount'),
+            totalCount: document.getElementById('totalCount'),
+            statusIndicator: document.getElementById('statusIndicator'),
+            lastRunTime: document.getElementById('lastRunTime'),
+            lastRunDuration: document.getElementById('lastRunDuration'),
+            cacheList: document.getElementById('cacheList'),
+            logBox: document.getElementById('logBox'),
+            runBtn: document.getElementById('runBtn'),
+            btnSpinner: document.getElementById('btnSpinner'),
+            btnText: document.getElementById('btnText'),
+            providerSel: document.getElementById('providerSel'),
+            lastUpdateBadge: document.getElementById('lastUpdateBadge')
+        };
+
+        // --- Charts Instances ---
+        let genreChart = null;
+        let providerChart = null;
+
+        // --- Utils ---
+        const fetchJson = async (url, options = {}) => {
+            try {
+                const res = await fetch(url, options);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                return await res.json();
+            } catch (e) {
+                console.error('Fetch error:', e);
+                return null;
+            }
+        };
+
+        const formatTime = (isoString) => {
+            if (!isoString) return 'N/A';
+            return new Date(isoString).toLocaleString();
+        };
+
+        const getCacheStatusColor = (dateStr) => {
+            if (!dateStr) return 'text-secondary';
+            const ageHours = (Date.now() - new Date(dateStr)) / (1000 * 60 * 60);
+            if (ageHours < 24) return 'text-success';
+            if (ageHours < 48) return 'text-warning';
+            return 'text-danger';
+        };
+
+        // --- Frontend Logging Helper ---
+        function logToBox(msg, type = 'info') {
+            const box = document.getElementById('logBox');
+            if (!box) return;
+            const div = document.createElement('div');
+            div.className = `log-entry ${type === 'error' ? 'text-danger' : (type === 'success' ? 'text-success' : 'text-info')}`;
+            div.textContent = `[UI] ${msg}`;
+            box.appendChild(div);
+            box.scrollTop = box.scrollHeight;
+        }
+
+        // --- Main Logic ---
+
+        async function updateDashboard() {
+            const provider = els.providerSel.value;
+            const query = provider ? `?provider=${encodeURIComponent(provider)}` : '';
+
+            const [stats, genres, providers, history, status] = await Promise.all([
+                fetchJson(`${API_BASE}/stats${query}`),
+                fetchJson(`${API_BASE}/genre-totals${query}`),
+                fetchJson(`${API_BASE}/provider-analytics`),
+                fetchJson(`${API_BASE}/update-history`),
+                fetchJson(`${API_BASE}/update-status`)
+            ]);
+
+            if (stats) {
+                els.movieCount.textContent = stats.movieCount.toLocaleString();
+                els.tvCount.textContent = stats.tvCount.toLocaleString();
+                els.totalCount.textContent = stats.total.toLocaleString();
+            }
+
+            if (status) {
+                const isRunning = status.status === 'running';
+                els.statusIndicator.textContent = isRunning ? 'Running' : (status.status === 'success' ? 'Idle' : 'Error');
+                els.statusIndicator.className = `status-badge ${isRunning ? 'status-warning' : (status.status === 'success' ? 'status-success' : 'status-danger')}`;
+
+                els.lastRunTime.textContent = formatTime(status.started);
+                els.lastUpdateBadge.textContent = `Updated: ${formatTime(status.completed)}`;
+
+                // Disable button if running
+                els.runBtn.disabled = isRunning;
+                if (isRunning) {
+                    els.btnSpinner.classList.remove('d-none');
+                    els.btnText.textContent = 'Updating...';
+                } else {
+                    els.btnSpinner.classList.add('d-none');
+                    els.btnText.textContent = 'Run Update';
+                }
+            }
+
+            if (genres) {
+                updateGenreChart(genres);
+            }
+
+            if (providers) {
+                updateProviderChart(providers);
+            }
+
+            // Mock cache data
+            els.cacheList.innerHTML = `
+                <li class="d-flex justify-content-between mb-2">
+                    <span>Novità Catalog</span>
+                    <span class="text-success"><i class="bi bi-check-circle-fill"></i> Active</span>
+                </li>
+                <li class="d-flex justify-content-between mb-2">
+                    <span>Trending Catalog</span>
+                    <span class="text-success"><i class="bi bi-check-circle-fill"></i> Active</span>
+                </li>
+                <li class="d-flex justify-content-between">
+                    <span>TMDB Cache</span>
+                    <span class="text-success"><i class="bi bi-database-check"></i> Optimized</span>
+                </li>
+            `;
+        }
+
+        async function updateLogs() {
+            const logs = await fetchJson(`${API_BASE}/logs`);
+            if (logs && Array.isArray(logs)) {
+                els.logBox.innerHTML = logs.map(line => {
+                    let colorClass = 'text-light';
+                    if (line.includes('ERROR') || line.includes('EXCEPTION')) colorClass = 'text-danger';
+                    if (line.includes('WARN')) colorClass = 'text-warning';
+                    if (line.includes('SUCCESS') || line.includes('ADDED')) colorClass = 'text-success';
+                    return `<div class="log-entry ${colorClass}">${line}</div>`;
+                }).join('');
+                els.logBox.scrollTop = els.logBox.scrollHeight;
+            }
+        }
+
+        // --- Chart Logic ---
+
+        function updateGenreChart(data) {
+            const ctx = document.getElementById('genreChart').getContext('2d');
+            const allGenres = {};
+            [...Object.entries(data.movies), ...Object.entries(data.series)].forEach(([k, v]) => {
+                allGenres[k] = (allGenres[k] || 0) + v;
+            });
+            const sorted = Object.entries(allGenres).sort((a, b) => b[1] - a[1]).slice(0, 8);
+            const labels = sorted.map(x => x[0]);
+            const values = sorted.map(x => x[1]);
+
+            if (genreChart) {
+                genreChart.data.labels = labels;
+                genreChart.data.datasets[0].data = values;
+                genreChart.update();
+            } else {
+                genreChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            data: values,
+                            backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899', '#06b6d4', '#64748b'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'right', labels: { color: '#94a3b8' } } }
+                    }
+                });
+            }
+        }
+
+        function updateProviderChart(data) {
+            const ctx = document.getElementById('providerChart').getContext('2d');
+            const provs = data.movies.providerCounts || {};
+            const sorted = Object.entries(provs).sort((a, b) => b[1] - a[1]).slice(0, 8);
+            const labels = sorted.map(x => x[0]);
+            const values = sorted.map(x => x[1]);
+
+            if (providerChart) {
+                providerChart.data.labels = labels;
+                providerChart.data.datasets[0].data = values;
+                providerChart.update();
+            } else {
+                providerChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Movies per Provider',
+                            data: values,
+                            backgroundColor: '#3b82f6',
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                        },
+                        plugins: { legend: { display: false } }
+                    }
+                });
+            }
+        }
+
+        // --- Event Listeners ---
+
+        els.runBtn.addEventListener('click', async () => {
+            if (els.runBtn.disabled) return;
+            els.runBtn.disabled = true;
+            els.btnSpinner.classList.remove('d-none');
+            els.btnText.textContent = 'Starting...';
+            const res = await fetchJson(`${API_BASE}/run-update`, { method: 'POST' });
+            if (!res || !res.success) {
+                alert('Failed to start update');
+                els.runBtn.disabled = false;
+                els.btnSpinner.classList.add('d-none');
+                els.btnText.textContent = 'Run Update';
+            }
+        });
+
+        document.getElementById('editorForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('saveBtn');
+            const spinner = document.getElementById('saveSpinner');
+            btn.disabled = true;
+            spinner.classList.remove('d-none');
+
+            const payload = {
+                tmdb_id: document.getElementById('editTmdbId').value,
+                type: document.getElementById('editType').value,
+                field: document.getElementById('editField').value,
+                value: document.getElementById('editValue').value,
+                mode: document.querySelector('input[name="editMode"]:checked').value
+            };
+
+            try {
+                const res = await fetch(`${API_BASE}/manual-update`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                if (res.ok && data.success) {
+                    alert('Update successful!');
+                    document.getElementById('editValue').value = '';
+                    updateLogs();
+                    fetchCurrentValue();
+                } else {
+                    alert('Error: ' + (data.error || 'Unknown error'));
+                }
+            } catch (err) {
+                alert('Network error: ' + err.message);
+            } finally {
+                btn.disabled = false;
+                spinner.classList.add('d-none');
+            }
+        });
+
+        // --- Current Value Fetcher ---
+        const fetchCurrentValue = async () => {
+            const tmdbId = document.getElementById('editTmdbId').value;
+            const type = document.getElementById('editType').value;
+            const field = document.getElementById('editField').value;
+            const display = document.getElementById('currentValueDisplay');
+
+            if (!tmdbId) {
+                display.textContent = '-';
+                return;
+            }
+
+            display.textContent = 'Fetching...';
+            // logToBox(`Fetching details for TMDB:${tmdbId} (${type})...`);
+
+            try {
+                const res = await fetch(`${API_BASE}/item-details?tmdb_id=${tmdbId}&type=${type}`);
+                if (!res.ok) {
+                    if (res.status === 404) display.textContent = '(Item not found in DB)';
+                    else display.textContent = '(Error fetching details)';
+                    return;
+                }
+                const item = await res.json();
+                let val = item[field];
+
+                if (val === undefined || val === null) {
+                    display.textContent = '(null)';
+                } else if (typeof val === 'object') {
+                    display.textContent = JSON.stringify(val, null, 2);
+                } else {
+                    display.textContent = String(val);
+                }
+            } catch (e) {
+                display.textContent = '(Network error)';
+            }
+        };
+
+        ['editTmdbId', 'editType', 'editField'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                el.addEventListener('change', fetchCurrentValue);
+                el.addEventListener('input', (e) => {
+                    if (id === 'editTmdbId') {
+                        clearTimeout(window.fetchDebounce);
+                        window.fetchDebounce = setTimeout(fetchCurrentValue, 500);
+                    }
+                });
+            }
+        });
+
+        // Fetch button listener
+        const fetchBtn = document.getElementById('fetchBtn');
+        if (fetchBtn) {
+            fetchBtn.addEventListener('click', fetchCurrentValue);
+        }
+
+        els.providerSel.addEventListener('change', updateDashboard);
+
+        // --- Init ---
+        updateDashboard();
+        updateLogs();
+        setInterval(updateDashboard, REFRESH_INTERVAL);
+        setInterval(updateLogs, 5000);
+    </script>
+</body>
+
+</html>

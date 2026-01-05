@@ -1,0 +1,6 @@
+node_modules
+catalog.db
+catalog.db-shm
+catalog.db-wal
+.env
+*.log

@@ -1,0 +1,26 @@
+{
+  "id": "org.vixsrc.seriescollections",
+  "version": "1.0.0",
+  "name": "Collezioni Serie TV",
+  "description": "Catalogo di collezioni di serie TV popolari e speciali, inclusi generi standard e speciali.",
+  "resources": [
+    "catalog"
+  ],
+  "types": ["series"],
+  "catalogs": [
+    {
+      "type": "series",
+      "id": "seriescollections",
+      "name": "Collezioni Serie TV",
+      "genres": [
+        "Azione", "Avventura", "Animazione", "Commedia", "Crime",
+        "Documentario", "Dramma", "Famiglia", "Fantasy", "Storia",
+        "Horror", "Musica", "Mistero", "Romance", "Fantascienza",
+        "Cinema TV", "Thriller", "Guerra", "Western",
+  "Animal Horror", "Virus", "Dystopia", "Apocalypse", "Supernatural",
+  "Trending", "Recenti"
+      ]
+    }
+  ],
+  "idPrefixes": ["tt"]
+}

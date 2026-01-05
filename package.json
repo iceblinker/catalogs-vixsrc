@@ -1,0 +1,52 @@
+{
+  "name": "stremio-vixsrc-addon",
+  "version": "1.0.1",
+  "description": "A Stremio addon that provides movie and TV show catalogs from VixSrc API endpoints",
+  "main": "index-advanced.js",
+  "scripts": {
+    "start": "node index-advanced.js",
+    "dev": "nodemon index-advanced.js",
+    "update": "node update-vixsrc-catalog.js",
+    "test": "jest",
+    "update-schema": "node update-schema.js"
+  },
+  "keywords": [
+    "stremio",
+    "addon",
+    "movies",
+    "tv-shows",
+    "vixsrc",
+    "tmdb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iceblinker/VixSrc-Catalogs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iceblinker/VixSrc-Catalogs/issues"
+  },
+  "homepage": "https://github.com/iceblinker/VixSrc-Catalogs#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "better-sqlite3": "^12.4.1",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^4.19.2",
+    "form-data": "^4.0.5",
+    "fuzzball": "^2.2.3",
+    "ioredis": "^5.8.2",
+    "node-fetch": "^2.7.0",
+    "pino": "^9.14.0",
+    "puppeteer": "^24.30.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
+  }
+}

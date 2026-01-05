@@ -1,0 +1,11 @@
+node_modules
+.git
+.gemini
+catalog.db
+catalog.db-shm
+catalog.db-wal
+cloudflared.exe
+temp_*
+*.log
+coverage
+archive

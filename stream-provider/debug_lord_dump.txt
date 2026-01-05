@@ -1,0 +1,78 @@
+URL: https://lordchannel.net/film/tron-ares/
+
+--- IFRAMES ---
+
+--- LINKS ---
+[] -> /
+[Home] -> /
+[Film] -> /film/
+[Anime] -> #
+[Anime ITA] -> /anime/anime-ita/
+[Anime SUB-ITA] -> /anime/anime-sub-ita/
+[Serie TV] -> /serietv/
+[Richieste] -> /forum/
+[] -> #
+[FAQ] -> /faq/
+[DMCA] -> /dmca/
+[LOGIN] -> /accounts/login/
+[Azione] -> /film/genere/Azione/
+[Avventura] -> /film/genere/Avventura/
+[Fantascienza] -> /film/genere/Fantascienza/
+[ITA] -> #
+[Vuoi vedere di più? Contattaci] -> https://lordchannel.net/contatti
+[Trailer] -> #tab-2
+[Commenti] -> #tab-1
+[Immagini] -> #tab-3
+[Commenti] -> #tab-1
+[Trailer] -> #tab-2
+[Immagini] -> #tab-3
+[] -> /media/7FZLWkBRmRvyXNb2Wt1376KBVi9.jpg
+[] -> /media/9RKe4adLti42qt4vXaKnVcP0cO3.jpg
+[] -> /media/crY4NjmGp3QPomA5NWT1MkgfdiO.jpg
+[] -> /media/grKi5wJAGEEBzO08aRXOr1K13Cl.jpg
+[] -> /media/rxK8zcIJdbIppLIdLHtkiK1e7Qe.jpg
+[] -> /media/tOLy50CMlwLQcdiyPJayp7NFrm0.jpg
+[] -> /film/die-hard-4-vivere-o-morire-kqQ2q5/
+[Die Hard 4: Vivere o morire] -> #
+[Azione] -> /film/genere/Azione/
+[Thriller] -> /film/genere/Thriller/
+[] -> /film/inception-g8ewXR/
+[Inception] -> #
+[Azione] -> /film/genere/Azione/
+[Fantascienza] -> /film/genere/Fantascienza/
+[Thriller] -> /film/genere/Thriller/
+[Psicologico] -> /film/genere/Psicologico/
+[] -> /film/lo-squalo-3/
+[Lo squalo 3] -> #
+[Horror] -> /film/genere/Horror/
+[Thriller] -> /film/genere/Thriller/
+[] -> /film/the-suicide-squad-2016-JGBg5Gpe6qcwPzBwH0mnNO5z/
+[The Suicide Squad 2016] -> #
+[Azione] -> /film/genere/Azione/
+[Fantascienza] -> /film/genere/Fantascienza/
+[Thriller] -> /film/genere/Thriller/
+[] -> /film/300-lalba-di-un-impero-3HoNUO/
+[300 - L'alba di un impero] -> #
+[Azione] -> /film/genere/Azione/
+[Drammatico] -> /film/genere/Drammatico/
+[Storico] -> /film/genere/Storico/
+[Splatter] -> /film/genere/Splatter/
+[] -> /film/resident-evil-vendetta-F221Uk/
+[Resident Evil - Vendetta] -> #
+[Azione] -> /film/genere/Azione/
+[Horror] -> /film/genere/Horror/
+[Animazione] -> /film/genere/Animazione/
+[Fantascienza] -> /film/genere/Fantascienza/
+[] -> /film/fuga-in-normandia/
+[Fuga in Normandia] -> #
+[Drammatico] -> /film/genere/Drammatico/
+[Storico] -> /film/genere/Storico/
+[Guerra] -> /film/genere/Guerra/
+[Biografico] -> /film/genere/Biografico/
+[] -> /film/jurassic-park-1-O8U49z/
+[Jurassic Park 1] -> #
+[Azione] -> /film/genere/Azione/
+[Avventura] -> /film/genere/Avventura/
+[Fantascienza] -> /film/genere/Fantascienza/
+[FAQ] -> /faq/
+[Privacy Policy] -> /privacy_policy/

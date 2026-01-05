@@ -1,0 +1,45 @@
+services:
+  vixsrc-addon:
+    build: .
+    container_name: vixsrc-addon
+    restart: unless-stopped
+    ports:
+      - "${ADDON_PORT:-3001}:${PORT:-3000}"
+    env_file:
+      - .env
+    shm_size: '2gb'
+    volumes:
+      - ./addon.log:/app/addon.log
+      - ./catalog.db:/app/catalog.db
+      - ./cache-moviecollections.json:/app/cache-moviecollections.json
+      - ./cache-newreleases.json:/app/cache-newreleases.json
+      - ./novita-movies-stremio.json:/app/novita-movies-stremio.json
+      - ./novita-series-stremio.json:/app/novita-series-stremio.json
+      - ./trending-movies-stremio.json:/app/trending-movies-stremio.json
+      - ./trending-series-stremio.json:/app/trending-series-stremio.json
+      - ./korean-movies-stremio.json:/app/korean-movies-stremio.json
+      - ./korean-series-stremio.json:/app/korean-series-stremio.json
+    networks:
+      - ai_network
+      - default
+
+  vixsrc-stream-provider:
+    build: ./stream-provider
+    container_name: vixsrc-stream-provider
+    restart: unless-stopped
+    ports:
+      - "${STREAM_PROVIDER_PORT:-7000}:${STREAM_PROVIDER_PORT:-7000}"
+    env_file:
+      - .env
+    environment:
+      - DB_PATH=/app/catalog.db
+      - PORT=${STREAM_PROVIDER_PORT:-7000}
+    volumes:
+      - ./catalog.db:/app/catalog.db:ro
+    networks:
+      - ai_network
+      - default
+
+networks:
+  ai_network:
+    external: true

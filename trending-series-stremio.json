@@ -1,0 +1,1342 @@
+[
+  {
+    "id": "tmdb:66732",
+    "type": "series",
+    "name": "Stranger Things",
+    "poster": "https://image.tmdb.org/t/p/w500/wZNIKNMqjulcU1AbU6X98tHy9QF.jpg",
+    "background": "https://image.tmdb.org/t/p/original/8zbAoryWbtH0DKdev8abFAjdufy.jpg",
+    "description": "La scomparsa di un ragazzino in una cittadina porta alla luce un mistero in cui si mescolano esperimenti segreti, spaventose forze soprannaturali e una strana bambina.",
+    "year": "2016",
+    "releaseInfo": "2016",
+    "imdbRating": "8.6",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Mistero",
+      "Action & Adventure",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:82596",
+    "type": "series",
+    "name": "Emily in Paris",
+    "poster": "https://image.tmdb.org/t/p/w500/c0bkO416OU7YGdOFktk45H8REgL.jpg",
+    "background": "https://image.tmdb.org/t/p/original/jXTZaHarR9TZiMoQwiQWsGYXqnS.jpg",
+    "description": "Nuove passioni. Nuove mode. E una nuova Emily? Una coraggiosa professionista del marketing americana spiega le ali nella vita e nell'amore quando ottiene il lavoro dei sogni a Parigi.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "7.6",
+    "genres": [
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:106379",
+    "type": "series",
+    "name": "Fallout",
+    "poster": "https://image.tmdb.org/t/p/w500/bnayCOZ739OHS2DHPy7ZQDGC8iv.jpg",
+    "background": "https://image.tmdb.org/t/p/original/cIgHBLTMbcIkS0yvIrUUVVKLdOz.jpg",
+    "description": "Basato su una delle serie di videogiochi più grandi di sempre, Fallout è la storia di chi ha e chi non ha, in un mondo in cui non è rimasto quasi più nulla da possedere. 200 anni dopo l'apocalisse, gli abitanti dei lussuosi rifugi antiatomici sono costretti a tornare nell'irradiato paesaggio infernale che i loro antenati si sono lasciati alle spalle, rimanendo sconvolti dalla scoperta di un universo incredibilmente complesso, gioiosamente bizzarro e altamente violento che li attende.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "8.2",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Sci-Fi & Fantasy",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:55630",
+    "type": "series",
+    "name": "MasterChef Italia",
+    "poster": "https://image.tmdb.org/t/p/w500/iZFz1uETlpSzwLlbR5zA0FNc2Xl.jpg",
+    "background": "https://image.tmdb.org/t/p/original/uuYNsBHFQTPMbl3WsTgW7yupHbx.jpg",
+    "description": "Adattamento italiano del format MasterChef. La trasmissione vede susseguirsi una serie di prove in cui i concorrenti devono dimostrare le proprie abilità in campo culinario. Queste comprendono conoscenza dei prodotti edibili, eccezionale inventiva e padronanza delle diverse cotture o ricette; inoltre si richiede capacità di adattamento in diverse situazioni, tattica nel gioco e carisma umano.",
+    "year": "2011",
+    "releaseInfo": "2011",
+    "imdbRating": "7.13",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:135794",
+    "type": "series",
+    "name": "Vita da Carlo",
+    "poster": "https://image.tmdb.org/t/p/w500/pVoAM7TxsrLsnPrlktlDOv4X27i.jpg",
+    "background": "https://image.tmdb.org/t/p/original/aX5YpmuYmG7CaU8HEBOckCeZSgd.jpg",
+    "description": "Carlo Verdone interpreta se stesso raccontando il dramma e la commedia della sua vita privata e del suo rapporto con una madre amorevole e oppressiva: Roma.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "6.795",
+    "genres": [
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:138395",
+    "type": "series",
+    "name": "Un Professore",
+    "poster": "https://image.tmdb.org/t/p/w500/g1Z60kHQ8NsryXtsrXfEysTAQs2.jpg",
+    "background": "https://image.tmdb.org/t/p/original/rMJ4gcUXWYnTuniuaMhsYMXkzx4.jpg",
+    "description": "Basato sul format catalano Merlí di Hector Lozano prodotto da Veranda per TV3 Lagardère Studios Distribution.  Dante Balestra è un professore di filosofia che, dopo tanti anni di assenza, torna a Roma per occuparsi di suo figlio Simone. Affascinante e fuori dagli schemi, il professore prende una classe al liceo Leonardo Da Vinci dove applica il suo metodo d'insegnamento anticonformista e instaura un rapporto molto particolare con i suoi alunni, tra cui proprio Simone. Ma il suo modo di fare porta presto a confondere la vita privata con la vita professionale e il ritorno dal passato di Anita, una sua ex fiamma ora madre di Manuel, la \"pecora nera\" della classe, rende le cose ancora più complesse.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.684",
+    "genres": [
+      "Dramma",
+      "Commedia",
+      "Famiglia"
+    ]
+  },
+  {
+    "id": "tmdb:157741",
+    "type": "series",
+    "name": "Landman",
+    "poster": "https://image.tmdb.org/t/p/w500/hYthRgS1nvQkGILn9YmqsF8kSk6.jpg",
+    "background": "https://image.tmdb.org/t/p/original/q71au2YjcwXBMZKNzNgjK7RZ3Hs.jpg",
+    "description": "Nelle città in rapida espansione del Texas occidentale, dove irrefrenabili miliardari stanno alimentando il più grande boom economico della storia, Tommy Norris è un anonimo gestore di crisi per la compagnia petrolifera di Monty Miller, un titano del locale sistema industriale con il quale ha una lunga relazione personale e professionale che coinvolge anche la moglie di quest'ultimo, Cami.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "8",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:225171",
+    "type": "series",
+    "name": "Pluribus",
+    "poster": "https://image.tmdb.org/t/p/w500/h8FTw60wbQdU3CxUDscyFBEUh10.jpg",
+    "background": "https://image.tmdb.org/t/p/original/vNCNUxNHHgP0WsA19hxztUsG3yG.jpg",
+    "description": "La persona più disperata del pianeta deve salvare il mondo dalla felicità.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.995",
+    "genres": [
+      "Dramma",
+      "Sci-Fi & Fantasy",
+      "Virus"
+    ]
+  },
+  {
+    "id": "tmdb:272418",
+    "type": "series",
+    "name": "Robin Hood",
+    "poster": "https://image.tmdb.org/t/p/w500/3teWChNzKJdbfen46IdeKTygdZa.jpg",
+    "background": "https://image.tmdb.org/t/p/original/uoIOfRNmu47P2fET2KnrYHt3TH.jpg",
+    "description": "Rob, un fuorilegge sassone, e Marian, una nobildonna normanna, si uniscono per combattere l'ingiustizia dopo la conquista normanna. Lui è a capo di una banda ribelle mentre lei si infiltra nella corte corrotta.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.648",
+    "genres": [
+      "Dramma",
+      "Action & Adventure"
+    ]
+  },
+  {
+    "id": "tmdb:230069",
+    "type": "series",
+    "name": "Respira",
+    "poster": "https://image.tmdb.org/t/p/w500/4WHlDw9xWYWefn71LqgawyIEUdI.jpg",
+    "background": "https://image.tmdb.org/t/p/original/2f1jxWzp0nCtA3jTWgViOjR1ZLi.jpg",
+    "description": "Un'appassionata équipe medica è determinata a salvare vite in un caotico ospedale pubblico dove le tensioni e le storie d'amore fanno alzare la pressione.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.65",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:71912",
+    "type": "series",
+    "name": "The Witcher",
+    "poster": "https://image.tmdb.org/t/p/w500/wSS25kvLxYNLGEYbmWVEF4aoGPt.jpg",
+    "background": "https://image.tmdb.org/t/p/original/foGkPxpw9h8zln81j63mix5B7m8.jpg",
+    "description": "Geralt di Rivia, un cacciatore di mostri mutante, viaggia verso il suo destino in un mondo turbolento in cui le persone spesso si dimostrano più perverse delle bestie.",
+    "year": "2019",
+    "releaseInfo": "2019",
+    "imdbRating": "7.958",
+    "genres": [
+      "Dramma",
+      "Action & Adventure",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:94954",
+    "type": "series",
+    "name": "Hazbin Hotel",
+    "poster": "https://image.tmdb.org/t/p/w500/aVYHMW8pdzJ9qG1OGRMKyGy9xor.jpg",
+    "background": "https://image.tmdb.org/t/p/original/tuCU2yVRM2iZxFkpqlPUyvd6tSu.jpg",
+    "description": "Charlie, Stella del Mattino, la Principessa dell'Inferno, fatica a convincere sia i demoni che gli angeli che ogni anima possa essere redenta. Cantate e imprecate con noi in questa commedia musicale animata per adulti sul tema delle seconde chance.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "8.622",
+    "genres": [
+      "Animazione",
+      "Commedia",
+      "Dramma",
+      "Sci-Fi & Fantasy",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:87826",
+    "type": "series",
+    "name": "Selling Sunset",
+    "poster": "https://image.tmdb.org/t/p/w500/wUtoD67q4BnRUwikUbT6M38d5oj.jpg",
+    "background": "https://image.tmdb.org/t/p/original/zzAPTDTHi7wrP99iD6x940wLjPy.jpg",
+    "description": "I prestigiosi agenti del Gruppo Oppenheim vendono dimore lussuose ad acquirenti facoltosi di Los Angeles. I rapporti sono tutto ed è così che spesso nascono i drammi.",
+    "year": "2019",
+    "releaseInfo": "2019",
+    "imdbRating": "6.5",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:97951",
+    "type": "series",
+    "name": "Mayor of Kingstown",
+    "poster": "https://image.tmdb.org/t/p/w500/6rWIip9MZELAA0SKii5WqsBDCYW.jpg",
+    "background": "https://image.tmdb.org/t/p/original/39bifj2FNytJ2m1cqOBcWMTKgmV.jpg",
+    "description": "In una piccola città del Michigan dove l'attività carceraria è l'unica fiorente industria, la famiglia McClusky è l'intermediario tra polizia, criminali, detenuti, guardie carcerarie e politici in una città completamente dipendente dalle prigioni e dai prigionieri che contengono.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.877",
+    "genres": [
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:250923",
+    "type": "series",
+    "name": "Nobody Wants This",
+    "poster": "https://image.tmdb.org/t/p/w500/cUpIceeJJoRqUHSCzh6jRSmlpkA.jpg",
+    "background": "https://image.tmdb.org/t/p/original/q8BwtVM3t0SOtB1nZsXpOKZp8IM.jpg",
+    "description": "Una podcaster agnostica che parla di sesso e un rabbino da poco single si innamorano. Riuscirà la loro storia a sopravvivere a stili di vita opposti e famiglie impiccione?",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.48",
+    "genres": [
+      "Commedia",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:154521",
+    "type": "series",
+    "name": "The Kardashians",
+    "poster": "https://image.tmdb.org/t/p/w500/pLeSPrwEmxwaV1vqzdVfAgnUvXc.jpg",
+    "background": "https://image.tmdb.org/t/p/original/iZQj2vw0wImBJZ2rBqzNySD2FgJ.jpg",
+    "description": "La famiglia che conoscete e amate è qui con una nuova serie, che vi farà entrare totalmente nelle loro vite. Kris, Kourtney, Kim, Khloé, Kendall e Kylie portano le telecamere nel privato per rivelare cosa c'è di vero dietro ai titoli dei giornali. Dalle forti pressioni nella gestione di business miliardari, alle esilaranti gioie del tempo libero e dell'accompagnare i bambini a scuola, questa serie porta gli spettatori nella famiglia con un'avvincente storia d'amore e di vita reale messa sotto ai riflettori.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.5",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:247756",
+    "type": "series",
+    "name": "Il Mostro",
+    "poster": "https://image.tmdb.org/t/p/w500/AewhTESggHM7pffrE9exvVIJDZ3.jpg",
+    "background": "https://image.tmdb.org/t/p/original/nYYJBixUNZAk4lmWdE5NBUfIMuw.jpg",
+    "description": "Un serial killer che prende di mira le coppie semina il terrore in tutta Italia, spingendo le autorità a indagare su un caso del 1968 che potrebbe condurre al Mostro di Firenze.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.024",
+    "genres": [
+      "Crime",
+      "Mistero",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:226680",
+    "type": "series",
+    "name": "GialappaShow",
+    "poster": "https://image.tmdb.org/t/p/w500/gczG92zbCmVDI2ahOpchGzr6895.jpg",
+    "background": "https://image.tmdb.org/t/p/original/y80t4DZQloY3K814ikKc75bRuMk.jpg",
+    "description": "Marco Santin e Giorgio Gherarducci - spalleggiati in studio dal Mago Forest, un grande cast di comici e tanti ospiti a sorpresa - commentano con sferzante ironia i programmi TV del momento, i più importanti eventi sportivi e i tormentoni del web.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "8.1",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:211288",
+    "type": "series",
+    "name": "Tracker",
+    "poster": "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
+    "background": "https://image.tmdb.org/t/p/original/5C5cMYUlmX6BU5YxBqhp7ZpSd3Q.jpg",
+    "description": "Colter Shaw, un survivalista solitario, si aggira per il paese come \"cercatore di ricompense\", usando le sue abilità di localizzatore per aiutare i cittadini privati e le forze dell'ordine a risolvere ogni sorta di mistero, mentre è alle prese con la sua famiglia in crisi.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.5",
+    "genres": [
+      "Dramma",
+      "Crime",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:202297",
+    "type": "series",
+    "name": "Fire Country",
+    "poster": "https://image.tmdb.org/t/p/w500/6XnA02VRG4dhBpTZWGZuXQdYGDW.jpg",
+    "background": "https://image.tmdb.org/t/p/original/r6jUY6q3ObYOeFFWxM7jemS7IWE.jpg",
+    "description": "In cerca di redenzione e di riduzione della pena detentiva, il giovane detenuto Bode Donovan si unisce a un programma antincendio che lo riporta nella sua piccola città natale nel nord della California, dove lui e altri detenuti lavorano insieme a vigili del fuoco d'élite per spegnere enormi incendi in tutta la regione.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.166",
+    "genres": [
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:2190",
+    "type": "series",
+    "name": "South Park",
+    "poster": "https://image.tmdb.org/t/p/w500/1CGwZCFX2qerXaXQJJUB3qUvxq7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+    "description": "Stanley \"Stan\" Marsh, Eric Cartman e Kyle Broflosky e Kenneth \"Kenny\" McCormick, quattro ragazzi che frequentano la scuola elementare e vivono nella cittadina di South Park, in Colorado. Pestiferi, osceni e sfacciatamente intelligenti i ragazzacci affrontano temi di attualità con immediatezza e sana cattiveria sfatando tabù e demonizzando la società americana. Le loro \"armi\" sono la parodia, la commedia nera e il linguaggio scurrile.",
+    "year": "1997",
+    "releaseInfo": "1997",
+    "imdbRating": "8.339",
+    "genres": [
+      "Animazione",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:80748",
+    "type": "series",
+    "name": "FBI",
+    "poster": "https://image.tmdb.org/t/p/w500/zfKS4WL0OZ9udpNoSYZw91VB3aH.jpg",
+    "background": "https://image.tmdb.org/t/p/original/5DFvscYGpcFaQMJljCic5gbzVe6.jpg",
+    "description": "La serie è incentrata sul funzionamento interno dell'ufficio dell'FBI di New York, che mette a frutto tutta la capacità, l'intelletto e la tecnologia strabiliante del Bureau per mantenere la città e gli Stati Uniti al sicuro.",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "7.9",
+    "genres": [
+      "Crime",
+      "Action & Adventure",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:97645",
+    "type": "series",
+    "name": "Solar Opposites",
+    "poster": "https://image.tmdb.org/t/p/w500/m431Q9FgkilJGxBnXSot4Gy87b2.jpg",
+    "background": "https://image.tmdb.org/t/p/original/1cVt0Tm7erwYT5lyae9vUkPr4XY.jpg",
+    "description": "Una famiglia di alieni provenienti da un mondo molto migliore deve rifugiarsi nell'America centrale dopo la distruzione del loro pianeta. La loro missione: proteggere il Pupa, un super computer vivente che un giorno si evolverà nella sua vera forma, consumarli e terraformare la Terra.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "7.801",
+    "genres": [
+      "Commedia",
+      "Animazione",
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:9",
+    "type": "series",
+    "name": "Match Game",
+    "poster": "https://image.tmdb.org/t/p/w500/yO1yfYyHemDZAJyLNLz3tCiaNC8.jpg",
+    "background": "https://image.tmdb.org/t/p/original/buy1QlEVABDyC8BYqebmz7tMnEd.jpg",
+    "description": "",
+    "year": "1973",
+    "releaseInfo": "1973",
+    "imdbRating": "7.792",
+    "genres": []
+  },
+  {
+    "id": "tmdb:299483",
+    "type": "series",
+    "name": "RIV4LI",
+    "poster": "https://image.tmdb.org/t/p/w500/AgZPHkdb4WpXB3fWNfLaMKbG9ML.jpg",
+    "background": "https://image.tmdb.org/t/p/original/o3JEK4huTYM3OFv18RlhmO9bwd.jpg",
+    "description": "In una scuola media di Pisa, nessuno ha mai sfidato i ragazzi più fighi, finché non arriva la nuova arrivata Terry con idee audaci e iniziano le rivalità.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.5",
+    "genres": [
+      "Famiglia"
+    ]
+  },
+  {
+    "id": "tmdb:62650",
+    "type": "series",
+    "name": "Chicago Med",
+    "poster": "https://image.tmdb.org/t/p/w500/9eym662FRJJb9wdgCiDKPDciZzf.jpg",
+    "background": "https://image.tmdb.org/t/p/original/x2jNLrYw1s9i6kihEJqsBQgs9nR.jpg",
+    "description": "Cavalcare il brivido emozionale attraverso il caos raccontanto giorno dopo giorno nell’ospedale più esplosivo della città, con la squadra coraggiosa dei medici che lo tengono insieme. Essi affronteranno nuovi casi unici ispirati dagli eventi di attualità, creeranno relazioni di fuoco nel pandemonio cardiopalmo del pronto soccorso. La serie è di genere medical drama è uno spinoff di Chicago Fire, creata da by Dick Wolf e Matt Olmstead.",
+    "year": "2015",
+    "releaseInfo": "2015",
+    "imdbRating": "8.283",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:44006",
+    "type": "series",
+    "name": "Chicago Fire",
+    "poster": "https://image.tmdb.org/t/p/w500/r915sk2JpthZSjHEgZKifWxgo6L.jpg",
+    "background": "https://image.tmdb.org/t/p/original/14LzHqJrFcHk7ruMNCXpEkB0Thg.jpg",
+    "description": "Nessun lavoro è più stressante e pericoloso, ma al tempo stesso stimolante e coinvolgente di quello dei vigili del fuoco, soccorritori e paramedici della squadra di Chicago Firehouse 51. La squadra è formata da uomini e donne di eccezionale coraggio, pronti a buttarsi a capofitto nelle situazioni di estremo pericolo, quando tutti gli altri se la danno a gambe. Ma l'enorme responsabilità del loro lavoro comporta anche un pesante tributo a livello personale. Certo da una parte sono compensati da un'eccellente reputazione che fa crescere notevolmente il loro ego, ma dall'altra sono soggetti a una fortissima pressione quando, in una manciata di secondi si trovano a dover prendere decisioni da cui dipende la vita o la morte delle persone che stanno soccorrendo. Inoltre ogni volta si rischia di entrare in conflitto con le decisioni degli altri membri della squadra, con cui occorre operare in perfetta sintonia. Ogni volta che un membro della squadra incappa in un evento dalla tragica conclusione, viene sovrastato da un enorme senso di colpa e rimorso, difficile da elaborare e rimuovere. Quando poi è il momento di agire per soccorrere un compagno, ogni membro della squadra deve riuscire a mettere da parte la propria diversità di vedute, rischiando la propria vita per salvare senza alcuna esitazione quella altrui...",
+    "year": "2012",
+    "releaseInfo": "2012",
+    "imdbRating": "8.4",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:138971",
+    "type": "series",
+    "name": "Billy the Kid",
+    "poster": "https://image.tmdb.org/t/p/w500/hwPPA0sqlU9kGRHDDyl4cVp4Vum.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wk00DBQ4hmAInKSDw4s7eX3jCAj.jpg",
+    "description": "Un'epica serie di avventure romantiche basata sulla vita del famoso fuorilegge americano Billy the Kid, dalle sue umili radici irlandesi, ai suoi primi giorni come cowboy e pistolero nella frontiera americana, al suo ruolo fondamentale nella guerra della contea di Lincoln e oltre.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "7.507",
+    "genres": [
+      "Western",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:456",
+    "type": "series",
+    "name": "I Simpson",
+    "poster": "https://image.tmdb.org/t/p/w500/fxLooktejTUqCvZl9ARhKMFNpbf.jpg",
+    "background": "https://image.tmdb.org/t/p/original/jvTeRgjFsp66xj8SWxhr7O2J4ud.jpg",
+    "description": "I Simpson (The Simpsons) è una popolare sitcom animata creata dal fumettista statunitense Matt Groening alla fine degli anni ottanta per la Fox Broadcasting Company. È una parodia satirica della società e dello stile di vita statunitensi, personificati dalla famiglia protagonista, di cui fanno parte Homer, Marge e i loro tre figli Bart, Lisa e Maggie.\n\nAmbientato in una cittadina statunitense chiamata Springfield, lo show tratta in chiave umoristica molti aspetti della condizione umana, così come la cultura, la società in generale e la stessa televisione.",
+    "year": "1989",
+    "releaseInfo": "1989",
+    "imdbRating": "8.012",
+    "genres": [
+      "Famiglia",
+      "Animazione",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:110316",
+    "type": "series",
+    "name": "Alice in Borderland",
+    "poster": "https://image.tmdb.org/t/p/w500/i0i7kGDrArtM1sCd8niZDC7iboV.jpg",
+    "background": "https://image.tmdb.org/t/p/original/bKxiLRPVWe2nZXCzt6JPr5HNWYm.jpg",
+    "description": "Un appassionato di videogiochi e i suoi due amici si ritrovano in una Tokyo parallela, dove per sopravvivere sono costretti a partecipare a una serie di giochi sadici.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "8.13",
+    "genres": [
+      "Mistero",
+      "Dramma",
+      "Action & Adventure",
+      "Apocalypse",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:250307",
+    "type": "series",
+    "name": "The Pitt",
+    "poster": "https://image.tmdb.org/t/p/w500/6fMGktEDXMZZPACJ5cWkVQ6TSte.jpg",
+    "background": "https://image.tmdb.org/t/p/original/6uPBHw488MUW6x51zZ2OCJo6Dgp.jpg",
+    "description": "Lo staff del Trauma Medical Center di Pittsburgh lavora ininterrottamente per salvare vite in un reparto di emergenza sovraffollato e senza fondi.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "8.717",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:95480",
+    "type": "series",
+    "name": "Slow Horses",
+    "poster": "https://image.tmdb.org/t/p/w500/9VCkgs1zefGI2qjJzr1gSwAmzmf.jpg",
+    "background": "https://image.tmdb.org/t/p/original/bDfboQUb45Cv9MYyVBDZw8M8xSM.jpg",
+    "description": "Questa arguta spy story segue le vicende di una disfunzionale squadra di agenti dell'MI5 e del loro odioso capo, il famigerato Jackson Lamb, mentre navigano tra le luci e le ombre del mondo dello spionaggio per difendere l'Inghilterra da forze sinistre.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "7.993",
+    "genres": [
+      "Crime",
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:153312",
+    "type": "series",
+    "name": "Tulsa King",
+    "poster": "https://image.tmdb.org/t/p/w500/bbhGWT5ln5dTFKP2DBCELOwK3jA.jpg",
+    "background": "https://image.tmdb.org/t/p/original/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+    "description": "Tulsa King segue il capo della mafia newyorkese Dwight \"Il Generale\" Manfredi, appena uscito di prigione dopo 25 anni ed esiliato a Tulsa, in Oklahoma. Rendendosi conto che la sua famiglia mafiosa potrebbe non avere in mente i suoi interessi, Dwight costruisce lentamente una \"banda\" composta da un gruppo di personaggi improbabili, per aiutarlo a stabilire un nuovo impero criminale.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.301",
+    "genres": [
+      "Crime",
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:205715",
+    "type": "series",
+    "name": "Gen V",
+    "poster": "https://image.tmdb.org/t/p/w500/4nHggEdMaqTrYiVmqorFxD9A2i4.jpg",
+    "background": "https://image.tmdb.org/t/p/original/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg",
+    "description": "Dal mondo di The Boys arriva Gen V, una serie ambientata nell’unica università per supereroi d’America. Questi studenti mettono alla prova i propri confini morali, lottando per scalare la classifica della scuola e la possibilità di entrare nei Sette, la squadra di eroi d’elite. Quando i segreti più oscuri della scuola vengono alla luce, tutti devono decidere che tipo di eroi vogliono diventare.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "7.71",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:90282",
+    "type": "series",
+    "name": "The Morning Show",
+    "poster": "https://image.tmdb.org/t/p/w500/y9x2R87yt2U616736NJrP0d56dt.jpg",
+    "background": "https://image.tmdb.org/t/p/original/uMsTtNaUEWOE2q64m8zthBIMgen.jpg",
+    "description": "Si alza il sipario sui programmi televisivi del mattino. Questa serie con protagonisti Reese Witherspoon, Jennifer Aniston e Steve Carell mostra, senza alcun filtro, il mondo del lavoro dal punto di vista di chi, ogni mattina, accompagna il risveglio dell’America.",
+    "year": "2019",
+    "releaseInfo": "2019",
+    "imdbRating": "7.7",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:226637",
+    "type": "series",
+    "name": "High Potential",
+    "poster": "https://image.tmdb.org/t/p/w500/8YUkL57Z2QU0Bh2QBzr4T563LO2.jpg",
+    "background": "https://image.tmdb.org/t/p/original/yVP12H81dwaay5B7GVqgO893q2c.jpg",
+    "description": "Morgan è una mamma single con una mente eccezionale, la cui abilità non convenzionale nel risolvere i crimini porta a una collaborazione insolita e inarrestabile con un detective esperto e molto ligio alle regole.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "8.03",
+    "genres": [
+      "Dramma",
+      "Crime",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:246246",
+    "type": "series",
+    "name": "Beauty in Black",
+    "poster": "https://image.tmdb.org/t/p/w500/i98Jl46WBpK7ymttNOakowtNuFF.jpg",
+    "background": "https://image.tmdb.org/t/p/original/ywJcUIMTCjstPLvvyIiPWP3G3m3.jpg",
+    "description": "Il destino di una spogliarellista cambia radicalmente dopo l'incontro con una ricca e disfunzionale famiglia che gestisce un impero di cosmetici e un losco traffico.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.546",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:107113",
+    "type": "series",
+    "name": "Only Murders in the Building",
+    "poster": "https://image.tmdb.org/t/p/w500/dGzOXiVFZRfIWCPE82bYqfEOxb1.jpg",
+    "background": "https://image.tmdb.org/t/p/original/WCnEPf4ZNPjszndmrFlDxZ5Uvd.jpg",
+    "description": "Only Murders in the Building segue tre sconosciuti che condividono un'ossessione per i crimini e all'improvviso si ritrovano coinvolti in uno di essi, mentre indagano sulla morte misteriosa di un vicino di casa nel loro condominio di New York.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "8.496",
+    "genres": [
+      "Commedia",
+      "Mistero",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:262469",
+    "type": "series",
+    "name": "Dating Naked UK",
+    "poster": "https://image.tmdb.org/t/p/w500/tWHl9QaUaz4sKEUk1qCaGqQDARq.jpg",
+    "background": "https://image.tmdb.org/t/p/original/nC5gyHQB5zrWOkKMquBueGW7gb5.jpg",
+    "description": "Dieci single nudi portano la loro ricerca dell'amore ad un nuovo livello. Stanchi del gioco degli appuntamenti, questi single si spoglieranno del tutto e si metteranno a nudo per cercare l'amore. Appuntamenti svestiti e senza censure.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.3",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:199001",
+    "type": "series",
+    "name": "Uno splendido errore",
+    "poster": "https://image.tmdb.org/t/p/w500/oJ8SVHRe9ZzZMRSJAfebGdp78Yl.jpg",
+    "background": "https://image.tmdb.org/t/p/original/5WUsnqUm7xbY3oSwumSLfjyyax.jpg",
+    "description": "Dopo un tragico evento una ragazzina va a vivere assieme alla famiglia numerosa della sua tutrice legale in una piccola città, dove impara molte cose su amore, speranza e amicizia.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "7.756",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:110492",
+    "type": "series",
+    "name": "Peacemaker",
+    "poster": "https://image.tmdb.org/t/p/w500/eYzbGcYnOUlvj2fa76pTgIXogd7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/aJcUU3LMlqMKBi8L3eaxGfAbd4G.jpg",
+    "description": "Christopher Smith, alias Peacemaker, è un vigilante vanaglorioso che insegue la pace a ogni costo e con ogni mezzo, senza riguardo per quante persone deve uccidere per raggiungere il suo obiettivo.\n\nLa serie è ambientata 5 mesi dopo gli eventi accaduti nel film \"The Suicide Squad - Missione suicida\".",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.214",
+    "genres": [
+      "Action & Adventure",
+      "Sci-Fi & Fantasy",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:90802",
+    "type": "series",
+    "name": "The Sandman",
+    "poster": "https://image.tmdb.org/t/p/w500/dhbqyYjLfTNAHodDDjDELzwO6F4.jpg",
+    "background": "https://image.tmdb.org/t/p/original/i8taDLjpF8cCbp53N8kOFt1LSkW.jpg",
+    "description": "Dopo lunghi anni di prigionia il Re dei Sogni Morfeo intraprende un viaggio attraverso mondi diversi per ritrovare quanto gli è stato rubato e recuperare i suoi poteri.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "7.891",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Dramma",
+      "Action & Adventure",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:93740",
+    "type": "series",
+    "name": "Fondazione",
+    "poster": "https://image.tmdb.org/t/p/w500/g28M5Qzpb8CeX2fYraNQjH79QZp.jpg",
+    "background": "https://image.tmdb.org/t/p/original/vmNj8bthBAofXgsaY6yP4bCvXko.jpg",
+    "description": "Una serie basata sui celebri romanzi di Isaac Asimov, Fondazione racconta il grandioso viaggio di un gruppo di esiliati con lo scopo di salvare l’umanità e ricostruire la civiltà durante la caduta dell’Impero Galattico.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.724",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:93405",
+    "type": "series",
+    "name": "Squid Game",
+    "poster": "https://image.tmdb.org/t/p/w500/nW5rupC5zMeAGgGBYXkr8JL8Xq7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/2meX1nMdScFOoV4370rqHWKmXhY.jpg",
+    "description": "Centinaia di individui a corto di denaro accettano uno strano invito a competere in giochi per bambini. Li attende un premio invitante, ma la posta in gioco è mortale.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.859",
+    "genres": [
+      "Action & Adventure",
+      "Mistero",
+      "Dramma",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:136315",
+    "type": "series",
+    "name": "The Bear",
+    "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg",
+    "description": "Un giovane chef lotta per trasformare un negozio di sandwich e un team di cucina sopra le righe.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.173",
+    "genres": [
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:114471",
+    "type": "series",
+    "name": "Ironheart",
+    "poster": "https://image.tmdb.org/t/p/w500/nDdesJoWpvCoAwPO0EsPz0NruOU.jpg",
+    "background": "https://image.tmdb.org/t/p/original/kiOEVg5BkzLE0pWoPKecXd7wZ2Q.jpg",
+    "description": "La tecnologia si scontra con la magia quando Riri Williams – una geniale giovane inventrice determinata a lasciare il segno nel mondo – torna nella sua città natale, Chicago. Il suo approccio unico nella creazione di armature è brillante, ma nel seguire le sue ambizioni, si ritrova coinvolta dal misterioso e affascinante Parker Robbins, a.k.a. \"Hood\".",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "5.385",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Crime",
+      "Action & Adventure"
+    ]
+  },
+  {
+    "id": "tmdb:259669",
+    "type": "series",
+    "name": "Olympo",
+    "poster": "https://image.tmdb.org/t/p/w500/6BgcsLnjFiizUFSZchctgeZJRzY.jpg",
+    "background": "https://image.tmdb.org/t/p/original/fWOagGfFtMm70U8BtWPlVRW6efu.jpg",
+    "description": "Quando una nuotatrice ha un malore in un centro sportivo ad alto rendimento, Amaia indaga sui rischi estremi che gli altri atleti corrono pur di alimentare la loro ambizione.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.654",
+    "genres": [
+      "Dramma",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:213338",
+    "type": "series",
+    "name": "The Buccaneers",
+    "poster": "https://image.tmdb.org/t/p/w500/q2mrK4nfo5TcEMfJswAXjIYPPM2.jpg",
+    "background": "https://image.tmdb.org/t/p/original/3bKiVUYhgEL7sNLEV994GkCKE4s.jpg",
+    "description": "Un gruppo di ragazze americane amanti del divertimento irrompe nel morigerato ambiente londinese del 1870, dando il via a uno scontro culturale anglo-americano. Mandate lì per trovare marito e migliorare il loro status sociale, le ragazze mirano a ben altro.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "7",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:221300",
+    "type": "series",
+    "name": "FUBAR",
+    "poster": "https://image.tmdb.org/t/p/w500/6fM34tcGFp3A0csyxJJomknZB4b.jpg",
+    "background": "https://image.tmdb.org/t/p/original/cgA0ffyHviUaRw0Fj9OgRv2xzUj.jpg",
+    "description": "Quando un padre e una figlia scoprono di lavorare entrambi segretamente per la CIA, le loro missioni ad alto rischio si intrecciano con dinamiche familiari imbarazzanti.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "6.635",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:96580",
+    "type": "series",
+    "name": "Resident Alien",
+    "poster": "https://image.tmdb.org/t/p/w500/5van3ktOTqWr5lcixh5aR8NlqqW.jpg",
+    "background": "https://image.tmdb.org/t/p/original/aCbOj4wc6vQUUVNKppssj2PYUy0.jpg",
+    "description": "Arrivato sulla Terra per distruggere l'umanità, l'extraterrestre Hah Re assume l'identità del medico Harry Vanderspleigle e inizia a collaborare con la polizia locale per risolvere un caso di omicidio.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.8",
+    "genres": [
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:235924",
+    "type": "series",
+    "name": "Il codice del crimine",
+    "poster": "https://image.tmdb.org/t/p/w500/rA946RadRhKLLaUY7AAJIfJqzu9.jpg",
+    "background": "https://image.tmdb.org/t/p/original/x7J7YydPEnTZm6JoTqbKOYkVb8e.jpg",
+    "description": "Gli agenti federali devono essere creativi per indagare su una rapina colossale.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "7.5",
+    "genres": [
+      "Dramma",
+      "Crime",
+      "Action & Adventure"
+    ]
+  },
+  {
+    "id": "tmdb:231280",
+    "type": "series",
+    "name": "Bravo ragazzo",
+    "poster": "https://image.tmdb.org/t/p/w500/gQI3xbhAwLuVrfe9wkGblwy7WKK.jpg",
+    "background": "https://image.tmdb.org/t/p/original/8l1BN0IIjHmRyW0oDfUfs3F6F4N.jpg",
+    "description": "Dopo 11 anni, la polizia torna a reclutare ex atleti di spicco. Un tempo considerati eroi, questi talentuosi sportivi sono ora costretti ad affrontare una realtà molto più dura. Tra difficoltà economiche, lutti inaspettati e pregiudizi sul lavoro, gli atleti si riuniscono in un nucleo speciale per combattere crimini efferati con la grinta e le abilità che li resero eroi dello sport.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "8.684",
+    "genres": [
+      "Crime",
+      "Commedia",
+      "Action & Adventure",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:74204",
+    "type": "series",
+    "name": "Big Mouth",
+    "poster": "https://image.tmdb.org/t/p/w500/o6LjJp312YlAmNEasdoLziSKjb3.jpg",
+    "background": "https://image.tmdb.org/t/p/original/uM6WJodeCyTp7h7NhE4rgd0RbRZ.jpg",
+    "description": "Nick e Andrew, insieme ai loro amici, scoprono i cambiamenti, le meraviglie e gli orrori dell'adolescenza, con il supporto dei loro genitori e dei mostri della pubertà, Maurice e Connie.",
+    "year": "2017",
+    "releaseInfo": "2017",
+    "imdbRating": "7.646",
+    "genres": [
+      "Commedia",
+      "Animazione"
+    ]
+  },
+  {
+    "id": "tmdb:4057",
+    "type": "series",
+    "name": "Criminal Minds",
+    "poster": "https://image.tmdb.org/t/p/w500/gigxjNnACiXAfrwoMox5WJFgc0I.jpg",
+    "background": "https://image.tmdb.org/t/p/original/w88B4ooZ2LSYPw5107JOkjvI8PI.jpg",
+    "description": "Criminal Minds è una serie poliziesca incentrata sull'Unità di analisi criminale (BAU) che ha sede presso l'accademia dell'FBI a Quantico, in Virginia. L'unità è composta da psichiatri, psicologi e criminologi in grado di “pensare” come gli S.I., sigla che utilizzano per indicare i “soggetti ignoti” che compiono delitti seriali sui quali sono chiamati ad indagare. La squadra interviene in ogni località degli Stati Uniti ogni qual volta si sospetti che i delitti possano essere opera di un serial killer, lavora stilando un profilo psicologico del S.I. in modo da anticiparne le mosse e catturarlo. La squadra è formata da diversi elementi, ognuno con un suo ruolo ben preciso: c'è chi ha l'incarico di indagare sul campo parlando con le famiglie e relazionandosi con le forze di polizia locale, chi si immedesima nel killer per comprenderlo, chi fa ricerche sui soggetti coinvolti. Ovviamente vengono analizzate anche le relazioni tra i vari personaggi.",
+    "year": "2005",
+    "releaseInfo": "2005",
+    "imdbRating": "8.3",
+    "genres": [
+      "Crime",
+      "Dramma",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:200709",
+    "type": "series",
+    "name": "Weak Hero",
+    "poster": "https://image.tmdb.org/t/p/w500/jXd83QZhBDAFno4OGqHcMMDs56i.jpg",
+    "background": "https://image.tmdb.org/t/p/original/cLTAda6fMRirkCY1xfO4pmcHVkk.jpg",
+    "description": "Yeon Si-eun è uno studente modello, che è tra i primi nella sua scuola. Fisicamente appare come un ragazzo debole, ma, usando la sua intelligenza, i suoi strumenti e la sua psicologia, combatte la violenza che ha luogo dentro e fuori la sua scuola.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.6",
+    "genres": [
+      "Action & Adventure",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:78191",
+    "type": "series",
+    "name": "You",
+    "poster": "https://image.tmdb.org/t/p/w500/oANi0vEE92nuijiZQgPZ88FSxqQ.jpg",
+    "background": "https://image.tmdb.org/t/p/original/gzOIymABxmetAECXtazEYCpMmfb.jpg",
+    "description": "Quando un brillante Bookstore Manager incrocia una aspirante scrittrice, usa Internet e i social media per raccogliere i dettagli più intimi ed avvicinarsi a lei. Una cotta affascinante e goffa diventa rapidamente un'ossessione mentre rimuove in silenzio e strategicamente ogni ostacolo - e persona - a modo suo.",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "8.022",
+    "genres": [
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:85021",
+    "type": "series",
+    "name": "Gangs of London",
+    "poster": "https://image.tmdb.org/t/p/w500/tcs6El8ZI1s9CUSHJcrGP6b01F9.jpg",
+    "background": "https://image.tmdb.org/t/p/original/9aJ6KwLASA38WzdMRVjk7ILpuTv.jpg",
+    "description": "Per 20 anni, Finn Wallace è stato il criminale più potente di Londra. Miliardi di sterline scorrevano attraverso la sua organizzazione ogni anno. Ma ora è morto e nessuno sa chi ha ordinato l’omicidio. Con i rivali di tutto il mondo, spetta all’impulsivo Sean Wallace, con l’aiuto della famiglia Dumani guidata da Ed Dumani prendere il posto di suo padre. Inoltre, in Gangs of London l’assunzione di potere da parte di Sean causa increspature nel mondo della criminalità internazionale. Forse l’unico uomo che potrebbe essere in grado di aiutarlo ed essere suo alleato è Elliot Finch, che fino ad ora è stato un perdente nella vita, un delinquente di basso rango con un misterioso interesse per la famiglia Wallace. Ma mentre soffia il vento del destino, Elliot si ritrova travolto dalle dinamiche interne della più grande organizzazione criminale di Londra.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "7.809",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:100088",
+    "type": "series",
+    "name": "The Last of Us",
+    "poster": "https://image.tmdb.org/t/p/w500/6WlffOd3bszyndGgsKGcUL6k28n.jpg",
+    "background": "https://image.tmdb.org/t/p/original/gKSbTwTvdfJYAJyTNOxlpNoiktH.jpg",
+    "description": "Vent'anni dopo la distruzione della civiltà moderna, Joel, uno scaltro sopravvissuto, viene incaricato di far uscire la quattordicenne Ellie da una zona di quarantena sotto stretta sorveglianza. Quello che inizia come un lavoro relativamente facile si trasforma presto in un viaggio brutale e straziante, poiché i due si troveranno a dover attraversare insieme gli Stati Uniti e a dipendere l'uno dall'altra per sopravvivere.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "8.462",
+    "genres": [
+      "Dramma",
+      "Virus",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:57243",
+    "type": "series",
+    "name": "Doctor Who",
+    "poster": "https://image.tmdb.org/t/p/w500/w8enSKCf6Zm0topeQ2XPccDqsqp.jpg",
+    "background": "https://image.tmdb.org/t/p/original/vcFW09U4834DyFOeRZpsx9x1D3S.jpg",
+    "description": "Il Dottore appare e sembra umano. È affascinante, arguto, e potrebbe essere scambiato per un qualsiasi uomo incontrato per strada. Ma è un Signore del tempo, ha più di 900 anni, è un alieno con due cuori e fa parte di una civiltà che possiede la tecnologia per viaggiare nel tempo. Il Dottore salva i pianeti per vivere, o meglio per hobby, ed è molto bravo in questo: salva pianeti e civiltà dal male dall'inizio del tempo. Ma chi sa chi è veramente?",
+    "year": "2005",
+    "releaseInfo": "2005",
+    "imdbRating": "7.577",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:42009",
+    "type": "series",
+    "name": "Black Mirror",
+    "poster": "https://image.tmdb.org/t/p/w500/seN6rRfN0I6n8iDXjlSMk1QjNcq.jpg",
+    "background": "https://image.tmdb.org/t/p/original/dg3OindVAGZBjlT3xYKqIAdukPL.jpg",
+    "description": "Una serie antologica di racconti angosciosi e spiazzanti che rivelano i tratti umani più oscuri, le innovazioni più sensazionali e tanto altro ancora.",
+    "year": "2011",
+    "releaseInfo": "2011",
+    "imdbRating": "8.288",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Dramma",
+      "Mistero",
+      "Dystopia",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:243202",
+    "type": "series",
+    "name": "Nuova Scena",
+    "poster": "https://image.tmdb.org/t/p/w500/dV0b1xdqg7WoAgmq3j9rU1gayjg.jpg",
+    "background": "https://image.tmdb.org/t/p/original/h4Ds1GYq7eMImgcNjKj4iTQ79cg.jpg",
+    "description": "In questo rap show Fabri Fibra, Geolier e Rose Villain vanno in cerca della nuova superstar della scena italiana partendo dalle strade di Roma, Napoli e Milano.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.031",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:247718",
+    "type": "series",
+    "name": "MobLand",
+    "poster": "https://image.tmdb.org/t/p/w500/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
+    "background": "https://image.tmdb.org/t/p/original/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
+    "description": "Due famiglie criminali si affrontano in una guerra che minaccia di far crollare imperi e distruggere vite. Nel mezzo dello scontro c'è Harry Da Souza, un astuto uomo di strada che conosce fin troppo bene quanto la lealtà possa essere instabile quando le forze opposte si scontrano.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "8.386",
+    "genres": [
+      "Crime",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:197939",
+    "type": "series",
+    "name": "Blocco 181",
+    "poster": "https://image.tmdb.org/t/p/w500/oHhD7JIcwQUWwALtgdWbGLCoupW.jpg",
+    "background": "https://image.tmdb.org/t/p/original/sdPVAixESyHpSF0bAHsez38z6LP.jpg",
+    "description": "Il Blocco 181 è quello che Milano non dà a vedere. Un fazzoletto di periferia con appartamenti abusivi, terreno quotidiano di sguardi truci e sospetti. Da un lato ci sono i ragazzi del Blocco, che proteggono lo spaccio di cocaina. Dall’altro, la gang dei pandilleros della Misa. Tra pistole e colpi di machete si fa spazio l’amore di un triangolo intimo e passionale tra Bea, sensuale e indomita, Ludo, borghese dalla faccia pulita e il tenebroso Mahdi. I tre scaleranno le gerarchie del sistema criminale, nello scontro tra Blocco e latinos.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "5.321",
+    "genres": [
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:207411",
+    "type": "series",
+    "name": "Good American Family",
+    "poster": "https://image.tmdb.org/t/p/w500/fzznLJmBzU5tTxFzklepKifE16o.jpg",
+    "background": "https://image.tmdb.org/t/p/original/jkyjkLuKxKa2PXaTcPDfrBUHxi8.jpg",
+    "description": "Narrato da diversi punti di vista, come mezzo per esplorare problematiche di prospettiva, pregiudizio e trauma, questo avvincente dramma è ispirato alle storie disturbanti che ruotano attorno a una coppia del Midwest che adotta una bambina con una rara forma di nanismo. Ma quando cominciano a crescerla insieme ai loro tre figli biologici, emerge un mistero attorno alla sua età e al suo passato, e pian piano cominciano a sospettare che potrebbe non essere chi dice di essere.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.715",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:249042",
+    "type": "series",
+    "name": "Adolescence",
+    "poster": "https://image.tmdb.org/t/p/w500/20i4nShZZg1g1VFHSB8xpaYM4r7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/pCT3WLNrBBQeY7DRMw2CD1Pii05.jpg",
+    "description": "Quando un tredicenne è accusato dell'omicidio di una compagna di classe, la sua famiglia, la terapeuta e il detective incaricato del caso si chiedono: cosa è successo veramente?",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.836",
+    "genres": [
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:71914",
+    "type": "series",
+    "name": "La ruota del tempo",
+    "poster": "https://image.tmdb.org/t/p/w500/yA4aisjIIQqfFDgrDyXLxRNkqLp.jpg",
+    "background": "https://image.tmdb.org/t/p/original/1P3QtW1IkivqDrKbbwuR0zCYIf8.jpg",
+    "description": "Le vite di cinque giovani di un villaggio cambiano per sempre, all'arrivo di una donna strana e potente, che afferma che uno di loro sia il bambino di un'antica profezia, che potrà sovvertire l'equilibrio tra Luce e Tenebre per sempre. Dovranno scegliere se affidare a lei - e a se stessi - il destino del mondo, prima che il Tenebroso si liberi dalla sua prigione e l'Ultima Battaglia inizi.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.631",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:110283",
+    "type": "series",
+    "name": "Mare Fuori",
+    "poster": "https://image.tmdb.org/t/p/w500/i318aG3wUpGLDPxn3cmKM9UvpOy.jpg",
+    "background": "https://image.tmdb.org/t/p/original/509CnjLa0O9eJSBwqwArNdUohY9.jpg",
+    "description": "L'Istituto di Pena Minorile di Napoli è a picco sul mare e ospita settanta detenuti: 50 maschi e 20 femmine. Quando entrano i ragazzi hanno sempre meno di 18 anni e lo fanno perché hanno \"sbagliato\". Questa serie racconta le loro storie.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "7.6",
+    "genres": [
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:58832",
+    "type": "series",
+    "name": "Nudi e crudi",
+    "poster": "https://image.tmdb.org/t/p/w500/4GOXsFjC74h0DujyzPciWZCKHsQ.jpg",
+    "background": "https://image.tmdb.org/t/p/original/7rqkQ2P0Q8QOXL0ITZctnzSx2Jl.jpg",
+    "description": "Cosa succede quando metti due perfetti sconosciuti - senza vestiti - in alcuni degli ambienti più estremi della Terra? Ogni duo maschio-femmina viene lasciato senza cibo, acqua, vestiti e solo un oggetto di sopravvivenza ciascuno mentre tentano di sopravvivere da soli.",
+    "year": "2013",
+    "releaseInfo": "2013",
+    "imdbRating": "6.738",
+    "genres": [
+      "Reality",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:63876",
+    "type": "series",
+    "name": "Pechino Express",
+    "poster": "https://image.tmdb.org/t/p/w500/97WBjxeRtwLwapHeHTig7Xt8xMd.jpg",
+    "background": "https://image.tmdb.org/t/p/original/f8fNO5VojeMUEhc3YKHNs4F7r0E.jpg",
+    "description": "Pechino Express è un adattamento del format belga-olandese Peking Express prodotto da Magnolia ed in onda a partire dal 2012 .La prima edizione è andata in onda con la conduzione di Emanuele Filiberto di Savoia.  A partire dalla seconda edizione alla conduzione del programma c'è Costantino Della Gherardesca, già concorrente della prima edizione. Nel corso dell'adventure game Costantino della Gherardesca, con la sua ironia e con un tocco di sarcasmo, accompagna le 8 coppie di concorrenti durante il loro viaggio. Un itinerario ricco di difficoltà che mette a dura prova i partecipanti tra sbalzi climatici e cambi di altitudine che mette le coppie di fronte a continue prove di resistenza psico-fisica. Nell'ultima edizione la 9a del 2022 i concorrenti attraversano quattro Paesi del Medio Oriente: Turchia, Uzbekistan, Giordania, Emirati Arabi.",
+    "year": "2012",
+    "releaseInfo": "2012",
+    "imdbRating": "8",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:225399",
+    "type": "series",
+    "name": "Il Gattopardo",
+    "poster": "https://image.tmdb.org/t/p/w500/v1Rxo43cl4CtqOKxkPaGJVpQEBV.jpg",
+    "background": "https://image.tmdb.org/t/p/original/aHjnX5tFWwjpUiKsaBHKDYfpNV2.jpg",
+    "description": "Durante l'unificazione italiana del 1860, un principe siciliano affronta il conflitto tra gli antichi privilegi della sua famiglia e i rivoluzionari cambiamenti in atto.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.821",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:157744",
+    "type": "series",
+    "name": "1923",
+    "poster": "https://image.tmdb.org/t/p/w500/zgZRJZvZn5cpsWAB0zMUdad3iZd.jpg",
+    "background": "https://image.tmdb.org/t/p/original/vIioWssbxRtEkIzgj8r0pCWYkYM.jpg",
+    "description": "La serie segue le vicende della famiglia Dutton nel 1923, durante un'epoca di varie avversità come l'espansione occidentale, le pandemie, la siccità storica, il proibizionismo e la Grande depressione.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.227",
+    "genres": [
+      "Dramma",
+      "Western"
+    ]
+  },
+  {
+    "id": "tmdb:216082",
+    "type": "series",
+    "name": "Zero Day",
+    "poster": "https://image.tmdb.org/t/p/w500/oaB2AlMxW36tiokTRcWStqCHk6n.jpg",
+    "background": "https://image.tmdb.org/t/p/original/t4JPNpET4aEmMA4Fg7Bfc7tI6jQ.jpg",
+    "description": "Un ex presidente degli Stati Uniti torna in azione per trovare la fonte di un mortale attacco informatico e finisce per scoprire una vasta rete di bugie e complotti.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.977",
+    "genres": [
+      "Dramma",
+      "War & Politics"
+    ]
+  },
+  {
+    "id": "tmdb:108978",
+    "type": "series",
+    "name": "Reacher",
+    "poster": "https://image.tmdb.org/t/p/w500/31GlRQMiDunO8cl3NxTz34U64rf.jpg",
+    "background": "https://image.tmdb.org/t/p/original/JYgqp8g2kI3SEus9XBDSHukfBN.jpg",
+    "description": "Quando l'Ufficiale di Polizia Militare in congedo Jack Reacher viene arrestato per un omicidio che non ha commesso, si trova in una cospirazione fatale con poliziotti corrotti, loschi uomini d'affari e politici arrivisti. Con solo il suo ingegno, deve capire cosa sta succedendo a Margrave, Georgia.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.085",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Crime"
+    ]
+  },
+  {
+    "id": "tmdb:281679",
+    "type": "series",
+    "name": "Storia della mia famiglia",
+    "poster": "https://image.tmdb.org/t/p/w500/h6Rga3B6xVlfaNZ7ZvqckugycKl.jpg",
+    "background": "https://image.tmdb.org/t/p/original/renyXumdrJNBrQZo7UEWxL0Lkdr.jpg",
+    "description": "Un padre malato terminale prepara la sua caotica famiglia a occuparsi dei suoi due figli e ad affrontare la vita senza di lui. Ma prima, dovranno seppellire vecchi rancori.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.1",
+    "genres": [
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:236102",
+    "type": "series",
+    "name": "Italia Shore",
+    "poster": "https://image.tmdb.org/t/p/w500/qaMLXveybI6bbUDI9EfLumHpIfK.jpg",
+    "background": "https://image.tmdb.org/t/p/original/oDVvcHpePIIpFCHAh51iZGreZ4p.jpg",
+    "description": "Gli ingredienti di Italia Shore sono quelli che conosci, ma ovviamente in salsa bianca rossa e verde: Un gruppo di ragazzi si scatena in una vacanza indimenticabile: adrenalina, party sfrenati e relazioni esplosive nei luoghi più cool d'Italia! Un mix di divertimento, drama e personalità scintillanti... tra risate e duro lavoro!",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "6.727",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:111803",
+    "type": "series",
+    "name": "The White Lotus",
+    "poster": "https://image.tmdb.org/t/p/w500/gbSaK9v1CbcYH1ISgbM7XObD2dW.jpg",
+    "background": "https://image.tmdb.org/t/p/original/rCTLaPwuApDx8vLGjYZ9pRl7zRB.jpg",
+    "description": "Una tagliente satira sociale che racconta le avventure di un gruppo di vacanzieri, ospiti di un meraviglioso resort di lusso.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.6",
+    "genres": [
+      "Commedia",
+      "Dramma",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:117488",
+    "type": "series",
+    "name": "Yellowjackets",
+    "poster": "https://image.tmdb.org/t/p/w500/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+    "background": "https://image.tmdb.org/t/p/original/ibFWJDWS8cTO6s2vZVd2uKDm8p.jpg",
+    "description": "25 anni dopo essere sopravvissute a un incidente aereo, quattro donne vivono nel ricordo e rimorso di quei giorni terribili.",
+    "year": "2021",
+    "releaseInfo": "2021",
+    "imdbRating": "7.5",
+    "genres": [
+      "Dramma",
+      "Mistero",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:101918",
+    "type": "series",
+    "name": "Valeria",
+    "poster": "https://image.tmdb.org/t/p/w500/9WN7hVLAx7LEhLn5ZPylUEghM4m.jpg",
+    "background": "https://image.tmdb.org/t/p/original/uyNSskEsn8rQdHmsbw2udfiAh.jpg",
+    "description": "Una scrittrice in crisi creativa e coniugale trova rifugio e supporto nelle sue tre migliori amiche. Tratto dai romanzi di Elisabet Benavent.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "7.381",
+    "genres": [
+      "Commedia",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:77169",
+    "type": "series",
+    "name": "Cobra Kai",
+    "poster": "https://image.tmdb.org/t/p/w500/6POBWybSBDBKjSs1VAQcnQC1qyt.jpg",
+    "background": "https://image.tmdb.org/t/p/original/5NrSIzfcBOFI9HRGV4nRYgMGhDU.jpg",
+    "description": "Acerrimi nemici. Dojo in guerra. Volti nuovi. Daniel e Johnny riaccendono vecchie rivalità della West Valley.",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "8.207",
+    "genres": [
+      "Action & Adventure",
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:233742",
+    "type": "series",
+    "name": "Newtopia",
+    "poster": "https://image.tmdb.org/t/p/w500/ilBndopP8kfpmhmlWDoR6xs5fKa.jpg",
+    "background": "https://image.tmdb.org/t/p/original/olRPEYjyjzoMAODjOMjF2K1VlzO.jpg",
+    "description": "Jae-yoon, un ex arruolato militare, e la sua ragazza, Young-joo, si lasciano al telefono per alcuni malintesi. Ma il mondo viene attaccato dagli zombie. Viene dichiarata l’emergenza nazionale, un aereo si schianta in centro e Jae-yoon, con la sua unità e rimane bloccato sul tetto di un grattacielo. Young-joo affronta gli zombie per trovarlo. Riuscirà il loro amore a sopravvivere all’apocalisse?",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.869",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Action & Adventure",
+      "Commedia",
+      "Dramma",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:248982",
+    "type": "series",
+    "name": "Cassandra",
+    "poster": "https://image.tmdb.org/t/p/w500/9ZkaVSaotpJ0vUv6OIR1c5Ris5o.jpg",
+    "background": "https://image.tmdb.org/t/p/original/4GAmr9BWRfVjZ3GAntm7yjVf82i.jpg",
+    "description": "Una famiglia si trasferisce in una smart home d'epoca e scopre che è controllata da un'assistente virtuale disposta a tutto pur di far rimanere i nuovi occupanti.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.1",
+    "genres": [
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:102904",
+    "type": "series",
+    "name": "Il colore delle magnolie",
+    "poster": "https://image.tmdb.org/t/p/w500/q2GSoUVCuyRXLpWNJMfmxY1Sw3v.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wt60Q4doM2vrubiCsutwaeWncLL.jpg",
+    "description": "Nella piccola città di Serenity, le grandi amiche Maddie, Helen e Dana Sue si sostengono a vicenda destreggiandosi tra relazioni sentimentali, famiglia e carriera.",
+    "year": "2020",
+    "releaseInfo": "2020",
+    "imdbRating": "7.75",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:82428",
+    "type": "series",
+    "name": "All American",
+    "poster": "https://image.tmdb.org/t/p/w500/c8FTtjQcQfqSI0McmVc1OOOf7Z7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/6npymlbLc0SMqqktCpu7X7K4eJy.jpg",
+    "description": "Due mondi completamente opposti si scontrano quando un giocatore di football del difficile quartiere di Compton viene chiamato a far parte della squadra del liceo di Beverly Hills.",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "8.152",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:215333",
+    "type": "series",
+    "name": "La ragazza di neve",
+    "poster": "https://image.tmdb.org/t/p/w500/sTATtgTYwzD9Dkg6aeGz3n7Y4CE.jpg",
+    "background": "https://image.tmdb.org/t/p/original/y8pTB7knYgwHxNSMOyGNTPqGL1S.jpg",
+    "description": "Quando una bambina scompare a Malaga, una giovane giornalista cerca in ogni modo di scoprire la verità, rischiando tutto per consentire alla famiglia di chiudere il cerchio.",
+    "year": "2023",
+    "releaseInfo": "2023",
+    "imdbRating": "7.2",
+    "genres": [
+      "Crime",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:210916",
+    "type": "series",
+    "name": "The Recruit",
+    "poster": "https://image.tmdb.org/t/p/w500/mLbFg0u2DPYuB5CILzwWk3kdI8b.jpg",
+    "background": "https://image.tmdb.org/t/p/original/rey2eh6752C2UbGYRileKk1PVTo.jpg",
+    "description": "Reclutato dalla CIA fresco di laurea, un giovane e temerario avvocato si getta senza alcuna preparazione nel pericoloso mondo dello spionaggio internazionale.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "7.45",
+    "genres": [
+      "Dramma",
+      "Crime",
+      "Action & Adventure"
+    ]
+  },
+  {
+    "id": "tmdb:95396",
+    "type": "series",
+    "name": "Scissione",
+    "poster": "https://image.tmdb.org/t/p/w500/jnwqpZpmwvEo0CFLjDwfnnAf4ow.jpg",
+    "background": "https://image.tmdb.org/t/p/original/ixgFmf1X59PUZam2qbAfskx2gQr.jpg",
+    "description": "Mark guida un team di impiegati la cui memoria è stata chirurgicamente scissa per dividere i ricordi della vita lavorativa da quelli della vita privata. Quando un misterioso collega compare fuori dalla Lumon Corporation, inizia un viaggio alla scoperta della verità riguardo al loro lavoro.",
+    "year": "2022",
+    "releaseInfo": "2022",
+    "imdbRating": "8.394",
+    "genres": [
+      "Dramma",
+      "Mistero",
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:124484",
+    "type": "series",
+    "name": "Primo appuntamento",
+    "poster": "https://image.tmdb.org/t/p/w500/dBlXYPjgY27NrzVwzsIJBn6Hr59.jpg",
+    "background": "https://image.tmdb.org/t/p/original/uzuAypDYsT18C0y7sBulhRqwhjz.jpg",
+    "description": "Ogni grande amore inizia con un primo appuntamento! Quante scintille scoccheranno in un ristorante molto speciale nel cuore di Roma dove molti single saranno alla ricerca della loro anima gemella? Ogni serata, delle coppie si conoscono in un cena “al buio\"... quanti cuori in cerca dell’anima gemella troveranno il vero amore?",
+    "year": "2017",
+    "releaseInfo": "2017",
+    "imdbRating": "7.2",
+    "genres": [
+      "Reality"
+    ]
+  },
+  {
+    "id": "tmdb:79744",
+    "type": "series",
+    "name": "The Rookie",
+    "poster": "https://image.tmdb.org/t/p/w500/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+    "background": "https://image.tmdb.org/t/p/original/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+    "description": "La serie segue John Nolan, un uomo di quarant'anni, che si sposta dalla sua confortevole vita in città a Los Angeles per perseguire il suo sogno di diventare un agente del dipartimento di polizia di Los Angeles. Nolan deve però navigare nel pericoloso, umoristico e imprevedibile mondo di un poliziotto \"giovane\".",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "8.512",
+    "genres": [
+      "Crime",
+      "Dramma",
+      "Commedia"
+    ]
+  }
+]

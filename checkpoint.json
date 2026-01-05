@@ -1,0 +1,135 @@
+{
+  "progress": [
+    {
+      "type": "tv",
+      "year": 2025,
+      "lastOffset": null,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 2024,
+      "lastOffset": null,
+      "completed": true
+    },
+    {
+      "type": "movie",
+      "year": 2025,
+      "lastOffset": null,
+      "completed": true
+    },
+    {
+      "type": "movie",
+      "year": 2024,
+      "lastOffset": null,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 2023,
+      "lastOffset": null,
+      "completed": true,
+      "kind": "year"
+    },
+    {
+      "type": "tv",
+      "year": 2022,
+      "lastOffset": null,
+      "completed": true,
+      "kind": "year"
+    },
+    {
+      "type": "movie",
+      "year": 2023,
+      "lastOffset": null,
+      "completed": true,
+      "kind": "year"
+    },
+    {
+      "type": "movie",
+      "year": 2022,
+      "lastOffset": null,
+      "completed": true,
+      "kind": "year"
+    },
+    {
+      "type": "tv",
+      "year": 2021,
+      "lastOffset": 480,
+      "completed": true,
+      "kind": "year"
+    },
+    {
+      "type": "tv",
+      "year": 1990,
+      "lastOffset": 0,
+      "completed": false
+    },
+    {
+      "type": "tv",
+      "year": 1990,
+      "kind": "decade",
+      "lastOffset": 0,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 1980,
+      "lastOffset": 0,
+      "completed": false
+    },
+    {
+      "type": "tv",
+      "year": 1980,
+      "kind": "decade",
+      "lastOffset": 0,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 1970,
+      "lastOffset": 0,
+      "completed": false
+    },
+    {
+      "type": "tv",
+      "year": 1970,
+      "kind": "decade",
+      "lastOffset": 0,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 1960,
+      "lastOffset": 0,
+      "completed": false
+    },
+    {
+      "type": "tv",
+      "year": 1960,
+      "kind": "decade",
+      "lastOffset": 0,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 1950,
+      "lastOffset": 0,
+      "completed": false
+    },
+    {
+      "type": "tv",
+      "year": 1950,
+      "kind": "decade",
+      "lastOffset": 0,
+      "completed": true
+    },
+    {
+      "type": "tv",
+      "year": 2020,
+      "lastOffset": 360,
+      "completed": true,
+      "kind": "year"
+    }
+  ]
+}

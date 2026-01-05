@@ -1,0 +1,676 @@
+[
+  {
+    "id": "tmdb:1379963",
+    "type": "movie",
+    "name": "Dimmelo sottovoce",
+    "poster": "https://image.tmdb.org/t/p/w500/7GBxcl5Yed6lKjwl1TGJRfjDsbO.jpg",
+    "background": "https://image.tmdb.org/t/p/original/rtv6da2U8poERiAZSAbCOePXzql.jpg",
+    "description": "Kamila ha tutto sotto controllo: gli studi, la vita sociale, la sua immagine... Tutto, tranne l'inaspettato ritorno dei suoi vicini di casa, i fratelli Di Bianco, dopo sette anni. Thiago le rubò il suo primo bacio, e Taylor era il suo migliore amico, ma il loro ritorno stravolge il mondo di Kami. Riusciranno i tre a superare il passato che li lega? O andrà tutto in frantumi, ancora una volta?",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.297",
+    "genres": [
+      "Romance",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:1084242",
+    "type": "movie",
+    "name": "Zootropolis 2",
+    "poster": "https://image.tmdb.org/t/p/w500/qAmXRssxXJ9foKgSGyisKnmRJfc.jpg",
+    "background": "https://image.tmdb.org/t/p/original/7nfpkR9XsQ1lBNCXSSHxGV7Dkxe.jpg",
+    "description": "Dopo aver risolto il caso più importante nella storia di Zootropolis, i poliziotti alle prime armi Judy Hopps e Nick Wilde scoprono che la loro collaborazione non è così solida come pensavano quando il capo Bogo ordina loro di unirsi al programma di consulenza \"Partners in Crisis\". Ma non ci vuole molto perché la loro collaborazione venga messa a dura prova quando si ritrovano sulle tracce tortuose di un mistero legato all'arrivo di un serpente velenoso nella metropoli degli animali.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.654",
+    "genres": [
+      "Animazione",
+      "Commedia",
+      "Avventura",
+      "Famiglia",
+      "Mistero"
+    ]
+  },
+  {
+    "id": "tmdb:1363123",
+    "type": "movie",
+    "name": "The Family Plan 2",
+    "poster": "https://image.tmdb.org/t/p/w500/aUPrVTBfu7NS1D0Z5L5OxWTrZS7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
+    "description": "Ora che i suoi giorni da assassino sono solo un ricordo, tutto quello che Dan vuole per Natale è passare dei bei momenti con i suoi figli. Ma quando scopre che sua figlia ha altri programmi, prenota un viaggio di famiglia a Londra, facendo finire tutti nel mirino di un nemico inaspettato.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.601",
+    "genres": [
+      "Azione",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:3035",
+    "type": "movie",
+    "name": "Frankenstein",
+    "poster": "https://image.tmdb.org/t/p/w500/mu6wHwH0IwCCaEYtpqujuPJYat1.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wFbPbJ9uRDpjY7micBTeolgkOA4.jpg",
+    "description": "Henry Frankenstein (Colin Clive) è ossessionato dall’idea di costruire un essere usando parti di cadaveri e dargli vita. Aiutato dall’assistente gobbo Fritz (Dwight Frye), si procura il necessario, ma, per l’ultimo pezzo, il cervello, Fritz prende quello di un criminale. Elizabeth (Mae Clarke), la promessa sposa di Henry, si preoccupa per lui e va a visitarlo in compagnia del luminare dottor Waldman (Edward Van Sloan), che, testimone del successo dell’esperimento di Frankenstein, decide di aiutarlo sin quando la creatura prende vita.",
+    "year": "1931",
+    "releaseInfo": "1931",
+    "imdbRating": "7.467",
+    "genres": [
+      "Dramma",
+      "Horror",
+      "Fantascienza"
+    ]
+  },
+  {
+    "id": "tmdb:1175942",
+    "type": "movie",
+    "name": "Troppo cattivi 2",
+    "poster": "https://image.tmdb.org/t/p/w500/gYuaju3hqkcxRjlCPgXlW2zthXT.jpg",
+    "background": "https://image.tmdb.org/t/p/original/lB96EMr5A7Og81UhyldJvvy35r.jpg",
+    "description": "Nel nuovo capitolo, i Troppo Cattivi, una banda di animali criminali, cercano di guadagnarsi fiducia e accettazione nella loro nuova vita da \"\"bravi ragazzi\"\". Tuttavia, vengono richiamati in azione per affrontare un'ultima missione, guidati da una squadra criminale tutta al femminile.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.71",
+    "genres": [
+      "Famiglia",
+      "Commedia",
+      "Crime",
+      "Avventura",
+      "Animazione"
+    ]
+  },
+  {
+    "id": "tmdb:1007734",
+    "type": "movie",
+    "name": "Io sono nessuno 2",
+    "poster": "https://image.tmdb.org/t/p/w500/8RXDbeVG9Tb0z8FWPph77uJsTkd.jpg",
+    "background": "https://image.tmdb.org/t/p/original/82C04rTiXYZ7c8XZv91Nu53w82Y.jpg",
+    "description": "Il padre di periferia Hutch Mansell, un ex assassino letale, viene riportato nel suo passato violento dopo aver sventato un'invasione domestica, innescando una catena di eventi che svela i segreti sul passato di sua moglie Becca e sul suo.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.018",
+    "genres": [
+      "Azione",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:1022787",
+    "type": "movie",
+    "name": "Elio",
+    "poster": "https://image.tmdb.org/t/p/w500/kFxz2c6cmINliKSLoUm4r6m0B2B.jpg",
+    "background": "https://image.tmdb.org/t/p/original/ukPu5xYOBAnh5H46uK4aQOirW2b.jpg",
+    "description": "Elio è un bambino di undici anni con un carattere artistico, creativo e sognatore, ma ha difficoltà a integrarsi con gli altri. A causa di questo problema, il piccolo è sempre rinchiuso in casa. Nel frattempo sua madre Olga è impegnata nella direzione di un progetto militare top-secret ed è intenta a decodificare uno strano segnale giunto dallo spazio. La donna, però, non immagina che dietro quel messaggio ci sia proprio suo figlio. Elio, infatti, è stato teletrasportato nello spazio ed è finito per essere scambiato per un ambasciatore intergalattico mandato dal pianeta Terra...",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.968",
+    "genres": [
+      "Famiglia",
+      "Commedia",
+      "Avventura",
+      "Animazione",
+      "Fantascienza"
+    ]
+  },
+  {
+    "id": "tmdb:1078605",
+    "type": "movie",
+    "name": "Weapons",
+    "poster": "https://image.tmdb.org/t/p/w500/xoeSn325CFQLt1WC9jSBBTsvPWR.jpg",
+    "background": "https://image.tmdb.org/t/p/original/yKWZIDo4ixcDUeelk2QGVA1EVmC.jpg",
+    "description": "Quando tutti i bambini di una stessa classe, tranne uno, scompaiono misteriosamente nella stessa notte e alla stessa ora, l’intera comunità si ritrova a interrogarsi su chi, o cosa, sia responsabile della loro sparizione.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.307",
+    "genres": [
+      "Horror",
+      "Mistero",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:1153714",
+    "type": "movie",
+    "name": "Death of a Unicorn",
+    "poster": "https://image.tmdb.org/t/p/w500/k3Nuu7Z5PuC6UxVIl2xbGhFvIjj.jpg",
+    "background": "https://image.tmdb.org/t/p/original/4rLaMBcCJ1pMq72vCulBMPsbAyh.jpg",
+    "description": "Elliot, dirigente vedovo di un'azienda farmaceutica, si reca con la figlia Ridley nella fastosa tenuta del suo capo, Odell Leopold. Guidando a gran velocità per il grave ritardo accumulato, Elliot finisce per investire un animale che si era fermato in mezzo alla strada: solo che non si tratta di un animale qualsiasi, ma di un unicorno. Quando la famiglia Leopold comprende che il sangue degli animali magici ha delle proprietà curative, pensa di sfruttare la scoperta a scopo commerciale. Nessuno però ha fatto i conti con l'ira di mamma e papà unicorno, assetati di vendetta.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.431",
+    "genres": [
+      "Horror",
+      "Fantasy",
+      "Commedia",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:1307078",
+    "type": "movie",
+    "name": "Il mio anno a Oxford",
+    "poster": "https://image.tmdb.org/t/p/w500/dEHMJlWsLfLtujXGANyeuxyuqd5.jpg",
+    "background": "https://image.tmdb.org/t/p/original/A466i5iATrpbVjX30clP1Zyfp31.jpg",
+    "description": "Un'americana ambiziosa realizza il suo sogno di studiare a Oxford e si innamora di un affascinante britannico con un segreto che potrebbe sconvolgere la sua vita ben pianificata.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.011",
+    "genres": [
+      "Romance",
+      "Commedia",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:1924",
+    "type": "movie",
+    "name": "Superman",
+    "poster": "https://image.tmdb.org/t/p/w500/ucdkkitvvTKKmfzLuiKFCirn5j2.jpg",
+    "background": "https://image.tmdb.org/t/p/original/5PfHGXosySGs0l1JfeREspy3v6G.jpg",
+    "description": "Sul pianeta Kripton é il 1948 quando il tribunale sta giudicando tre traditori. Il presidente del tribunale manda suo figlio Kal-El in salvo sulla terra, dove a causa della diversa atmosfera assume poteri straordinari. Viene adottato da una copia diventando così Clark Kent.",
+    "year": "1978",
+    "releaseInfo": "1978",
+    "imdbRating": "7.149",
+    "genres": [
+      "Fantascienza",
+      "Azione",
+      "Avventura"
+    ]
+  },
+  {
+    "id": "tmdb:1100988",
+    "type": "movie",
+    "name": "28 anni dopo",
+    "poster": "https://image.tmdb.org/t/p/w500/ohBbrHokKyJKL6cwcUCZFkNMXls.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wxxSyWPPgssnkO6FbCAVyntLLSr.jpg",
+    "description": "Sono passati quasi tre decenni da quando il virus della rabbia è fuoriuscito da un laboratorio di armi biologiche e ora, ancora in una quarantena forzata e brutale, alcuni sono riusciti a sopravvivere in mezzo agli infetti. Un gruppo di sopravvissuti vive su una piccola isola collegata alla terraferma da un'unica strada rialzata ed estremamente protetta. Quando uno di questi  lascia l'isola per una missione diretta nel profondo della terraferma, scoprirà segreti, meraviglie e orrori che hanno mutato non solo gli infetti ma anche gli altri sopravvissuti.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.641",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Fantascienza",
+      "Virus",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:10191",
+    "type": "movie",
+    "name": "Dragon Trainer",
+    "poster": "https://image.tmdb.org/t/p/w500/oM6tE3LJ1Rw5EHVJg0MVCDY7Dvi.jpg",
+    "background": "https://image.tmdb.org/t/p/original/59vDC1BuEQvti24OMr0ZvtAK6R1.jpg",
+    "description": "Hiccup è un giovane vichingo che vive in un villaggio sperduto nel nulla, in una landa fredda, inospitale, con poco da mangiare e soprattutto infestata dai draghi. Tuttavia i vichinghi invece che spostarsi preferiscono combattere, non a caso sono tutti grandi e grossi. Tutti tranne Hiccup, figlio del capo del villaggio, che è secco e inadatto al combattimento. Il ragazzo ha però una spiccata passione per la costruzione di macchinari con cui tenta di uccidere draghi e una conseguente inclinazione per la creazione di problemi...",
+    "year": "2010",
+    "releaseInfo": "2010",
+    "imdbRating": "7.855",
+    "genres": [
+      "Fantasy",
+      "Avventura",
+      "Animazione",
+      "Famiglia"
+    ]
+  },
+  {
+    "id": "tmdb:342473",
+    "type": "movie",
+    "name": "Ballerina",
+    "poster": "https://image.tmdb.org/t/p/w500/1qQ1oixuuJJxWZnNqS87vol8o6F.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wlLdcK3Sm7zp0w1ZuVvnFlmcchM.jpg",
+    "description": "Félicie è una piccola orfana della Bretagna ed ha un'unica grande passione: la danza. Insieme al suo migliore amico Victor, che sogna di diventare un inventore, studia un piano folle per fuggire dall'orfanotrofio dove vive e andare a Parigi. Félicie dovrà superare i propri limiti e gli ostacoli sulla sua strada per realizzare il suo sogno: diventare la prima ballerina dell'Opera di Parigi.",
+    "year": "2016",
+    "releaseInfo": "2016",
+    "imdbRating": "7.193",
+    "genres": [
+      "Animazione",
+      "Avventura",
+      "Commedia",
+      "Famiglia"
+    ]
+  },
+  {
+    "id": "tmdb:803796",
+    "type": "movie",
+    "name": "KPop Demon Hunters",
+    "poster": "https://image.tmdb.org/t/p/w500/zT7Lhw3BhJbMkRqm9Zlx2YGMsY0.jpg",
+    "background": "https://image.tmdb.org/t/p/original/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg",
+    "description": "Quando non fanno il tutto esaurito negli stadi, le superstar del K-pop Rumi, Mira e Zoey usano i loro poteri segreti per proteggere i fan da minacce soprannaturali.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "8.16",
+    "genres": [
+      "Fantasy",
+      "Musica",
+      "Commedia",
+      "Animazione",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:1136867",
+    "type": "movie",
+    "name": "Material Love",
+    "poster": "https://image.tmdb.org/t/p/w500/nmNi5uMO5earkzK9OL0nsWMQOr7.jpg",
+    "background": "https://image.tmdb.org/t/p/original/lqwwGkwJHtz9QgKtz4zeY19YgDg.jpg",
+    "description": "Una giovane e ambiziosa combina-coppie di New York si ritrova a dover scegliere tra l’uomo ideale e il suo ex, tutt’altro che perfetto.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.463",
+    "genres": [
+      "Romance",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:870028",
+    "type": "movie",
+    "name": "The Accountant 2",
+    "poster": "https://image.tmdb.org/t/p/w500/5hvm0GeaahJfWcfvLODT3Iw3LaL.jpg",
+    "background": "https://image.tmdb.org/t/p/original/yBDvgpyynDsbMyK21FoQu1c2wYR.jpg",
+    "description": "Christian Wolff (Ben Affleck) ha un talento per risolvere problemi complessi. Quando un vecchio conoscente viene ucciso, lasciando dietro di sé il messaggio criptico “trova il contabile”, Wolff è spinto a risolvere il caso. Rendendosi conto che sono necessari metodi più estremi, Wolff recluta il suo letale fratello Brax (Jon Bernthal) per aiutarlo. In collaborazione con Marybeth Medina (Cynthia Addai-Robinson), vicedirettore del Dipartimento del Tesoro degli Stati Uniti, scoprono una letale cospirazione, diventando bersagli di una spietata rete di assassini che non si fermeranno davanti a nulla pur di mantenere sepolti i loro segreti.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.112",
+    "genres": [
+      "Mistero",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:1233413",
+    "type": "movie",
+    "name": "I peccatori",
+    "poster": "https://image.tmdb.org/t/p/w500/gGhvLVcdWQanE1XuPkC3iE4PJN9.jpg",
+    "background": "https://image.tmdb.org/t/p/original/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+    "description": "Tornati nella regione natia con un discreto bottino e con abbondanti alcolici dalla malavita di Chicago, i gemelli Smoke e Stack trasformano una baracca in un locale di ballo e gioco clandestino per la popolazione nera. La festa notturna innesca una gioia contagiosa, ma presto si avvicinano tre bianchi che chiedono insistentemente di poter entrare. Sarà presto chiara la loro intenzione.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.5",
+    "genres": [
+      "Horror",
+      "Azione",
+      "Thriller",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:668489",
+    "type": "movie",
+    "name": "Havoc",
+    "poster": "https://image.tmdb.org/t/p/w500/ubP2OsF3GlfqYPvXyLw9d78djGX.jpg",
+    "background": "https://image.tmdb.org/t/p/original/7rKyFSg6SdLoCRCVoWLjL5k658k.jpg",
+    "description": "Un furto di droga andato storto ha conseguenze letali e un poliziotto disilluso deve lottare contro la criminalità di una città corrotta per salvare il figlio di un politico.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.394",
+    "genres": [
+      "Azione",
+      "Crime",
+      "Thriller",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:1087891",
+    "type": "movie",
+    "name": "Operazione vendetta",
+    "poster": "https://image.tmdb.org/t/p/w500/9IoYsiQEUe50ViywjffKh5pUJqX.jpg",
+    "background": "https://image.tmdb.org/t/p/original/aD7FXrm2GErTmzrIFBntPyhAqS9.jpg",
+    "description": "Charlie Heller (Malek) è un brillante ma profondamente introverso decodificatore della CIA che lavora in un ufficio nel seminterrato del quartier generale di Langley e la cui vita viene sconvolta quando sua moglie viene uccisa in un attacco terroristico a Londra. Quando i suoi supervisori si rifiutano di agire, l'uomo prende in mano la situazione e si imbarca in un pericoloso viaggio intorno al mondo per rintracciare i responsabili, usando la sua intelligenza come arma principale per sfuggire ai suoi inseguitori e vendicare la moglie.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.977",
+    "genres": [
+      "Thriller",
+      "Azione"
+    ]
+  },
+  {
+    "id": "tmdb:950387",
+    "type": "movie",
+    "name": "Un film Minecraft",
+    "poster": "https://image.tmdb.org/t/p/w500/myoxQxrAEZICqe3DRyJUsiE5lWS.jpg",
+    "background": "https://image.tmdb.org/t/p/original/2Nti3gYAX513wvhp8IiLL6ZDyOm.jpg",
+    "description": "Benvenuti nel mondo di Minecraft, dove la creatività non serve solo a costruire, ma è essenziale per la sopravvivenza! Quattro improvvisati avventurieri – Garrett “The Garbage Man” Garrison (Momoa), Henry (Hansen), Natalie (Myers) e Dawn (Brooks) – sono alle prese con problemi quotidiani quando vengono improvvisamente trascinati, attraverso un misterioso portale, nell’Overworld: un bizzarro paese delle meraviglie cubico dove regna l’immaginazione. Per far ritorno a casa, dovranno imparare a padroneggiare questo mondo (e proteggerlo dalla minaccia di Piglins e Zombie) mentre intraprendono una magica missione affiancati da un esperto e inaspettato ‘costruttore’ del posto, Steve (Black). L’avventura metterà alla prova tutti e cinque, sfidandoli a essere coraggiosi e a ritrovare le qualità che rendono ciascuno di loro unico e creativo… le stesse abilità di cui hanno bisogno per tornare a vivere nel mondo reale.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.31",
+    "genres": [
+      "Famiglia",
+      "Fantasy",
+      "Commedia",
+      "Avventura",
+      "Azione",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:549509",
+    "type": "movie",
+    "name": "The Brutalist",
+    "poster": "https://image.tmdb.org/t/p/w500/LfI6QwtR7HTguzvjLESpc6qNK6.jpg",
+    "background": "https://image.tmdb.org/t/p/original/hmZnqijPaaACjenDkrbWcCmcADI.jpg",
+    "description": "In fuga dall'Europa del dopoguerra, l'architetto visionario László Toth arriva in America per ricostruire la sua vita, il suo lavoro e il suo matrimonio con la moglie Erzsébet dopo essere stato costretto a separarsi durante la guerra da confini e regimi mutevoli. Da solo in un paese nuovo e sconosciuto, László si stabilisce in Pennsylvania, dove il ricco e importante industriale Harrison Lee Van Buren riconosce il suo talento nel costruire. Ma il potere e l'eredità hanno un costo elevato.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7",
+    "genres": [
+      "Dramma",
+      "Storia"
+    ]
+  },
+  {
+    "id": "tmdb:1254786",
+    "type": "movie",
+    "name": "La lista dei miei desideri",
+    "poster": "https://image.tmdb.org/t/p/w500/i8j8Km1Db2n0De5XcwuPoexjlAr.jpg",
+    "background": "https://image.tmdb.org/t/p/original/sulUXRukzh7WSK34y8mnaUcHo3y.jpg",
+    "description": "Quando la madre la spinge a completare la lista dei desideri scritta da adolescente, una giovane donna scopre segreti di famiglia, trova l'amore e riscopre se stessa.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.969",
+    "genres": [
+      "Romance",
+      "Commedia",
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:1197306",
+    "type": "movie",
+    "name": "A Working Man",
+    "poster": "https://image.tmdb.org/t/p/w500/svSRfBNmZjDnus65gZJovFNa63R.jpg",
+    "background": "https://image.tmdb.org/t/p/original/fTrQsdMS2MUw00RnzH0r3JWHhts.jpg",
+    "description": "Levon Cade ha lasciato una carriera militare decorata nelle operazioni segrete per vivere una vita semplice lavorando nell’edilizia. Ma quando la figlia del suo capo, che per lui è come una famiglia, viene rapita dai trafficanti di esseri umani, la sua ricerca per riportarla a casa scopre un mondo di corruzione molto più grande di quanto avrebbe mai potuto immaginare.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.697",
+    "genres": [
+      "Azione",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:1097549",
+    "type": "movie",
+    "name": "Babygirl",
+    "poster": "https://image.tmdb.org/t/p/w500/ccZAqgSFk7K7vvqAu30896eXXJ8.jpg",
+    "background": "https://image.tmdb.org/t/p/original/s7vWRjcfRVMW8tBIxhC3UhKxRoo.jpg",
+    "description": "Una potente donna d'affari mette a repentaglio la sua vita professionale e personale quando intraprende una relazione segreta e intensa con il suo giovane assistente.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "5.716",
+    "genres": [
+      "Dramma",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tmdb:1280941",
+    "type": "movie",
+    "name": "Il ragazzo dai pantaloni rosa",
+    "poster": "https://image.tmdb.org/t/p/w500/b1Kg8uVbxgbTgElS8iQTkWp1X3w.jpg",
+    "background": "https://image.tmdb.org/t/p/original/olCv7BXqGBAMUZnYDUfgiu8rixN.jpg",
+    "description": "Il 20 Novembre 2012, Andrea Spezzacatena, un ragazzo che aveva appena compiuto 15 anni, si tolse la vita. Fu il primo caso in Italia di bullismo e cyberbullismo che portò al suicidio di un minorenne. L’incidente scatenante fu l’aver voluto indossare dei pantaloni rossi, regalo della madre, che a causa di un lavaggio sbagliato erano diventati rosa. Questo film è tratto dalla sua storia.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.1",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:777443",
+    "type": "movie",
+    "name": "The Electric State",
+    "poster": "https://image.tmdb.org/t/p/w500/mGi3wAEJQVc6QeWOPaTA155Wpx6.jpg",
+    "background": "https://image.tmdb.org/t/p/original/2n7lYEeIbucsEQCswRcVB6ZYmMP.jpg",
+    "description": "Un'adolescente rimasta orfana si mette in viaggio con un misterioso robot per trovare il fratello scomparso, unendo le forze con un contrabbandiere e il suo spassoso aiutante.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.493",
+    "genres": [
+      "Fantascienza",
+      "Avventura",
+      "Azione",
+      "Apocalypse"
+    ]
+  },
+  {
+    "id": "tmdb:447273",
+    "type": "movie",
+    "name": "Biancaneve",
+    "poster": "https://image.tmdb.org/t/p/w500/xflYjI2PNBtO2WIaXqzFnoWDSNZ.jpg",
+    "background": "https://image.tmdb.org/t/p/original/tyfO9jHgkhypUFizRVYD0bytPjP.jpg",
+    "description": "Una rivisitazione musicale live-action del classico film del 1937. La magica avventura musicale torna alla storia senza tempo con gli amati personaggi Mammolo, Dotto, Cucciolo, Brontolo, Gongolo, Pisolo e Eolo.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "4.3",
+    "genres": [
+      "Famiglia",
+      "Fantasy"
+    ]
+  },
+  {
+    "id": "tmdb:696506",
+    "type": "movie",
+    "name": "Mickey 17",
+    "poster": "https://image.tmdb.org/t/p/w500/2JQBZs01ahsOiANQ7Fs8MN9zBY4.jpg",
+    "background": "https://image.tmdb.org/t/p/original/hGLywNhy1Fo1rNFHsNZsXGS69B8.jpg",
+    "description": "Mickey 17 è un \"sacrificabile\", un impiegato usa e getta, in una spedizione umana inviata a colonizzare il mondo ghiacciato Niflheim. Dopo la morte di un'iterazione, un nuovo corpo viene rigenerato con la maggior parte dei suoi ricordi intatti.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.827",
+    "genres": [
+      "Fantascienza",
+      "Commedia",
+      "Avventura"
+    ]
+  },
+  {
+    "id": "tmdb:1064213",
+    "type": "movie",
+    "name": "Anora",
+    "poster": "https://image.tmdb.org/t/p/w500/fjUmU6DEt75a535pSBLUdRAmK6t.jpg",
+    "background": "https://image.tmdb.org/t/p/original/qvyOfwTC3qdbzkqdXWSSEMHtjBZ.jpg",
+    "description": "Anora, una giovane prostituta di Brooklyn, ha la possibilità di vivere una storia da Cenerentola quando incontra e sposa impulsivamente il figlio di un oligarca. Quando la notizia arriva in Russia, la sua favola è minacciata: i genitori partono per New York per far annullare il matrimonio.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.058",
+    "genres": [
+      "Dramma",
+      "Commedia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tmdb:1443587",
+    "type": "movie",
+    "name": "Flow",
+    "poster": null,
+    "background": null,
+    "description": "Flow",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "genres": [
+      "Dramma"
+    ]
+  },
+  {
+    "id": "tmdb:661539",
+    "type": "movie",
+    "name": "A Complete Unknown",
+    "poster": "https://image.tmdb.org/t/p/w500/lrukuw7z38D2OJhJ0iMERCcXwt2.jpg",
+    "background": "https://image.tmdb.org/t/p/original/kcCy5tKTe6WepVQ6SQaSewpmoCj.jpg",
+    "description": "A COMPLETE UNKNOWN segue l'arrivo del diciannovenne Bob Dylan a New York nel 1961, alla ricerca del suo eroe, un Woody Guthrie malato. Viene accolto dalla scena folk newyorkese (Guthrie, Pete Seeger, Joan Baez e altri) che riconosce il suo talento. Trova ingaggi nei club del centro e diventa presto un fenomeno, sotto contratto con la Columbia Records. Il film segue l'ascesa di Dylan a fenomeno culturale, le sue forti relazioni nel mondo della musica folk e la sua definitiva transizione dalla musica folk, formando una band, confondendo i suoi fan e deludendo la comunità musicale che lo aveva inizialmente accolto.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.097",
+    "genres": [
+      "Dramma",
+      "Musica"
+    ]
+  },
+  {
+    "id": "tmdb:1312157",
+    "type": "movie",
+    "name": "FolleMente",
+    "poster": "https://image.tmdb.org/t/p/w500/3inRpYgwsWCA9p889eTcw2QQ7Km.jpg",
+    "background": "https://image.tmdb.org/t/p/original/tOwffsVVkPWaQGmWDoZxKhGmrNi.jpg",
+    "description": "Quanto conosciamo davvero di noi stessi quando prendiamo una decisione? E se dentro di noi esistessero più versioni del nostro IO, ognuna con qualcosa da dire?  FolleMente è una brillante commedia romantica che va oltre le apparenze, immergendosi nella mente dei due protagonisti, Piero e Lara, svelando i loro pensieri più nascosti e le battaglie interiori che tutti affrontiamo.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.212",
+    "genres": [
+      "Commedia",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tmdb:1124620",
+    "type": "movie",
+    "name": "The Monkey",
+    "poster": "https://image.tmdb.org/t/p/w500/l0lQlXvEN4rnVyMh077Xa1m6t7q.jpg",
+    "background": "https://image.tmdb.org/t/p/original/cjZ7No0DX2L3ielLSoUOMYPw7C.jpg",
+    "description": "In soffitta c'è una scimmietta giocattolo un po' misteriosa. Apparteneva al papà dei gemelli Hal e Bill che, da bambini, la ritrovano e ne azionano il meccanismo ruotando la chiave nella schiena. È l'inizio di una serie di morti orribili che distrugge la loro famiglia. Passano 25 anni e il giocattolo maledetto riappare. Ecco una nuova scia di sangue che costringe i due fratelli, ormai separati, a fare i conti con il loro oscuro passato.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "5.992",
+    "genres": [
+      "Horror",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:974576",
+    "type": "movie",
+    "name": "Conclave",
+    "poster": "https://image.tmdb.org/t/p/w500/ic4EM9yv6CP8lfPXcNlKTuxTT6X.jpg",
+    "background": "https://image.tmdb.org/t/p/original/91SnazWmEWnnH988aaz0l6NaWY9.jpg",
+    "description": "Conclave ci porta nel cuore di uno degli eventi più misteriosi e segreti del mondo: l'elezione di un nuovo Papa. Dopo la morte improvvisa dell’amato e compianto Papa, il Cardinale Lawrence (Ralph Fiennes) è incaricato di dirigere questo delicato processo. Una volta che i leader più potenti della Chiesa Cattolica si riuniscono e si chiudono nelle segrete sale del Vaticano, Lawrence si ritrova intrappolato in una rete di intrighi, tradimenti e giochi di potere. Un oscuro segreto viene alla luce, minacciando di scuotere le fondamenta stesse della Chiesa.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.195",
+    "genres": [
+      "Dramma",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:950396",
+    "type": "movie",
+    "name": "Misteri dal profondo",
+    "poster": "https://image.tmdb.org/t/p/w500/7IU0AhsnulBMEGauba755Snhcy4.jpg",
+    "background": "https://image.tmdb.org/t/p/original/9nhjGaFLKtddDPtPaX5EmKqsWdH.jpg",
+    "description": "Due agenti speciali vengono mandati a sorvegliare i margini opposti di una misteriosa gola. La loro intesa cresce quando si ritrovano a tentare di sopravvivere al male oscuro che emerge dal profondo.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.649",
+    "genres": [
+      "Romance",
+      "Fantascienza",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:1084199",
+    "type": "movie",
+    "name": "Companion",
+    "poster": "https://image.tmdb.org/t/p/w500/AbH00wyIzvwHkiBVyRXKN4Phytl.jpg",
+    "background": "https://image.tmdb.org/t/p/original/cZnJ3ABPvsWGqwPcu06Eda493F9.jpg",
+    "description": "Nella tenuta di un miliardario, un tranquillo fine settimana in riva al lago si trasforma in un incubo per Iris e dei suoi amici. Infatti, un androide sottomesso, creato per la compagnia umana, impazzisce.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "7.042",
+    "genres": [
+      "Horror",
+      "Fantascienza",
+      "Thriller"
+    ]
+  },
+  {
+    "id": "tmdb:1323784",
+    "type": "movie",
+    "name": "Mala influencia",
+    "poster": "https://image.tmdb.org/t/p/w500/oogmlZekRCHP0JDhHKDZIyDIfpP.jpg",
+    "background": "https://image.tmdb.org/t/p/original/zXUxcXnBPHF1cD0IHi4KUpsNvF4.jpg",
+    "description": "Un ex detenuto inizia una nuova vita quando è assunto per proteggere una ricca ereditiera da uno stalker, ma tra loro si sviluppa un'attrazione a cui è difficile resistere.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "5.652",
+    "genres": [
+      "Thriller",
+      "Dramma",
+      "Romance"
+    ]
+  },
+  {
+    "id": "tmdb:1386877",
+    "type": "movie",
+    "name": "Io sono la fine del mondo",
+    "poster": "https://image.tmdb.org/t/p/w500/atxPVWn8ljVO1YX7W5xUwO6BGnM.jpg",
+    "background": "https://image.tmdb.org/t/p/original/3amhHtHYHXIhWfUf5bpm31mDWB7.jpg",
+    "description": "\"Un giorno i tuoi genitori non ci saranno più e sarai pieno di rimorsi\" è la frase che convince Angelo a prendersi cura dei suoi vecchi genitori ora che non sono più autosufficienti: non vuole infatti perdere l'occasione di vendicarsi dei peggiori nemici della sua adolescenza.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "4.969",
+    "genres": [
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:993710",
+    "type": "movie",
+    "name": "Back in Action",
+    "poster": "https://image.tmdb.org/t/p/w500/3L3l6LsiLGHkTG4RFB2aBA6BttB.jpg",
+    "background": "https://image.tmdb.org/t/p/original/mkxGpqh4yOYqtENv01IrDcesFRf.jpg",
+    "description": "15 anni prima: Emily e Matt sono due agenti CIA impegnati in una missione in Europa volta a sottrare dalle mani di Balthazar Gor, ex-KGB e ora a capo dell'organizzazione terroristica Volka, la chiave ICS che dà accesso alle maggiori infrastrutture critiche del pianeta. I due hanno successo, ma durante la loro fuga un incidente fa credere a tutti che sono morti, lasciando la coppia libera di crearsi una nuova vita... 15 anni dopo: Emily e Matt sono due genitori che, come tutti i genitori, hanno difficoltà a relazionarsi con i loro due figli, la quindicenne Alice e il dodicenne Leo, quando la loro normale vita di tutti i giorni viene sconvolta dal fatto che sono costretti a tornare in azione.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.436",
+    "genres": [
+      "Azione",
+      "Commedia"
+    ]
+  },
+  {
+    "id": "tmdb:710295",
+    "type": "movie",
+    "name": "Wolf Man",
+    "poster": "https://image.tmdb.org/t/p/w500/vceqBdM2070ZQ7HBYVf96gyY9Hh.jpg",
+    "background": "https://image.tmdb.org/t/p/original/wwARk7hRIfHfh2n2ubN6N7lvTne.jpg",
+    "description": "Blake eredita la casa d'infanzia nell'Oregon dopo la scomparsa di suo padre, che viene dato per morto. Con il logorarsi del suo matrimonio con la potente moglie Charlotte, Blake la convince a prendersi una pausa dalla città e andare a visitare la proprietà con la loro giovane figlia, Ginger. Ma quando la famiglia si avvicina alla fattoria nel cuore della notte, viene attaccata da un animale invisibile e, in una fuga disperata, si barrica all'interno della casa mentre la creatura si aggira attorno al perimetro. Con il passare della notte, però, Blake inizia a comportarsi in modo strano, trasformandosi in qualcosa di irriconoscibile, e Charlotte sarà costretta a decidere se il terrore all'interno della casa sia più letale di quello all’esterno.",
+    "year": "2025",
+    "releaseInfo": "2025",
+    "imdbRating": "6.238",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Animal Terror",
+      "Virus",
+      "Supernatural"
+    ]
+  },
+  {
+    "id": "tmdb:426063",
+    "type": "movie",
+    "name": "Nosferatu",
+    "poster": "https://image.tmdb.org/t/p/w500/1SftujfE9iqZpGJfnREO4IBeeqV.jpg",
+    "background": "https://image.tmdb.org/t/p/original/fYnEbgoNCxW9kL0IgOgtJb9JTBU.jpg",
+    "description": "Una racconto gotico sull'ossessione tra una giovane donna tormentata e il terrificante vampiro che si è infatuato di lei, provocando un indicibile orrore.",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "6.699",
+    "genres": [
+      "Horror",
+      "Fantasy",
+      "Virus",
+      "Supernatural"
+    ]
+  }
+]
