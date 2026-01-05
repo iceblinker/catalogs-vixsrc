@@ -4,7 +4,7 @@ services:
     container_name: vixsrc-addon
     restart: unless-stopped
     ports:
-      - "${ADDON_PORT:-3001}:${PORT:-3000}"
+      - "${ADDON_PORT:-3015}:${PORT:-3000}"
     env_file:
       - .env
     shm_size: '2gb'
@@ -28,7 +28,7 @@ services:
     container_name: vixsrc-stream-provider
     restart: unless-stopped
     ports:
-      - "${STREAM_PROVIDER_PORT:-7000}:${STREAM_PROVIDER_PORT:-7000}"
+      - "${STREAM_PROVIDER_PORT:-7015}:${STREAM_PROVIDER_PORT:-7000}"
     env_file:
       - .env
     environment:
