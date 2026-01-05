@@ -127,7 +127,14 @@ const MANIFEST = {
 };
 
 // --- Middleware ---
-app.use(cors({ origin: '*' }));
+app.use(cors()); // Allow all
+app.use((req, res, next) => {
+    // Manually enforce CORS headers to be sure
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    next();
+});
 app.use(express.json());
 app.use((req, res, next) => {
     res.setTimeout(30000, () => {
