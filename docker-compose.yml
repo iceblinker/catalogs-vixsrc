@@ -4,7 +4,7 @@ services:
     container_name: vixsrc-addon
     restart: unless-stopped
     ports:
-      - "3020:3000"
+      - "${ADDON_PORT:-3015}:${PORT:-3000}"
     env_file:
       - .env
     shm_size: '2gb'
