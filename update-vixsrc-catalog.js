@@ -37,7 +37,7 @@ const { fetchTMDB } = require('./services/ingestion/tmdbClient');
 const { fetchVixIds } = require('./services/ingestion/vixsrcClient');
 const { processList, mapCommon } = require('./services/ingestion/processor');
 const { buildCollectionMeta } = require('./services/metaService');
-const collectionsCatalog = require('./collectionsCatalog');
+const collectionsCatalog = require('./stream-provider/collectionsCatalog');
 const { fork } = require('child_process');
 
 const fetch = (...args) => import('node-fetch').then(({ default: f }) => f(...args));
@@ -186,8 +186,12 @@ async function updateCatalog() {
         log(`[Update]  Skipped TMDB IDs (not found in tv or movie): [${skippedIds.join(', ')}]`);
     }
     log(`[Update]  END  duration:${stats.duration}  added-movie:${stats.addedMovies}  added-tv:${stats.addedTv}  skipped:${stats.skipped}  already:${stats.already}  errors:${stats.errors.length}`);
-    const hist = JSON.parse(fs.readFileSync(UPDATE_HISTORY_PATH, 'utf8') || '[]');
-    fs.writeFileSync(UPDATE_HISTORY_PATH, JSON.stringify([stats, ...hist].slice(0, 50), null, 2));
+
+    // BYPASS UPDATE HISTORY LOGIC TO PREVENT ENOENT CRASH
+    // const hist = JSON.parse(fs.readFileSync(UPDATE_HISTORY_PATH, 'utf8') || '[]');
+    // fs.writeFileSync(UPDATE_HISTORY_PATH, JSON.stringify([stats, ...hist].slice(0, 50), null, 2));
+    log('[Update] History update bypassed to prevent crash.');
+
     fs.writeFileSync(UPDATE_STATUS_PATH, JSON.stringify({ ...status, status: 'success', completed: new Date().toISOString() }, null, 2));
 
     // --- Write collection catalog caches for instant loading ---
