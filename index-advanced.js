@@ -35,6 +35,14 @@ const dashboardRouter = require('./routes/dashboard');
 
 const app = express();
 
+// --- Global Logging Middleware ---
+app.use((req, res, next) => {
+    // Log every request immediately
+    const timestamp = new Date().toISOString();
+    console.log(`[Global] ${timestamp} | ${req.method} ${req.url} | IP: ${req.ip}`);
+    next();
+});
+
 // --- Logging ---
 const log = (msg) => {
     const line = `[${new Date().toISOString()}] ${msg}`;
@@ -167,6 +175,12 @@ app.get('/dashboard.html', (req, res) => res.sendFile(path.join(__dirname, 'dash
 app.use('/catalog', catalogRouter);
 app.use('/meta', metaRouter);
 app.use('/dashboard', dashboardRouter);
+
+// --- 404 Catch-All ---
+app.use((req, res, next) => {
+    console.log(`[404] Resource not found: ${req.method} ${req.url}`);
+    res.status(404).send({ error: 'Not Found', path: req.url });
+});
 
 
 // --- Start Server ---
