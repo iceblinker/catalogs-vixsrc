@@ -5,6 +5,7 @@ const { getCatalogItems } = require('../services/catalogService');
 const querystring = require('querystring');
 
 router.get('/:type/:id/:extra?.json', async (req, res) => {
+    console.log(`[Catalog Router] Hit: ${req.originalUrl} | Params: ${JSON.stringify(req.params)}`);
     try {
         const { type, id } = req.params;
 
