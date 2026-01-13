@@ -14,55 +14,67 @@ const EUROPEAN_COUNTRIES = [
 ];
 
 function normalizeProviders(wp, details = {}) {
-    if (!wp || !wp.IT) return { providers: [], watch_providers: null, provider_catalog_names: [] };
-
-    // Extract countries from details (production_countries for movies, origin_country for tv)
-    let originCountries = [];
-    if (details.production_countries && Array.isArray(details.production_countries)) {
-        originCountries = details.production_countries.map(c => c.iso_3166_1);
-    } else if (details.origin_country && Array.isArray(details.origin_country)) {
-        originCountries = details.origin_country;
-    }
-
-    const isAsian = originCountries.some(c => ASIAN_COUNTRIES.includes(c));
-    const isEuropean = originCountries.some(c => EUROPEAN_COUNTRIES.includes(c));
-
     const providerCatalogSet = new Set();
     const idSet = new Set();
-    const k = 'flatrate';
-    if (wp.IT && Array.isArray(wp.IT[k])) {
-        wp.IT[k].forEach(p => {
-            for (const entry of PROVIDER_CATALOG_MAP) {
-                let canonicalName = entry.name;
-                if (canonicalName.replace(/\s+/g, '') === 'Sky/NOW'.replace(/\s+/g, '')) {
-                    canonicalName = 'Sky/NOW';
-                }
+    const out = { IT: {} };
 
-                // Check if this provider matches the entry
-                const isMatch = (Array.isArray(entry.ids) && entry.ids.includes(p.provider_id)) ||
-                    entry.name.toLowerCase() === (p.provider_name || '').trim().toLowerCase() ||
-                    entry.originals.some(o => o.toLowerCase() === (p.provider_name || '').trim().toLowerCase());
+    // Process TMDB Providers if available
+    if (wp && wp.IT) {
+        const k = 'flatrate';
+        if (Array.isArray(wp.IT[k])) {
+            wp.IT[k].forEach(p => {
+                for (const entry of PROVIDER_CATALOG_MAP) {
+                    let canonicalName = entry.name;
+                    if (canonicalName.replace(/\s+/g, '') === 'Sky/NOW'.replace(/\s+/g, '')) {
+                        canonicalName = 'Sky/NOW';
+                    }
 
-                if (isMatch) {
-                    // Special handling for Netflix: Asia and Netflix: Europe
-                    if (canonicalName === 'Netflix') {
-                        providerCatalogSet.add('Netflix'); // Always add base Netflix
-                        if (isAsian) {
-                            providerCatalogSet.add('Netflix: Asia');
+                    // Check if this provider matches the entry
+                    const isMatch = (Array.isArray(entry.ids) && entry.ids.includes(p.provider_id)) ||
+                        entry.name.toLowerCase() === (p.provider_name || '').trim().toLowerCase() ||
+                        entry.originals.some(o => o.toLowerCase() === (p.provider_name || '').trim().toLowerCase());
+
+                    if (isMatch) {
+                        // Special handling for Netflix: Asia and Netflix: Europe
+                        if (canonicalName === 'Netflix') {
+                            providerCatalogSet.add('Netflix'); // Always add base Netflix
+                            // Extract countries from details (production_countries for movies, origin_country for tv)
+                            let originCountries = [];
+                            if (details.production_countries && Array.isArray(details.production_countries)) {
+                                originCountries = details.production_countries.map(c => c.iso_3166_1);
+                            } else if (details.origin_country && Array.isArray(details.origin_country)) {
+                                originCountries = details.origin_country;
+                            }
+                            const isAsian = originCountries.some(c => ASIAN_COUNTRIES.includes(c));
+                            const isEuropean = originCountries.some(c => EUROPEAN_COUNTRIES.includes(c));
+
+                            if (isAsian) {
+                                providerCatalogSet.add('Netflix: Asia');
+                            }
+                            if (isEuropean) {
+                                providerCatalogSet.add('Netflix: Europe');
+                            }
+                        } else {
+                            providerCatalogSet.add(canonicalName);
                         }
-                        if (isEuropean) {
-                            providerCatalogSet.add('Netflix: Europe');
-                        }
-                    } else {
-                        providerCatalogSet.add(canonicalName);
                     }
                 }
-            }
-            if (p.provider_id) idSet.add(p.provider_id);
-        });
+                if (p.provider_id) idSet.add(p.provider_id);
+            });
+            out.IT[k] = wp.IT[k];
+        } else {
+            out.IT[k] = [];
+        }
+    } else {
+        out.IT['flatrate'] = [];
     }
-    const out = { IT: {} };
-    out.IT[k] = wp.IT[k] || [];
+
+    // Special Rule: If title contains "Drag Race" or "RuPaul", force WOW Presents Plus
+    const title = (details.name || details.title || '').toLowerCase();
+    if (title.includes('drag race') || title.includes('rupaul')) {
+        providerCatalogSet.add('WOW Presents Plus');
+    }
+
     return {
         providers: Array.from(providerCatalogSet).sort(),
         watch_providers: out,
