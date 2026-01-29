@@ -7,17 +7,84 @@ const tvRepo = require('../../lib/db/repositories/tvRepository');
 const fs = require('fs');
 const path = require('path');
 
-// Mappings for User Requests
-const URL_MAP = {
-    'trending-series': { url: 'https://streamingunity.so/it/browse/trending?type=tv', type: 'tv', header: 'I titoli del momento', file: 'trending-series-stremio.json' },
-    'novita-series': { url: 'https://streamingunity.so/it/browse/latest?type=tv', type: 'tv', header: 'Aggiunti di recente', file: 'novita-series-stremio.json' },
-    'korean-series': { url: 'https://streamingunity.so/it/archive?genre[]=26&type=tv', type: 'tv', header: null, file: 'korean-series-stremio.json' },
-    'trending-movies': { url: 'https://streamingunity.so/it/browse/trending?type=movie', type: 'movie', header: 'I titoli del momento', file: 'trending-movies-stremio.json' },
-    'novita-movies': { url: 'https://streamingunity.so/it/browse/latest?type=movie', type: 'movie', header: 'Aggiunti di recente', file: 'novita-movies-stremio.json' },
-    'korean-movies': { url: 'https://streamingunity.so/it/archive?genre[]=26&type=movie', type: 'movie', header: null, file: 'korean-movies-stremio.json' },
-};
+// Known StreamingUnity domains to try (in order of preference)
+const KNOWN_DOMAINS = [
+    'https://streamingunity.so',
+    'https://streamingunity.tv',
+    'https://streamingunity.co',
+    'https://streamingunity.net',
+    'https://streamingunity.org'
+];
+
+// Fallback base URL from env, or first known domain
+const ENV_BASE_URL = process.env.STREAMINGUNITY_BASE_URL;
+
+// Cache the resolved domain for this session
+let resolvedBaseUrl = null;
+
+/**
+ * Resolve the current working StreamingUnity domain by following redirects
+ * @param {Function} log - Logger function
+ * @returns {Promise<string>} - The resolved base URL
+ */
+async function resolveCurrentDomain(log = console.log) {
+    if (resolvedBaseUrl) return resolvedBaseUrl;
+
+    const domainsToTry = ENV_BASE_URL ? [ENV_BASE_URL, ...KNOWN_DOMAINS] : KNOWN_DOMAINS;
+
+    for (const domain of domainsToTry) {
+        try {
+            log(`[DomainResolver] Trying ${domain}...`);
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 10000);
+
+            const response = await fetch(domain, {
+                method: 'HEAD',
+                redirect: 'follow',
+                signal: controller.signal
+            });
+            clearTimeout(timeout);
+
+            // Get the final URL after redirects
+            const finalUrl = new URL(response.url);
+            const resolvedDomain = `${finalUrl.protocol}//${finalUrl.host}`;
+
+            if (response.ok || response.status === 403) { // 403 might be Cloudflare, but domain is valid
+                log(`[DomainResolver] ✓ Resolved to: ${resolvedDomain}`);
+                resolvedBaseUrl = resolvedDomain;
+                return resolvedDomain;
+            }
+        } catch (e) {
+            log(`[DomainResolver] ✗ ${domain} failed: ${e.message}`);
+        }
+    }
+
+    // Fallback to env or first known domain
+    const fallback = ENV_BASE_URL || KNOWN_DOMAINS[0];
+    log(`[DomainResolver] ⚠ Using fallback: ${fallback}`);
+    resolvedBaseUrl = fallback;
+    return fallback;
+}
+
+/**
+ * Build URL map with the resolved base URL
+ */
+function buildUrlMap(baseUrl) {
+    return {
+        'trending-series': { url: `${baseUrl}/it/browse/trending?type=tv`, type: 'tv', header: 'I titoli del momento', file: 'trending-series-stremio.json' },
+        'novita-series': { url: `${baseUrl}/it/browse/latest?type=tv`, type: 'tv', header: 'Aggiunti di recente', file: 'novita-series-stremio.json' },
+        'korean-series': { url: `${baseUrl}/it/archive?genre[]=26&type=tv`, type: 'tv', header: null, file: 'korean-series-stremio.json' },
+        'trending-movies': { url: `${baseUrl}/it/browse/trending?type=movie`, type: 'movie', header: 'I titoli del momento', file: 'trending-movies-stremio.json' },
+        'novita-movies': { url: `${baseUrl}/it/browse/latest?type=movie`, type: 'movie', header: 'Aggiunti di recente', file: 'novita-movies-stremio.json' },
+        'korean-movies': { url: `${baseUrl}/it/archive?genre[]=26&type=movie`, type: 'movie', header: null, file: 'korean-movies-stremio.json' },
+    };
+}
 
 async function scrapeCatalog(key, log = console.log) {
+    // Resolve domain dynamically
+    const baseUrl = await resolveCurrentDomain(log);
+    const URL_MAP = buildUrlMap(baseUrl);
+
     const config = URL_MAP[key];
     if (!config) throw new Error(`Unknown catalog key: ${key}`);
 
@@ -138,6 +205,10 @@ async function scrapeCatalog(key, log = console.log) {
 }
 
 async function runAllScrapers(log = console.log) {
+    // Resolve domain once at start
+    const baseUrl = await resolveCurrentDomain(log);
+    const URL_MAP = buildUrlMap(baseUrl);
+
     const keys = Object.keys(URL_MAP);
     for (const key of keys) {
         await scrapeCatalog(key, log);

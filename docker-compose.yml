@@ -12,6 +12,8 @@ services:
       - ./addon.log:/app/addon.log
       - ./catalog.db:/app/catalog.db
       - ./cache-moviecollections.json:/app/cache-moviecollections.json
+      - ./cache-seriescollections.json:/app/cache-seriescollections.json
+      - ./cache-nuovi-episodi.json:/app/cache-nuovi-episodi.json
       - ./cache-newreleases.json:/app/cache-newreleases.json
       - ./novita-movies-stremio.json:/app/novita-movies-stremio.json
       - ./novita-series-stremio.json:/app/novita-series-stremio.json
