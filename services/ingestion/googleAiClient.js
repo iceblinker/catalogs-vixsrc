@@ -597,4 +597,125 @@ async function analyzeApocalypseBatch(movies, log = console.log) {
     }
 }
 
-module.exports = { generateDescription, translateText, fixMetadataWithAI, analyzeGenreWithAI, analyzeContent, analyzeAnimalTerrorBatch, analyzeVirusBatch, analyzeSupernaturalBatch, analyzeApocalypseBatch };
+/**
+ * Normalize a slugified title using AI
+ * Fixes issues like "Ginny And Georgia" → "Ginny & Georgia", "Greys Anatomy" → "Grey's Anatomy"
+ * @param {string} rawTitle The slugified title from URL
+ * @param {Function} log Logger
+ * @returns {Promise<string>} The normalized title, or original if AI fails
+ */
+async function normalizeTitle(rawTitle, log = console.log) {
+    if (!rawTitle) return rawTitle;
+
+    const prompt = `You are a movie/TV title expert. Fix this slugified title to its proper form with correct punctuation, apostrophes, and characters.
+
+Input: "${rawTitle}"
+
+Rules:
+1. Fix apostrophes: "Greys Anatomy" → "Grey's Anatomy", "Its Always Sunny" → "It's Always Sunny"
+2. Fix ampersands: "Law And Order" → "Law & Order"
+3. Fix Roman numerals and special chars
+4. If Italian title, keep it Italian but fix formatting
+5. Common fixes: "Pd" → "P.D.", "Tv" → "TV"
+
+Output ONLY the corrected title, nothing else.`;
+
+    if (AI_PROVIDER === 'ollama') {
+        const result = await callOllama(prompt, log);
+        if (result && result.length < 200) { // Sanity check
+            return result.trim().replace(/^["']|["']$/g, ''); // Remove quotes if AI added them
+        }
+        return rawTitle;
+    }
+
+    // Google fallback
+    const apiKey = getNextKey();
+    if (!apiKey) return rawTitle;
+    await sleep(500); // Lighter rate limit for quick lookups
+
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`;
+    const payload = { contents: [{ parts: [{ text: prompt }] }] };
+
+    try {
+        const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+        if (!res.ok) return rawTitle;
+        const data = await res.json();
+        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (text && text.length < 200) {
+            return text.trim().replace(/^["']|["']$/g, '');
+        }
+    } catch (e) {
+        log(`[AI] Title normalize error: ${e.message}`);
+    }
+    return rawTitle;
+}
+
+/**
+ * Batch normalize titles using AI (more efficient for multiple titles)
+ * @param {string[]} rawTitles Array of slugified titles
+ * @param {Function} log Logger
+ * @returns {Promise<Object>} Map of original → normalized titles
+ */
+async function normalizeTitlesBatch(rawTitles, log = console.log) {
+    if (!rawTitles || rawTitles.length === 0) return {};
+
+    // Limit batch size to avoid token limits
+    const batchSize = 20;
+    const results = {};
+
+    for (let i = 0; i < rawTitles.length; i += batchSize) {
+        const batch = rawTitles.slice(i, i + batchSize);
+
+        const prompt = `You are a movie/TV title expert. Fix these slugified titles to their proper forms.
+
+Input titles (one per line):
+${batch.map((t, idx) => `${idx + 1}. ${t}`).join('\n')}
+
+Rules:
+1. Fix apostrophes: "Greys Anatomy" → "Grey's Anatomy"
+2. Fix ampersands: "Law And Order" → "Law & Order"  
+3. Fix formatting: "Chicago Pd" → "Chicago P.D."
+4. If Italian, keep Italian but fix punctuation
+
+Output as JSON object mapping original to corrected:
+{"Greys Anatomy": "Grey's Anatomy", "Law And Order": "Law & Order"}`;
+
+        let responseText = null;
+
+        if (AI_PROVIDER === 'ollama') {
+            responseText = await callOllama(prompt, log, true);
+        } else {
+            const apiKey = getNextKey();
+            if (apiKey) {
+                await sleep(1000);
+                const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${apiKey}`;
+                const payload = { contents: [{ parts: [{ text: prompt }] }] };
+                try {
+                    const res = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                    if (res.ok) {
+                        const data = await res.json();
+                        responseText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    }
+                } catch (e) { log(`[AI] Batch normalize error: ${e.message}`); }
+            }
+        }
+
+        if (responseText) {
+            try {
+                const cleaned = responseText.replace(/```json/g, '').replace(/```/g, '').trim();
+                const parsed = JSON.parse(cleaned);
+                Object.assign(results, parsed);
+            } catch (e) {
+                log(`[AI] Batch JSON parse error: ${e.message}`);
+                // Fallback: use originals
+                batch.forEach(t => results[t] = t);
+            }
+        } else {
+            batch.forEach(t => results[t] = t);
+        }
+    }
+
+    return results;
+}
+
+module.exports = { generateDescription, translateText, fixMetadataWithAI, analyzeGenreWithAI, analyzeContent, analyzeAnimalTerrorBatch, analyzeVirusBatch, analyzeSupernaturalBatch, analyzeApocalypseBatch, normalizeTitle, normalizeTitlesBatch };

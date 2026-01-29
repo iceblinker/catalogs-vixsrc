@@ -1,6 +1,7 @@
 const { getStealthPage, closeBrowser } = require('./stealthBrowser');
 const { mapCommon } = require('./processor');
 const { fetchTMDB } = require('./tmdbClient');
+const { normalizeTitlesBatch } = require('./googleAiClient');
 const { getDatabase } = require('../../lib/db');
 const movieRepo = require('../../lib/db/repositories/movieRepository');
 const tvRepo = require('../../lib/db/repositories/tvRepository');
@@ -142,12 +143,20 @@ async function scrapeCatalog(key, log = console.log) {
         log(`[Scraper] Found ${titles.length} titles. Processing enrichment...`);
         await page.close();
 
+        // AI-powered title normalization for better TMDB matching
+        log(`[Scraper] Normalizing titles with AI...`);
+        const titleMap = await normalizeTitlesBatch(titles, log);
+        log(`[Scraper] Normalized ${Object.keys(titleMap).length} titles.`);
+
         // Enrichment with TMDB
         const enriched = [];
         const db = getDatabase();
         const repo = config.type === 'movie' ? movieRepo : tvRepo;
 
-        for (const title of titles) {
+        for (const rawTitle of titles) {
+            // Use normalized title for lookup
+            const title = titleMap[rawTitle] || rawTitle;
+
             // Check DB First (Fast)
             let meta = null;
             try {
