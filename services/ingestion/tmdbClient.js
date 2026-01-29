@@ -100,9 +100,9 @@ async function saveCollectionIfMissing(coll, log = console.log) {
     }
 }
 
-async function fetchTMDB(id, type, log = console.log) {
+async function fetchTMDB(id, type, language = 'it-IT', log = console.log) {
     const db = getDatabase();
-    const cacheKey = `tmdb:${type}:${id}`;
+    const cacheKey = `tmdb:${type}:${id}:${language}`;
 
     // Check cache
     try {
@@ -116,7 +116,7 @@ async function fetchTMDB(id, type, log = console.log) {
     } catch (e) { }
 
     const base = 'https://api.themoviedb.org/3';
-    const url = `${base}/${type}/${id}?api_key=${TMDB_API_KEY}&language=it-IT&region=IT&append_to_response=credits,videos,images,keywords,external_ids,watch/providers,translations,alternative_titles`;
+    const url = `${base}/${type}/${id}?api_key=${TMDB_API_KEY}&language=${language}&region=IT&append_to_response=credits,videos,images,keywords,external_ids,watch/providers,translations,alternative_titles`;
 
     try {
         const res = await fetch(url, {
@@ -125,7 +125,7 @@ async function fetchTMDB(id, type, log = console.log) {
             }
         });
         if (!res.ok) {
-            log(`[TMDB]  ERROR ${res.status} ${res.statusText} for ${id}`);
+            log(`[TMDB]  ERROR ${res.status} ${res.statusText} for ${id} (${language})`);
             return null;
         }
         const details = await res.json();
@@ -133,7 +133,7 @@ async function fetchTMDB(id, type, log = console.log) {
         details.providers = providers;
         details.watch_providers = watch_providers;
         if (details.belongs_to_collection?.id) await saveCollectionIfMissing(details.belongs_to_collection, log);
-        log(`[TMDB]  OK    ${type} ${id} – ${details.title || details.name}`);
+        log(`[TMDB]  OK    ${type} ${id} – ${details.title || details.name} (${language})`);
 
         const result = { details, actualType: type };
 
@@ -149,10 +149,10 @@ async function fetchTMDB(id, type, log = console.log) {
     }
 }
 
-async function fetchSeason(tvId, seasonNumber, log = console.log) {
+async function fetchSeason(tvId, seasonNumber, language = 'it-IT', log = console.log) {
     const db = getDatabase();
     // Cache key for season
-    const cacheKey = `tmdb:season:${tvId}:${seasonNumber}`;
+    const cacheKey = `tmdb:season:${tvId}:${seasonNumber}:${language}`;
 
     // Check cache
     try {
@@ -166,7 +166,7 @@ async function fetchSeason(tvId, seasonNumber, log = console.log) {
     } catch (e) { }
 
     const base = 'https://api.themoviedb.org/3';
-    const url = `${base}/tv/${tvId}/season/${seasonNumber}?api_key=${TMDB_API_KEY}&language=it-IT`;
+    const url = `${base}/tv/${tvId}/season/${seasonNumber}?api_key=${TMDB_API_KEY}&language=${language}`;
 
     try {
         const res = await fetch(url);

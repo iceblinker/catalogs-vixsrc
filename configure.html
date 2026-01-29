@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure VixSrc Catalogs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { background: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .card { background: #1e293b; border: 1px solid #334155; }
+        .btn-primary { background: #3b82f6; border: none; }
+        .btn-primary:hover { background: #2563eb; }
+        .form-control, .form-select { background: #0f172a; border-color: #334155; color: #fff; }
+        .form-control:focus, .form-select:focus { background: #0f172a; color: #fff; border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.25); }
+    </style>
+</head>
+<body class="d-flex align-items-center min-vh-100 py-5">
+    <div class="container" style="max-width: 600px;">
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">VixSrc Catalogs</h1>
+            <p class="text-secondary">Configure your extension</p>
+        </div>
+        
+        <div class="card p-4">
+            <form id="configForm">
+                <div class="mb-3">
+                    <label class="form-label">Language</label>
+                    <select class="form-select" id="language">
+                        <option value="it-IT">Italiano (Default)</option>
+                        <option value="en-US">English</option>
+                        <option value="es-ES">Español</option>
+                        <option value="fr-FR">Français</option>
+                        <option value="de-DE">Deutsch</option>
+                        <option value="pt-BR">Português (Brasil)</option>
+                        <option value="pt-PT">Português</option>
+                        <option value="ru-RU">Russian</option>
+                    </select>
+                    <div class="form-text text-secondary">Metadata and descriptions will be shown in this language.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">RPDB API Key (Optional)</label>
+                    <input type="text" class="form-control" id="rpdb" placeholder="Enter Rating Poster DB Key">
+                    <div class="form-text text-secondary">
+                        Get a key at <a href="https://ratingposterdb.com/" target="_blank" class="text-primary">ratingposterdb.com</a> for updated posters with ratings.
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary btn-lg" id="installBtn">Install Addon</button>
+                    <button type="button" class="btn btn-outline-secondary" id="copyBtn">Copy Link</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function getConfig() {
+            const lang = document.getElementById('language').value;
+            const rpdb = document.getElementById('rpdb').value.trim();
+            
+            const params = [];
+            if (lang && lang !== 'it-IT') params.push(`language=${lang}`);
+            if (rpdb) params.push(`rpdb_key=${rpdb}`);
+            
+            return params.length > 0 ? params.join('|') : '';
+        }
+
+        function getManifestUrl() {
+            const config = getConfig();
+            const protocol = window.location.protocol;
+            const host = window.location.host;
+            const path = config ? `/${config}/manifest.json` : '/manifest.json';
+            return `${protocol}//${host}${path}`;
+        }
+
+        document.getElementById('installBtn').addEventListener('click', () => {
+            const manifest = getManifestUrl();
+            // Stremio uses stremio:// protocol, replacing http/https
+            const stremioUrl = manifest.replace(/^https?:/, 'stremio:');
+            window.location.href = stremioUrl;
+        });
+
+        document.getElementById('copyBtn').addEventListener('click', () => {
+             const manifest = getManifestUrl();
+             const stremioUrl = manifest.replace(/^https?:/, 'stremio:');
+             navigator.clipboard.writeText(stremioUrl).then(() => {
+                 alert('Link copied to clipboard!');
+             });
+        });
+    </script>
+</body>
+</html>

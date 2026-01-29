@@ -157,9 +157,28 @@ app.use((req, res, next) => {
 });
 
 // --- Routes Mounting ---
-app.get('/manifest.json', (req, res) => {
-    log('[Manifest] /manifest.json requested');
-    res.send(MANIFEST);
+app.get('/:config?/manifest.json', (req, res) => {
+    const { config } = req.params;
+    log(`[Manifest] ${req.url} requested`);
+
+    function parseConfig(configStr) {
+        if (!configStr) return {};
+        return configStr.split('|').reduce((acc, pair) => {
+            const [k, v] = pair.split('=');
+            if (k && v) acc[k] = v;
+            return acc;
+        }, {});
+    }
+
+    const configObj = parseConfig(config);
+    const manifest = { ...MANIFEST }; // Shallow copy
+
+    if (configObj.language && configObj.language !== 'it-IT') {
+        manifest.name += ` (${configObj.language})`;
+        manifest.description += ` | Translated to ${configObj.language}`;
+    }
+
+    res.send(manifest);
 });
 
 // Serve static dashboard files (SECURE: Only specific files)
@@ -171,9 +190,10 @@ app.get('/', (req, res) => {
     }
 });
 app.get('/dashboard.html', (req, res) => res.sendFile(path.join(__dirname, 'dashboard.html')));
+app.get('/configure', (req, res) => res.sendFile(path.join(__dirname, 'configure.html')));
 
-app.use('/catalog', catalogRouter);
-app.use('/meta', metaRouter);
+app.use('/:config?/catalog', catalogRouter);
+app.use('/:config?/meta', metaRouter);
 app.use('/dashboard', dashboardRouter);
 
 // --- 404 Catch-All ---

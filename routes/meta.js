@@ -1,16 +1,27 @@
 const express = require('express');
-const router = express.Router();
+const router = express.Router({ mergeParams: true });
 const movieRepo = require('../lib/db/repositories/movieRepository');
 const tvRepo = require('../lib/db/repositories/tvRepository');
 const collectionsCatalog = require('../collectionsCatalog');
 const { fullMeta, buildCollectionMeta } = require('../services/metaService');
 const cache = require('../lib/cache');
 
-router.get('/:type/:id.json', async (req, res) => {
-    const { type, id } = req.params;
+function parseConfig(configStr) {
+    if (!configStr) return {};
+    return configStr.split('|').reduce((acc, pair) => {
+        const [k, v] = pair.split('=');
+        if (k && v) acc[k] = v;
+        return acc;
+    }, {});
+}
 
-    // Cache Key
-    const cacheKey = `meta:${type}:${id}`;
+router.get('/:type/:id.json', async (req, res) => {
+    const { type, id, config } = req.params;
+    const configObj = parseConfig(config);
+    const language = configObj.language || 'it-IT'; // Default for cache key
+
+    // Cache Key (include language/config in key)
+    const cacheKey = `meta:${type}:${id}:${language}:${configObj.rpdb_key || ''}`;
 
     // Try Cache
     const cached = await cache.get(cacheKey);
@@ -42,7 +53,7 @@ router.get('/:type/:id.json', async (req, res) => {
     // Standard Meta
     try {
         const { getMeta } = require('../services/metaService');
-        const meta = await getMeta(type, id);
+        const meta = await getMeta(type, id, configObj);
 
         if (!meta) return res.status(404).send({ err: 'Meta not found' });
 

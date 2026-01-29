@@ -196,20 +196,6 @@
     ]
   },
   {
-    "id": "tmdb:303173",
-    "type": "series",
-    "name": "MARINES",
-    "poster": "https://image.tmdb.org/t/p/w500/7867qMmS3VRjMGj7C6L30mOPyRZ.jpg",
-    "background": "https://image.tmdb.org/t/p/original/kCf0Ydkeue3vnRljYxMRhigU2nx.jpg",
-    "description": "Segue la 31a unità di spedizione dei Marines mentre conduce esercitazioni di combattimento ad alto rischio nel Pacifico.",
-    "year": "2025",
-    "releaseInfo": "2025",
-    "imdbRating": "6",
-    "genres": [
-      "Documentario"
-    ]
-  },
-  {
     "id": "tmdb:271885",
     "type": "series",
     "name": "Non stare a guardare",
@@ -237,21 +223,6 @@
     "imdbRating": "7.336",
     "genres": [
       "Dramma",
-      "Crime"
-    ]
-  },
-  {
-    "id": "tmdb:304936",
-    "type": "series",
-    "name": "Terrazza Sentimento",
-    "poster": "https://image.tmdb.org/t/p/w500/uxntXFQ6SqY4celQejnUC9y6TQ3.jpg",
-    "background": "https://image.tmdb.org/t/p/original/6BHxT63TTKmlG6rds4b844d1kVV.jpg",
-    "description": "l ritrovamento di una ragazza in stato confusionale, a pochi passi dal Duomo, segna l’inizio di un caso che ha svelato il lato oscuro della nuova “Milano da bere”. Era fuggita dopo ore di abusi da Terrazza Sentimento, così veniva chiamato l’attico di un noto imprenditore, Alberto Genovese, dove si svolgevano party esclusivi. Le indagini rivelano subito un quadro inquietante e portano alla luce altre vittime. Un documentario raccontato da chi c’era, da chi ha indagato e da chi ha trovato il coraggio di denunciare.",
-    "year": "2025",
-    "releaseInfo": "2025",
-    "imdbRating": "6.95",
-    "genres": [
-      "Documentario",
       "Crime"
     ]
   },
@@ -1593,37 +1564,6 @@
       "Crime",
       "Mistero",
       "Sci-Fi & Fantasy"
-    ]
-  },
-  {
-    "id": "tmdb:291583",
-    "type": "series",
-    "name": "Il caso Air Cocaine",
-    "poster": "https://image.tmdb.org/t/p/w500/1CSakKtqVkAKU4HrZLjUeHYFJ4O.jpg",
-    "background": "https://image.tmdb.org/t/p/original/ceuc2V5QdHJL2Pte6xJ5cYzHElY.jpg",
-    "description": "Nel 2013, quattro improbabili sospetti francesi sono stati catturati con 700 kg di cocaina a Punta Cana. Il documentario indaga su chi ha orchestrato l'operazione.",
-    "year": "2025",
-    "releaseInfo": "2025",
-    "imdbRating": "7.5",
-    "genres": [
-      "Documentario",
-      "Crime"
-    ]
-  },
-  {
-    "id": "tmdb:87428",
-    "type": "series",
-    "name": "Why Women Kill",
-    "poster": "https://image.tmdb.org/t/p/w500/fI3E1G5N8oimMeyYn5UzWRT2cST.jpg",
-    "background": "https://image.tmdb.org/t/p/original/61YttrsiP6B4sJo98HFMuHKPV3G.jpg",
-    "description": "Dal creatore di Desperate Housewives Marc Cherry, Why Women Kill è una dark comedy di CBS All Access che esamina l'evoluzione del rapporto delle donne con l'idea di matrimonio e infedeltà nell'arco di tre diversi decenni. Le protagoniste sono una casalinga degli anni '60, Beth Ann (Ginnifer Goodwin, C'era una volta); una superficiale esponente dell'alta società negli anni '80, Simone (Lucy Liu, Elementary); e un'avvocatessa dei giorni nostri, Taylor (Kirby Howell-Baptiste, House of Lies). Sono tutte e tre sposate, ma vivono l'amore in modo completamente diverso l'una dall’altra - la prima è preda del patriarcato, la seconda degli anni dell'eccesso e la terza ha una relazione aperta e un'amante lesbica. Ognuna di loro affronta le conseguenze del tradimento assecondando inconsapevolmente le convenzioni sociali dell'epoca in cui vive, senza però riuscire a controllare i propri istinti primordiali. Perché, come spiega Cherry, \"per quanto ci piaccia credere che l'istituzione del matrimonio sia cambiata negli anni, l'infedeltà ha sempre la capacità di sconvolgerci nel profondo\". Il resto del cast include Alexandra Daddario (True Detective) nei panni di Jade, la bellissima amante di Taylor, maniaca del pulito e un po' folle; Reid Scott (Veep) del marito scrittore di Taylor, Eli; Sam Jaeger (Parenthood) di Rob, il marito di Beth Ann, il tipico uomo d'affari degli anni '60 con il sogno della casalinga sottomessa; e Jack Davenport (Smash) di Karl, il marito donnaiolo di Simone.",
-    "year": "2019",
-    "releaseInfo": "2019",
-    "imdbRating": "7.9",
-    "genres": [
-      "Commedia",
-      "Crime",
-      "Dramma"
     ]
   }
 ]

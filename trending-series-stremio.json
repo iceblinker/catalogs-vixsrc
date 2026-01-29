@@ -1,5 +1,36 @@
 [
   {
+    "id": "tmdb:249522",
+    "type": "series",
+    "name": "Beast Games",
+    "poster": "https://image.tmdb.org/t/p/w500/ut4Tr4ZSskBT1wYBbwHTnTPoPSu.jpg",
+    "background": "https://image.tmdb.org/t/p/original/p1rQJ5bljPSk3LoCo5UKRkpsiSd.jpg",
+    "description": "Ben 1.000 concorrenti competeranno in sfide fisiche e mentali da brivido, cercando di vincere l'incredibile somma di 5 milioni di dollari. Settimana dopo settimana, i concorrenti useranno la loro forza e il loro ingegno per rimanere in gioco, nella speranza di diventare multimilionari!",
+    "year": "2024",
+    "releaseInfo": "2024",
+    "imdbRating": "7.5",
+    "genres": [
+      "Reality",
+      "Documentario"
+    ]
+  },
+  {
+    "id": "tmdb:79744",
+    "type": "series",
+    "name": "The Rookie",
+    "poster": "https://image.tmdb.org/t/p/w500/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+    "background": "https://image.tmdb.org/t/p/original/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
+    "description": "La serie segue John Nolan, un uomo di quarant'anni, che si sposta dalla sua confortevole vita in città a Los Angeles per perseguire il suo sogno di diventare un agente del dipartimento di polizia di Los Angeles. Nolan deve però navigare nel pericoloso, umoristico e imprevedibile mondo di un poliziotto \"giovane\".",
+    "year": "2018",
+    "releaseInfo": "2018",
+    "imdbRating": "8.512",
+    "genres": [
+      "Crime",
+      "Dramma",
+      "Commedia"
+    ]
+  },
+  {
     "id": "tmdb:66732",
     "type": "series",
     "name": "Stranger Things",
@@ -1321,22 +1352,6 @@
     "imdbRating": "7.2",
     "genres": [
       "Reality"
-    ]
-  },
-  {
-    "id": "tmdb:79744",
-    "type": "series",
-    "name": "The Rookie",
-    "poster": "https://image.tmdb.org/t/p/w500/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
-    "background": "https://image.tmdb.org/t/p/original/6iNWfGVCEfASDdlNb05TP5nG0ll.jpg",
-    "description": "La serie segue John Nolan, un uomo di quarant'anni, che si sposta dalla sua confortevole vita in città a Los Angeles per perseguire il suo sogno di diventare un agente del dipartimento di polizia di Los Angeles. Nolan deve però navigare nel pericoloso, umoristico e imprevedibile mondo di un poliziotto \"giovane\".",
-    "year": "2018",
-    "releaseInfo": "2018",
-    "imdbRating": "8.512",
-    "genres": [
-      "Crime",
-      "Dramma",
-      "Commedia"
     ]
   }
 ]
