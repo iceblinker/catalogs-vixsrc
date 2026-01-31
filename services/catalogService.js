@@ -5,6 +5,7 @@ const { KEYWORD_CATALOGS, PROVIDER_CATALOG_MAP, SPECIAL_GENRE_CONFIG, STRICT_EXC
 const { KEYWORD_CATALOG, CACHE_MOVIE_COLLECTIONS, CACHE_SERIES_COLLECTIONS, CACHE_NUOVI_EPISODI, CACHE_NOVITA_MOVIES, CACHE_TRENDING_MOVIES, CACHE_NOVITA_SERIES, CACHE_TRENDING_SERIES } = require('../config/settings');
 const path = require('path');
 const fs = require('fs');
+const fsp = require('fs').promises;
 const cache = require('../lib/cache');
 const chromaClient = require('./search/chromaClient');
 
@@ -12,6 +13,38 @@ const chromaClient = require('./search/chromaClient');
 const AI_SEARCH_ENABLED = process.env.AI_SEARCH_ENABLED === 'true';
 
 const log = (msg) => console.log(msg);
+
+// Memory cache for large JSON files
+const fileCache = new Map();
+const FILE_CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+
+async function readJsonCached(filePath) {
+    const now = Date.now();
+    const entry = fileCache.get(filePath);
+
+    // Check if file modified (optional but safer)
+    let mtime = 0;
+    try {
+        const stats = await fsp.stat(filePath);
+        mtime = stats.mtimeMs;
+    } catch (e) {
+        throw new Error('Cache not ready');
+    }
+
+    if (entry && (now - entry.timestamp < FILE_CACHE_TTL) && entry.mtime === mtime) {
+        return entry.data;
+    }
+
+    try {
+        const raw = await fsp.readFile(filePath, 'utf8');
+        const data = JSON.parse(raw);
+        fileCache.set(filePath, { data, timestamp: now, mtime });
+        return data;
+    } catch (e) {
+        console.error(`[FileCache] Error reading ${filePath}:`, e.message);
+        throw new Error('Cache not ready');
+    }
+}
 
 async function getCatalogItems(type, id, extra) {
     const skip = parseInt(extra.skip || '0', 10);
@@ -23,8 +56,7 @@ async function getCatalogItems(type, id, extra) {
     // --- Collection Catalogs ---
     if (id === 'vixsrc_movie_collections') {
         const cachePath = CACHE_MOVIE_COLLECTIONS;
-        if (!fs.existsSync(cachePath)) throw new Error('Cache not ready');
-        const cache = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+        const cache = await readJsonCached(cachePath);
         let metas = Array.isArray(cache.metas) ? cache.metas : (Array.isArray(cache.collections) ? cache.collections : []);
 
         if (genre) {
@@ -48,8 +80,7 @@ async function getCatalogItems(type, id, extra) {
 
     if (id === 'vixsrc_series_collections') {
         const cachePath = CACHE_SERIES_COLLECTIONS;
-        if (!fs.existsSync(cachePath)) throw new Error('Cache not ready');
-        const cache = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+        const cache = await readJsonCached(cachePath);
         let metas = Array.isArray(cache.metas) ? cache.metas : (Array.isArray(cache.collections) ? cache.collections : []);
         metas = metas.filter(m => m.type === 'series');
         if (genre) {
@@ -283,13 +314,16 @@ async function getCatalogItems(type, id, extra) {
         // Special Genres (Novità, Trending, Nuovi Episodi)
         if (genre === 'Nuovi Episodi' && type === 'series') {
             const cachePath = CACHE_NUOVI_EPISODI;
-            if (fs.existsSync(cachePath)) {
-                const cache = JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+            try {
+                const cache = await readJsonCached(cachePath);
                 const ids = cache.ids || [];
                 const pageIds = ids.slice(skip, skip + 100);
                 const foundRows = pageIds.map(tid => tvRepo.getById(Number(tid))).filter(Boolean);
                 const metas = foundRows.map(r => toMetaPreview(fullMeta(r, 'series')));
                 return { metas };
+            } catch (e) {
+                // Return empty if cache not ready
+                return { metas: [] };
             }
         }
         if (['Novità', 'Trending'].includes(genre)) {
@@ -300,10 +334,12 @@ async function getCatalogItems(type, id, extra) {
                 cacheFile = type === 'movie' ? CACHE_TRENDING_MOVIES : CACHE_TRENDING_SERIES;
             }
 
-            if (fs.existsSync(cacheFile)) {
-                const cached = JSON.parse(fs.readFileSync(cacheFile, 'utf8'));
+            try {
+                const cached = await readJsonCached(cacheFile);
                 const metas = (Array.isArray(cached) ? cached : (cached.metas || [])).slice(skip, skip + 100);
                 return { metas };
+            } catch (e) {
+                return { metas: [] };
             }
         }
 
