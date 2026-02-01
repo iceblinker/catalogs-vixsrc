@@ -1,11 +1,24 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
 const { getCatalogItems } = require('../services/catalogService');
+const fs = require('fs');
+const path = require('path');
+const { LOG_FILE } = require('../config/settings');
 
 const querystring = require('querystring');
 
+const log = (msg) => {
+    const line = `[${new Date().toISOString()}] ${msg}`;
+    console.log(line);
+    try {
+        fs.appendFileSync(LOG_FILE, line + '\n');
+    } catch (e) {
+        // Ignore busy
+    }
+};
+
 router.get('/:type/:id/:extra?.json', async (req, res) => {
-    console.log(`[Catalog Router] Hit: ${req.originalUrl} | Params: ${JSON.stringify(req.params)}`);
+    log(`[Catalog] Hit: ${req.originalUrl}`);
     try {
         const { type, id } = req.params;
 
@@ -76,7 +89,7 @@ router.get('/:type/:id/:extra?.json', async (req, res) => {
         res.setHeader('Cache-Control', 'public, max-age=86400'); // 24 hours
         res.send(result);
     } catch (e) {
-        console.error(`[Catalog] Error: ${e.message}`);
+        log(`[Catalog] Error: ${e.message}`);
         res.status(500).send({ metas: [] });
     }
 });
