@@ -28,7 +28,9 @@ async function readJsonCached(filePath) {
         const stats = await fsp.stat(filePath);
         mtime = stats.mtimeMs;
     } catch (e) {
-        throw new Error('Cache not ready');
+        // If file doesn't exist yet (startup), return empty structure to avoid crashing
+        console.warn(`[FileCache] File not found: ${filePath}`);
+        return {};
     }
 
     if (entry && (now - entry.timestamp < FILE_CACHE_TTL) && entry.mtime === mtime) {
@@ -42,7 +44,9 @@ async function readJsonCached(filePath) {
         return data;
     } catch (e) {
         console.error(`[FileCache] Error reading ${filePath}:`, e.message);
-        throw new Error('Cache not ready');
+        // Fallback: return stale cache if available, otherwise empty
+        if (entry) return entry.data;
+        return {};
     }
 }
 
