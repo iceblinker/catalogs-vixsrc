@@ -136,18 +136,9 @@ const MANIFEST = {
 
 // --- Middleware ---
 // app.use(cors()); // Disable package to avoid double-headers
-app.use((req, res, next) => {
-    // Manually enforce CORS headers to be sure
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+// CORS is handled by Caddy reverse proxy
+// app.use((req, res, next) => { ... });
 
-    // Intercept OPTIONS method
-    if (req.method === 'OPTIONS') {
-        return res.sendStatus(200);
-    }
-    next();
-});
 app.use(express.json());
 app.use((req, res, next) => {
     res.setTimeout(30000, () => {
