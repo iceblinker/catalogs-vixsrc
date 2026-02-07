@@ -17,7 +17,7 @@ const log = (msg) => {
     }
 };
 
-router.get('/:type/:id/:extra?.json', async (req, res) => {
+router.get(['/:type/:id.json', '/:type/:id/:extra.json'], async (req, res) => {
     log(`[Catalog] Hit: ${req.originalUrl}`);
     try {
         const { type, id } = req.params;
