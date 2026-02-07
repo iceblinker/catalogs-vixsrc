@@ -4,6 +4,7 @@ const { ensureSchema } = require('../lib/db/schema');
 const movieRepo = require('../lib/db/repositories/movieRepository');
 const tvRepo = require('../lib/db/repositories/tvRepository');
 const { processSingleItem } = require('../services/ingestion/processor');
+const { harmonize } = require('../services/ingestion/harmonizer');
 
 // Regex for Asian characters
 const isAsian = (text) => /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/.test(text);
@@ -77,6 +78,12 @@ async function backfill() {
     }
 
     console.log(`[Backfill] Complete! Updated: Movies=${st.movie}, TV=${st.tv}`);
+
+    // Run Harmonization to ensure descriptions are translated
+    console.log('[Backfill] Running Harmonization to force Italian translations...');
+    await harmonize('movie_metadata', 'movie', console.log);
+    await harmonize('tv_metadata', 'tv', console.log);
+    console.log('[Backfill] Harmonization Complete.');
 }
 
 backfill().catch(err => console.error(err));
