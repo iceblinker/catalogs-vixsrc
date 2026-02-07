@@ -407,14 +407,16 @@ async function analyzeVirusBatch(movies, log = console.log) {
     You are a film analyst specializing in the "Virus & Outbreak" genre.
     
     **Inclusion Criteria:**
-    1. **Scale:** The disease must affect a large group (a town, a city, or global). It must be an epidemic or pandemic.
-    2. **Threat:** The narrative focus must be on the spread, the search for a cure, the societal collapse, or the survival against the biological agent.
-    3. **Zombies:** Include if the zombie outbreak is explicitly caused by a virus or biological infection (e.g. 28 Days Later, Resident Evil).
-
+    1. **Scale:** The disease, infection, or mutation must affect a *community, nation, or the world*. It must be an epidemic, pandemic, or apocolyptic event.
+    2. **Man vs Disease:** The core conflict is humanity struggling against a biological threat (virus, bacteria, parasite, fungus).
+    3. **Themes:** Survival, quarantine, search for a cure/vaccine, societal collapse due to disease, or biological warfare.
+    4. **Mutations/Zombies:** Include if humans are mutating, transforming, or turning into undead/monsters due to a biological agent (e.g., 28 Days Later, Resident Evil, The Strain).
+    
     **Strict Exclusions:**
-    * Personal medical dramas about a single person's illness (e.g. Philadelphia, A Walk to Remember).
-    * Documentaries about real-world diseases.
-    * Supernatural curses (unless they behave exactly like a biological contagion).
+    * **Personal Struggle:** Do NOT include stories about a single person's battle with a non-contagious or common disease (e.g., cancer, Alzheimer's, AIDS, HIV) unless it is a weaponized/mutated variant affecting the masses.
+    * **Family Drama:** Do not include dramas focused solely on how a disease affects a family dynamic without the broader context of an outbreak/survival scenario.
+    * **Documentaries:** Exclude non-fiction.
+    * **Supernatural:** Exclude curses or magic unless they function biologically (e.g. "zombie virus" is OK, "voodoo curse" is NO).
 
     **Task:**
     Analyze the provided list of movies/series. Return ONLY a JSON array of the IDs for items that strictly fit this criteria.

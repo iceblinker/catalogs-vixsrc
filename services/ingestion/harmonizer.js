@@ -1,5 +1,6 @@
 const { getDatabase } = require('../../lib/db');
 const { fetchTMDB, normalizeProviders } = require('./tmdbClient');
+const { generateDescription } = require('./googleAiClient');
 const { mapCommon } = require('./processor');
 
 async function harmonize(table, type, log = console.log) {
@@ -63,6 +64,33 @@ async function harmonize(table, type, log = console.log) {
                 }
             }
             updateFields[key] = mapped[key];
+        }
+
+        // --- ITALIAN FORCING LOGIC ---
+        // Check if the final description (mapped or original) is actually Italian.
+        // If it looks English or is empty/short, force AI translation.
+        const currentDesc = updateFields.description || row.description || '';
+        const isEnglishy = /\b(the|and|with|his|her|film|movie|series|is|are|was)\b/i.test(currentDesc) &&
+            !/\b(il|la|con|che|sono|era)\b/i.test(currentDesc);
+
+        // If description is missing, too short (< 20 chars), or looks English
+        if ((!currentDesc || currentDesc.length < 20 || isEnglishy) && row.title) {
+            // log(`[Harmonizer] Detected English/Empty description for "${row.title}". Translating...`);
+            try {
+                // Use the generateDescription helper which handles translation/generation
+                // It uses the title and year (from details or row) to find/create an Italian summary.
+                const releaseDate = mapped.release_date || mapped.last_air_date || row.release_date;
+                const year = releaseDate ? parseInt(releaseDate) : (new Date().getFullYear());
+
+                const translated = await generateDescription(row.title, year, currentDesc, () => { });
+
+                if (translated && translated.length > 20) {
+                    updateFields.description = translated;
+                    // log(`[Harmonizer] Translation success: "${translated.substring(0, 50)}..."`);
+                }
+            } catch (e) {
+                // log(`[Harmonizer] Translation failed: ${e.message}`);
+            }
         }
 
         if (Object.keys(updateFields).length) {

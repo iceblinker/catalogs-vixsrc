@@ -114,7 +114,10 @@ async function run() {
             description LIKE '%pathogen%' OR description LIKE '%plague%' OR
             keywords LIKE '%pandemic%' OR keywords LIKE '%virus%' OR 
             keywords LIKE '%bioweapon%' OR keywords LIKE '%post-apocalyptic%' OR
-            keywords LIKE '%zombie%'
+            keywords LIKE '%zombie%' OR keywords LIKE '%bacteria%' OR 
+            keywords LIKE '%mutation%' OR keywords LIKE '%vaccine%' OR
+            keywords LIKE '%quarantine%' OR keywords LIKE '%survival%' OR
+            keywords LIKE '%pathogen%' OR keywords LIKE '%contagion%'
             `
         },
         {
