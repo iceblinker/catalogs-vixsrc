@@ -9,7 +9,7 @@ const { CATALOG_NAME } = require('../../config/settings');
 const CURRENT_CATALOG = CATALOG_NAME;
 // const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-const { SPECIAL_GENRE_CONFIG } = require('../../config/constants');
+const { SPECIAL_GENRE_CONFIG, TMDB_MOVIE_GENRE_MAP, TMDB_SERIES_GENRE_MAP } = require('../../config/constants');
 
 const isAsian = (text) => /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/.test(text);
 
@@ -71,6 +71,18 @@ function mapCommon(details, crews, mediaType) {
 
     // --- Special Genre Injection ---
     let genres = details.genres || [];
+
+    // FIX: Standardize Genre Names to English using ID Maps
+    // This ensures consistency even if we fetched in Italian (where ID 28 is 'Azione')
+    const genreMap = mediaType === 'movie' ? TMDB_MOVIE_GENRE_MAP : TMDB_SERIES_GENRE_MAP;
+    if (genreMap) {
+        genres = genres.map(g => {
+            if (genreMap[g.id]) {
+                return { id: g.id, name: genreMap[g.id] }; // Enforce English Name
+            }
+            return g;
+        });
+    }
     const keywords = details.keywords?.keywords || details.keywords?.results || [];
     const keywordStrings = keywords.map(k => k.name.toLowerCase());
 
