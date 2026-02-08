@@ -291,18 +291,18 @@ const EXCLUDED_GENRES = ['documentario', 'documentary', 'reality', 'talk', 'anim
 const STRICT_EXCLUDED_GENRES = ['documentario', 'documentary', 'reality', 'talk', 'animazione', 'animation', 'bambini', 'kids'];
 
 const ITALIAN_TO_ENGLISH_GENRES = {
-    "Azione": "Action & Adventure",
-    "Avventura": "Action & Adventure",
+    "Azione": "Action",  // Changed from "Action & Adventure" to match TMDB
+    "Avventura": "Adventure",  // Changed from "Action & Adventure" to match TMDB
     "Animazione": "Animation",
     "Commedia": "Comedy",
     "Crime": "Crime",
     "Documentario": "Documentary",
     "Dramma": "Drama",
     "Famiglia": "Family",
-    "Fantascienza": "Sci-Fi & Fantasy",
-    "Fantasy": "Sci-Fi & Fantasy",
-    "Guerra": "War & Politics",
-    "Storia": "War & Politics",
+    "Fantascienza": "Science Fiction",  // Changed from "Sci-Fi & Fantasy" to match TMDB
+    "Fantasy": "Fantasy",  // Changed from "Sci-Fi & Fantasy" to match TMDB
+    "Guerra": "War",  // Changed from "War & Politics" to match TMDB
+    "Storia": "History",  // Changed from "War & Politics" to match TMDB
     "Horror": "Horror",
     "Musica": "Music",
     "Mistero": "Mystery",
@@ -313,6 +313,7 @@ const ITALIAN_TO_ENGLISH_GENRES = {
     "Animal Terror": "Animal Terror",
     "Korean": "Korean"
 };
+
 
 module.exports = {
     ASIAN_COUNTRIES,
