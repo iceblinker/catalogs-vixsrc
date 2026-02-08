@@ -25,7 +25,17 @@ async function backfill() {
         const keysMissing = !m.keywords || m.keywords === '[]' || m.keywords === 'null';
         const provMissing = !m.providers || m.providers === '[]' || m.providers === 'null';
         const prodMissing = !m.production_companies || m.production_companies === '[]' || m.production_companies === 'null';
-        return descBad || titleAsian || keysMissing || provMissing || prodMissing;
+
+        // Check for English genres that should be Italian
+        // We check for raw strings in the genres JSON or array
+        let hasEnglishGenre = false;
+        try {
+            const gStr = typeof m.genres === 'string' ? m.genres : JSON.stringify(m.genres || []);
+            hasEnglishGenre = gStr.includes("Action") || gStr.includes("Comedy") || gStr.includes("Adventure") ||
+                gStr.includes("Animation") || gStr.includes("Science Fiction") || gStr.includes("Family");
+        } catch (e) { }
+
+        return descBad || titleAsian || keysMissing || provMissing || prodMissing || hasEnglishGenre;
     };
 
     // 1. Find candidates (Movies)
