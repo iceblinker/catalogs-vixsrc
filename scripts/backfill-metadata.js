@@ -1,10 +1,15 @@
 require('dotenv').config();
-const { getDatabase } = require('../lib/db');
+const { getDatabase, closeDatabase } = require('../lib/db');
 const { ensureSchema } = require('../lib/db/schema');
 const movieRepo = require('../lib/db/repositories/movieRepository');
 const tvRepo = require('../lib/db/repositories/tvRepository');
 const { processSingleItem } = require('../services/ingestion/processor');
 const { harmonize } = require('../services/ingestion/harmonizer');
+const aiCatalogUpdater = require('./ai-catalog-updater');
+const collectionsCatalog = require('../stream-provider/collectionsCatalog');
+const { buildCollectionMeta } = require('../services/metaService');
+const { CACHE_MOVIE_COLLECTIONS, CACHE_NEW_RELEASES } = require('../config/settings');
+const fs = require('fs');
 
 // Regex for Asian characters
 const isAsian = (text) => /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]/.test(text);
@@ -25,18 +30,19 @@ async function backfill() {
 
     // 1. Find candidates (Movies)
     // Note: ensureSchema guarantees columns exist
-    const allMovies = db.prepare('SELECT tmdb_id, title, description, keywords, providers, production_companies FROM movie_metadata ORDER BY popularity DESC').all();
+    const allMovies = db.prepare('SELECT tmdb_id, title, description, genres, keywords, providers, production_companies FROM movie_metadata ORDER BY popularity DESC').all();
     const movieCandidates = allMovies.filter(hasMissingData).map(m => m.tmdb_id);
 
     // 2. Find candidates (TV)
-    const allTv = db.prepare('SELECT tmdb_id, name as title, description, keywords, providers, production_companies FROM tv_metadata ORDER BY popularity DESC').all();
+    const allTv = db.prepare('SELECT tmdb_id, name as title, description, genres, keywords, providers, production_companies FROM tv_metadata ORDER BY popularity DESC').all();
     const tvCandidates = allTv.filter(hasMissingData).map(t => t.tmdb_id);
 
     console.log(`[Backfill] Found candidates -> Movies: ${movieCandidates.length}, TV: ${tvCandidates.length}`);
 
     if (movieCandidates.length === 0 && tvCandidates.length === 0) {
         console.log('[Backfill] No items need backfilling.');
-        return;
+        // Even if no backfill, run harmonization/AI/collections to be safe? 
+        // Let's just fall through to the end logic to ensure consistency.
     }
 
     const BATCH_SIZE = 1;
@@ -84,6 +90,50 @@ async function backfill() {
     await harmonize('movie_metadata', 'movie', console.log);
     await harmonize('tv_metadata', 'tv', console.log);
     console.log('[Backfill] Harmonization Complete.');
+
+    // Run AI Catalog Update
+    console.log('[Backfill] Running AI Catalog Update (Animal Terror, Virus, etc.)...');
+    await aiCatalogUpdater.run();
+    console.log('[Backfill] AI Catalog Update Complete.');
+
+    // Regenerate Collection Caches
+    console.log('[Backfill] Regenerating Collection Caches...');
+    try {
+        // Movie Collections (by popularity)
+        const collections = collectionsCatalog.getMovieCollections();
+        // Re-fetch all movies to ensure we have latest data
+        const allMoviesRefresh = movieRepo.find('collection_id IS NOT NULL', [], 100000);
+        const moviesByCollection = {};
+        for (const movie of allMoviesRefresh) {
+            if (!moviesByCollection[movie.collection_id]) moviesByCollection[movie.collection_id] = [];
+            moviesByCollection[movie.collection_id].push(movie);
+        }
+        const metas = collections.map(col => {
+            const items = moviesByCollection[col.id] || [];
+            return buildCollectionMeta(col, items);
+        });
+        fs.writeFileSync(CACHE_MOVIE_COLLECTIONS, JSON.stringify({ metas }, null, 2));
+        console.log(`[Backfill] cache-moviecollections.json written (${metas.length} collections)`);
+
+        // New Releases in Collections
+        const newReleases = collectionsCatalog.getNewReleaseCollections();
+        const metas2 = newReleases.map(col => {
+            const items = moviesByCollection[col.id] || [];
+            return buildCollectionMeta(col, items);
+        });
+        fs.writeFileSync(CACHE_NEW_RELEASES, JSON.stringify({ metas: metas2 }, null, 2));
+        console.log(`[Backfill] cache-newreleases.json written (${metas2.length} collections)`);
+
+    } catch (e) {
+        console.error(`[Backfill] ERROR writing collection caches: ${e.message}`);
+    }
 }
 
-backfill().catch(err => console.error(err));
+backfill().then(() => {
+    closeDatabase();
+    process.exit(0);
+}).catch(err => {
+    console.error(err);
+    closeDatabase();
+    process.exit(1);
+});

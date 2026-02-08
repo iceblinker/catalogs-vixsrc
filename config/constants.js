@@ -47,43 +47,43 @@ const SPECIAL_GENRE_CONFIG = {
 
 // TMDB Series Genre ID to Name mapping
 const TMDB_SERIES_GENRE_MAP = {
-    10759: "Action & Adventure",
-    16: "Animation",
-    35: "Comedy",
+    10759: "Action & Adventure", // No direct Italian equivalent in standard list usually, but let's check SERIES_GENRES. It has "Action & Adventure". Wait, DB has "Action & Adventure". Let's keep it.
+    16: "Animazione",
+    35: "Commedia",
     80: "Crime",
-    99: "Documentary",
-    18: "Drama",
-    10751: "Family",
-    10762: "Kids",
-    9648: "Mystery",
-    10763: "News",
-    10764: "Reality",
-    10765: "Sci-Fi & Fantasy",
-    10766: "Soap",
-    10767: "Talk",
-    10768: "War & Politics",
+    99: "Documentario",
+    18: "Dramma",
+    10751: "Famiglia",
+    10762: "Kids", // DB has "Kids"
+    9648: "Mistero",
+    10763: "News", // DB has "News"
+    10764: "Reality", // DB has "Reality"
+    10765: "Sci-Fi & Fantasy", // DB has "Sci-Fi & Fantasy"
+    10766: "Soap", // DB has "Soap"
+    10767: "Talk", // DB has "Talk"
+    10768: "War & Politics", // DB has "War & Politics"
     37: "Western"
 };
 
 const TMDB_MOVIE_GENRE_MAP = {
-    28: "Action",
-    12: "Adventure",
-    16: "Animation",
-    35: "Comedy",
+    28: "Azione",
+    12: "Avventura",
+    16: "Animazione",
+    35: "Commedia",
     80: "Crime",
-    99: "Documentary",
-    18: "Drama",
-    10751: "Family",
+    99: "Documentario",
+    18: "Dramma",
+    10751: "Famiglia",
     14: "Fantasy",
-    36: "History",
+    36: "Storia",
     27: "Horror",
-    10402: "Music",
-    9648: "Mystery",
+    10402: "Musica",
+    9648: "Mistero",
     10749: "Romance",
-    878: "Science Fiction",
-    10770: "TV Movie",
+    878: "Fantascienza",
+    10770: "televisione film",
     53: "Thriller",
-    10752: "War",
+    10752: "Guerra",
     37: "Western"
 };
 
