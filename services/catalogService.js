@@ -367,14 +367,11 @@ async function getCatalogItems(type, id, extra) {
 
         // Standard Genre Filter
         else if (genre) {
-            // Map display name to internal key if needed (e.g. 'Animal Horror' -> 'animal_horror')
-            // But SPECIAL_GENRE_CONFIG uses display names as keys, so we check that directly.
-            // However, the user's original code had a map. Let's respect the map if the config key lookup fails, 
-            // OR if the config keys are actually the mapped values (which they are NOT in constants.js).
-            // In constants.js: SPECIAL_GENRE_CONFIG['Animal Horror'] exists.
+            // Map Italian genre to English if needed (e.g. 'Azione' -> 'Action')
+            const mappedGenre = ITALIAN_TO_ENGLISH_GENRES[genre] || genre;
 
-            if (SPECIAL_GENRE_CONFIG[genre]) {
-                const cfg = SPECIAL_GENRE_CONFIG[genre];
+            if (SPECIAL_GENRE_CONFIG[genre] || SPECIAL_GENRE_CONFIG[mappedGenre]) {
+                const cfg = SPECIAL_GENRE_CONFIG[genre] || SPECIAL_GENRE_CONFIG[mappedGenre];
                 whereParts.push('rating >= ?');
                 params.push(cfg.minRating);
                 whereParts.push('(' + cfg.keywords.map(() => 'keywords LIKE ?').join(' OR ') + ')');
@@ -385,7 +382,7 @@ async function getCatalogItems(type, id, extra) {
                     params.push(...cfg.horrorVariants.map(g => `%${g}%`));
                 }
 
-                if (genre === 'Virus') {
+                if (genre === 'Virus' || mappedGenre === 'Virus') {
                     const allExclusions = EXCLUDED_GENRES.concat(cfg.extraExclusions || []);
                     whereParts.push('(' + allExclusions.map(() => 'genres NOT LIKE ?').join(' AND ') + ')');
                     params.push(...allExclusions.map(g => `%${g}%`));
@@ -400,7 +397,7 @@ async function getCatalogItems(type, id, extra) {
                 }
             } else {
                 whereParts.push('genres LIKE ?');
-                params.push(`%${genre}%`);
+                params.push(`%${mappedGenre}%`);
             }
         }
 
