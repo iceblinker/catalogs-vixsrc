@@ -1,7 +1,7 @@
 const movieRepo = require('../lib/db/repositories/movieRepository');
 const tvRepo = require('../lib/db/repositories/tvRepository');
 const { toMetaPreview, fullMeta } = require('./metaService');
-const { KEYWORD_CATALOGS, PROVIDER_CATALOG_MAP, SPECIAL_GENRE_CONFIG, STRICT_EXCLUDED_GENRES, EXCLUDED_GENRES, ITALIAN_TO_ENGLISH_GENRES, ASIAN_COUNTRIES, EUROPEAN_COUNTRIES } = require('../config/constants');
+const { KEYWORD_CATALOGS, PROVIDER_CATALOG_MAP, SPECIAL_GENRE_CONFIG, STRICT_EXCLUDED_GENRES, EXCLUDED_GENRES, GENRE_QUERY_MAP, ASIAN_COUNTRIES, EUROPEAN_COUNTRIES } = require('../config/constants');
 const { KEYWORD_CATALOG, CACHE_MOVIE_COLLECTIONS, CACHE_SERIES_COLLECTIONS, CACHE_NUOVI_EPISODI, CACHE_NOVITA_MOVIES, CACHE_TRENDING_MOVIES, CACHE_NOVITA_SERIES, CACHE_TRENDING_SERIES } = require('../config/settings');
 const path = require('path');
 const fs = require('fs');
@@ -71,8 +71,8 @@ async function getCatalogItems(type, id, extra) {
                     return bDate - aDate;
                 });
             } else {
-                // Map Italian genre to English if needed
-                const filterGenre = ITALIAN_TO_ENGLISH_GENRES[genre] || genre;
+                // Map Genre (English/Italian) to DB Genre
+                const filterGenre = GENRE_QUERY_MAP[genre] || genre;
                 metas = metas.filter(m => Array.isArray(m.genres) && (m.genres.includes(filterGenre) || m.genres.includes(genre)));
                 metas = metas.slice().sort((a, b) => (b.popularity || 0) - (a.popularity || 0));
             }
@@ -95,8 +95,8 @@ async function getCatalogItems(type, id, extra) {
                     return bDate - aDate;
                 });
             } else {
-                // Map Italian genre to English if needed
-                const filterGenre = ITALIAN_TO_ENGLISH_GENRES[genre] || genre;
+                // Map Genre (English/Italian) to DB Genre
+                const filterGenre = GENRE_QUERY_MAP[genre] || genre;
                 metas = metas.filter(m => Array.isArray(m.genres) && (m.genres.includes(filterGenre) || m.genres.includes(genre)));
                 metas = metas.slice().sort((a, b) => (b.popularity || 0) - (a.popularity || 0));
             }
@@ -367,8 +367,8 @@ async function getCatalogItems(type, id, extra) {
 
         // Standard Genre Filter
         else if (genre) {
-            // Map Italian genre to English if needed (e.g. 'Azione' -> 'Action')
-            const mappedGenre = ITALIAN_TO_ENGLISH_GENRES[genre] || genre;
+            // Map Genre (English/Italian) to DB Genre
+            const mappedGenre = GENRE_QUERY_MAP[genre] || genre;
 
             if (SPECIAL_GENRE_CONFIG[genre] || SPECIAL_GENRE_CONFIG[mappedGenre]) {
                 const cfg = SPECIAL_GENRE_CONFIG[genre] || SPECIAL_GENRE_CONFIG[mappedGenre];

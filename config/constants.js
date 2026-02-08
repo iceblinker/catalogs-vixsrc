@@ -65,6 +65,28 @@ const TMDB_SERIES_GENRE_MAP = {
     37: "Western"
 };
 
+const TMDB_MOVIE_GENRE_MAP = {
+    28: "Action",
+    12: "Adventure",
+    16: "Animation",
+    35: "Comedy",
+    80: "Crime",
+    99: "Documentary",
+    18: "Drama",
+    10751: "Family",
+    14: "Fantasy",
+    36: "History",
+    27: "Horror",
+    10402: "Music",
+    9648: "Mystery",
+    10749: "Romance",
+    878: "Science Fiction",
+    10770: "TV Movie",
+    53: "Thriller",
+    10752: "War",
+    37: "Western"
+};
+
 const ASIAN_COUNTRIES = [
     'CN', 'JP', 'KR', 'TH', 'VN', 'ID', 'MY', 'PH', 'SG', 'TW', 'HK', 'MO', 'KH', 'LA', 'MM', 'BN', 'TL', 'IN', 'PK', 'LK', 'BD', 'NP'
 ];
@@ -290,28 +312,50 @@ const GENRE_MAP = {
 const EXCLUDED_GENRES = ['documentario', 'documentary', 'reality', 'talk', 'animazione', 'animation'];
 const STRICT_EXCLUDED_GENRES = ['documentario', 'documentary', 'reality', 'talk', 'animazione', 'animation', 'bambini', 'kids'];
 
-const ITALIAN_TO_ENGLISH_GENRES = {
-    "Azione": "Action",  // Changed from "Action & Adventure" to match TMDB
-    "Avventura": "Adventure",  // Changed from "Action & Adventure" to match TMDB
-    "Animazione": "Animation",
-    "Commedia": "Comedy",
-    "Crime": "Crime",
-    "Documentario": "Documentary",
-    "Dramma": "Drama",
-    "Famiglia": "Family",
-    "Fantascienza": "Science Fiction",  // Changed from "Sci-Fi & Fantasy" to match TMDB
-    "Fantasy": "Fantasy",  // Changed from "Sci-Fi & Fantasy" to match TMDB
-    "Guerra": "War",  // Changed from "War & Politics" to match TMDB
-    "Storia": "History",  // Changed from "War & Politics" to match TMDB
+const GENRE_QUERY_MAP = {
+    // Fixes for Movies (Map Manifest -> DB)
+    "Cinema TV": "televisione film",
+
+    // Fixes for Series (English Manifest -> Italian DB)
+    "Animation": "Animazione",
+    "Comedy": "Commedia",
+    "Crime": "Crime", // Same
+    "Documentary": "Documentario",
+    "Drama": "Dramma",
+    "Family": "Famiglia",
+    "Kids": "Kids", // Same? Let's check DB. DB has "Kids": 241. So same.
+    "Mystery": "Mistero",
+    "News": "News", // DB has "News": 3. Same.
+    "Reality": "Reality", // DB has "Reality": 459. Same.
+    "Sci-Fi & Fantasy": "Sci-Fi & Fantasy", // DB has "Sci-Fi & Fantasy": 698. Same.
+    "Science Fiction": "Fantascienza", // For Movies if using English manifest?
+    "Soap": "Soap", // DB has "Soap": 20. Same.
+    "Talk": "Talk", // DB has "Talk": 29. Same.
+    "War & Politics": "War & Politics", // DB has "War & Politics": 92. Same.
+    "Western": "Western", // DB has "Western": 22. Same.
+
+    // Movie Specifics (If Manifest uses English but DB has Italian)
+    "Action": "Azione",
+    "Adventure": "Avventura",
+    "Fantasy": "Fantasy", // DB has "Fantasy": 1040. Same.
+    "History": "Storia",
     "Horror": "Horror",
-    "Musica": "Music",
-    "Mistero": "Mystery",
-    "Romance": "Romance",
+    "Music": "Musica",
+    "Romance": "Romance", // DB has "Romance": 1556. Same.
     "Thriller": "Thriller",
-    "Western": "Western",
-    "Cinema TV": "TV Movie",
+    "War": "Guerra",
+    "TV Movie": "televisione film",
+
+    // Special
     "Animal Terror": "Animal Terror",
-    "Korean": "Korean"
+    "Korean": "Korean",
+    "Virus": "Virus",
+    "Dystopia": "Dystopia",
+    "Apocalypse": "Apocalypse",
+    "Supernatural": "Supernatural",
+    "Medical Drama": "Medical Drama",
+    "Asian Drama": "Asian Drama",
+    "European Drama": "European Drama"
 };
 
 
@@ -322,6 +366,7 @@ module.exports = {
     SPECIAL_GENRE_CONFIG,
     SERIES_GENRES,
     TMDB_SERIES_GENRE_MAP,
+    TMDB_MOVIE_GENRE_MAP,
     MOVIE_GENRES,
     PROVIDER_MOVIE_GENRES,
     PROVIDER_SERIES_GENRES,
@@ -336,7 +381,7 @@ module.exports = {
     GENRE_MAP,
     EXCLUDED_GENRES,
     STRICT_EXCLUDED_GENRES,
-    ITALIAN_TO_ENGLISH_GENRES,
+    GENRE_QUERY_MAP,
     TRACKERS: [
         "udp://tracker.opentrackr.org:1337/announce",
         "udp://9.rarbg.com:2810/announce",
